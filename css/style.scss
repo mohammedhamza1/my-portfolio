@@ -1,9 +1,13 @@
 @import 'sass/_variable.scss';
-
+body{
+  background: red;
+}
 //start home
 .home {
   background: $darkColor;
+  color: #fff;
   padding: 50px 0;
+  //start header
   header {
     .navbar-wrapper {
       .navbar {
@@ -26,6 +30,9 @@
         }
         .navbar-collapse{
           margin-top: 20px;
+          @media (max-width: 991.98px) {
+            margin-bottom: -135px;
+          }
           .navbar-nav {
             background: $darkLightColor;
             padding: 0 30px;
@@ -64,6 +71,69 @@
       }
     }
   }
+  //end header
+
+  //start section my name
+  section.my-name{
+    .row{
+      min-height: 470px;
+      @media (max-width: 575.98px) {
+        min-height: 420px;
+      }
+      @media (min-width: 575.98px) {
+        min-height: 470px;
+      }
+      @media (min-width: 991.98px) {
+        min-height: 500px;
+      }
+      .col{
+        .name{
+          text-align: center;
+          text-transform: uppercase;
+          .first-name{
+            h1{
+              font-family: $firstNameFontFamily;
+              font-weight: 300;
+              font-size: 64px;
+              margin-bottom: -20px;
+              @media (max-width: 575.98px) {
+                font-size: 32px;
+                margin-bottom: -10px;
+              }
+            }
+          }
+          .second-name{
+            h1{
+              font-family: $secondNameFontFamily;
+              font-weight: 700;
+              font-size: 130px;
+              letter-spacing: 1px;
+              margin-bottom: -20px;
+              @media (max-width: 575.98px) {
+                margin-bottom: -10px;
+                font-size: 60px;
+              }
+            }
+          }
+          .job-title{
+            h4{
+              font-family: $jobTitleFontFamily;
+              font-size: 30px;
+              letter-spacing: 12px;
+              color: $borderColor;
+              padding-bottom: 10px;
+              @media (max-width: 575.98px) {
+                font-size: 15px;
+                padding-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //end section my name
+
 }
 
 //end home
