@@ -1,3 +1,32 @@
-
+.home {
+  background: #192734;
+  padding: 50px 0; }
+  .home header .navbar-wrapper .navbar .navbar-brand {
+    background: #213243;
+    padding: 5px 20px;
+    border-radius: 9px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Questrial", sans-serif;
+    font-size: 35px; }
+  .home header .navbar-wrapper .navbar .navbar-nav {
+    background: #213243;
+    padding: 0 30px;
+    border-radius: 9px;
+    text-transform: uppercase; }
+    .home header .navbar-wrapper .navbar .navbar-nav .nav-item {
+      margin-right: 50px;
+      border-bottom: 5px solid transparent;
+      padding: 10px 0;
+      box-sizing: border-box;
+      transition: all ease-in-out .3s; }
+      .home header .navbar-wrapper .navbar .navbar-nav .nav-item .nav-link {
+        color: #fff; }
+    .home header .navbar-wrapper .navbar .navbar-nav .nav-item:last-of-type {
+      margin-right: 0; }
+    .home header .navbar-wrapper .navbar .navbar-nav .nav-item.active {
+      border-color: #21AE62; }
+    .home header .navbar-wrapper .navbar .navbar-nav .nav-item:hover {
+      border-color: #21AE62; }
 
 /*# sourceMappingURL=style.css.map */

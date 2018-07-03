@@ -1,2 +1,50 @@
 @import 'sass/_variable.scss';
 
+//start home
+.home {
+  background: $darkColor;
+  padding: 50px 0;
+  header {
+    .navbar-wrapper {
+      .navbar {
+        .navbar-brand {
+          background: $darkLightColor;
+          padding: 5px 20px;
+          border-radius: $borderRadius;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-family: $brandFontFamily;
+          font-size: 35px;
+        }
+        .navbar-nav {
+          background: $darkLightColor;
+          padding: 0 30px;
+          border-radius: $borderRadius;
+          text-transform: uppercase;
+          .nav-item {
+            margin-right: 50px;
+            border-bottom: 5px solid transparent;
+            padding: 10px 0;
+            box-sizing: border-box;
+            transition: all ease-in-out .3s;
+            .nav-link {
+              color: #fff;
+            }
+          }
+          .nav-item:last-of-type {
+            margin-right: 0;
+          }
+          .nav-item.active{
+            border-color: $borderColor;
+          }
+          .nav-item:hover {
+            border-color: $borderColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+//end home
+
