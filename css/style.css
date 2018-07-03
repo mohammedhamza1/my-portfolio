@@ -60,7 +60,7 @@ body {
         min-height: 470px; } }
     @media (min-width: 991.98px) {
       .home section.my-name .row {
-        min-height: 500px; } }
+        min-height: 490px; } }
     .home section.my-name .row .col .name {
       text-align: center;
       text-transform: uppercase; }
