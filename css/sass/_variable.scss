@@ -20,7 +20,7 @@ $jobTitleFontFamily: 'Julius Sans One', sans-serif;
 $sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
 
 //mixins
-@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left) {
+@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left,$bradius) {
   content: '';
   position: absolute;
   background: $background;
@@ -31,10 +31,10 @@ $sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
   right: $right;
   top: $top;
   left: $left;
-  border-bottom-left-radius: 8px;
-  border-top-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-right-radius: 8px;
+  border-bottom-left-radius: $bradius;
+  border-top-left-radius: $bradius;
+  border-bottom-right-radius: $bradius;
+  border-top-right-radius: $bradius;
 }
 
 //shared

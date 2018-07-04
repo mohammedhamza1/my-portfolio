@@ -143,7 +143,7 @@ section.about {
     @extend %sectionsSmallHeadsStyle;
   }
   .who-am-i:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 595px, -3px, '');
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 595px, -3px, '', 8px);
   }
   h1 {
     @extend %sectionsMainHeadsStyle;
@@ -154,7 +154,8 @@ section.about {
         @extend %sectionsChildHeadsStyle;
       }
       h6:before {
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0);
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
       }
       p {
         color: $paragraphsColor;
@@ -170,7 +171,8 @@ section.about {
         @extend %sectionsChildHeadsStyle;
       }
       h6:before {
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0);
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
       }
     }
   }
