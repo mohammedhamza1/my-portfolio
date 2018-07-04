@@ -40,38 +40,37 @@ section.about .row .info h6, section.about .row .skills h6 {
   @media (max-width: 575.98px) {
     .home header .navbar-wrapper .navbar .navbar-toggler {
       padding: 5px; } }
-  .home header .navbar-wrapper .navbar .navbar-collapse {
-    margin-top: 20px; }
-    @media (max-width: 991.98px) {
-      .home header .navbar-wrapper .navbar .navbar-collapse {
-        margin-bottom: -110px; } }
-    .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav {
-      background: #213243;
-      padding: 0 30px;
-      border-radius: 9px;
-      text-transform: uppercase; }
-      .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item {
-        margin-right: 50px;
-        border-bottom: 5px solid transparent;
-        padding: 10px 0;
-        box-sizing: border-box;
+  @media (max-width: 991.98px) {
+    .home header .navbar-wrapper .navbar .navbar-collapse {
+      margin-bottom: -110px;
+      margin-top: 20px; } }
+  .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav {
+    background: #213243;
+    padding: 0 30px;
+    border-radius: 9px;
+    text-transform: uppercase; }
+    .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item {
+      margin-right: 50px;
+      border-bottom: 5px solid transparent;
+      padding: 10px 0;
+      box-sizing: border-box;
+      transition: all ease-in-out .2s; }
+      @media (max-width: 991.98px) {
+        .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item {
+          border: none;
+          padding: 5px 0; } }
+      .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        color: #fff;
         transition: all ease-in-out .2s; }
-        @media (max-width: 991.98px) {
-          .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item {
-            border: none;
-            padding: 5px 0; } }
-        .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
-          color: #fff;
-          transition: all ease-in-out .2s; }
-        @media (max-width: 991.98px) {
-          .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-            color: #21AE62; } }
-      .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
-        margin-right: 0; }
-      .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item.active {
-        border-color: #21AE62; }
-      .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item:hover {
-        border-color: #21AE62; }
+      @media (max-width: 991.98px) {
+        .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+          color: #21AE62; } }
+    .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item:last-of-type {
+      margin-right: 0; }
+    .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item.active {
+      border-color: #21AE62; }
+    .home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item:hover {
+      border-color: #21AE62; }
   .home section.my-name .row {
     min-height: 470px; }
     @media (max-width: 575.98px) {

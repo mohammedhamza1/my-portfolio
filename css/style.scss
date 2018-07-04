@@ -27,9 +27,9 @@
           }
         }
         .navbar-collapse {
-          margin-top: 20px;
           @media (max-width: 991.98px) {
             margin-bottom: -110px;
+            margin-top: 20px;
           }
           .navbar-nav {
             background: $darkLightColor;
