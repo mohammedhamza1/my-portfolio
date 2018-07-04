@@ -1,7 +1,5 @@
 @import 'sass/_variable.scss';
-body{
-  background: red;
-}
+
 //start home
 .home {
   background: $darkColor;
@@ -23,12 +21,12 @@ body{
             font-size: 25px;
           }
         }
-        .navbar-toggler{
+        .navbar-toggler {
           @media (max-width: 575.98px) {
             padding: 5px;
           }
         }
-        .navbar-collapse{
+        .navbar-collapse {
           margin-top: 20px;
           @media (max-width: 991.98px) {
             margin-bottom: -110px;
@@ -52,7 +50,7 @@ body{
                 color: #fff;
                 transition: all ease-in-out .2s;
               }
-              .nav-link:hover{
+              .nav-link:hover {
                 @media (max-width: 991.98px) {
                   color: $borderColor;
                 }
@@ -61,7 +59,7 @@ body{
             .nav-item:last-of-type {
               margin-right: 0;
             }
-            .nav-item.active{
+            .nav-item.active {
               border-color: $borderColor;
             }
             .nav-item:hover {
@@ -75,8 +73,8 @@ body{
   //end header
 
   //start section my name
-  section.my-name{
-    .row{
+  section.my-name {
+    .row {
       min-height: 470px;
       @media (max-width: 575.98px) {
         min-height: 420px;
@@ -87,12 +85,12 @@ body{
       @media (min-width: 991.98px) {
         min-height: 490px;
       }
-      .col{
-        .name{
+      .col {
+        .name {
           text-align: center;
           text-transform: uppercase;
-          .first-name{
-            h1{
+          .first-name {
+            h1 {
               font-family: $firstNameFontFamily;
               font-weight: 300;
               font-size: 64px;
@@ -103,8 +101,8 @@ body{
               }
             }
           }
-          .second-name{
-            h1{
+          .second-name {
+            h1 {
               font-family: $secondNameFontFamily;
               font-weight: 700;
               font-size: 130px;
@@ -116,8 +114,8 @@ body{
               }
             }
           }
-          .job-title{
-            h4{
+          .job-title {
+            h4 {
               font-family: $jobTitleFontFamily;
               font-size: 30px;
               letter-spacing: 12px;
@@ -133,8 +131,51 @@ body{
     }
   }
   //end section my name
-
 }
 
 //end home
+//start about
+section.about {
+  padding: $sectionsPadding;
+  background: $darkLightColor;
+  color: #fff;
+  .who-am-i {
+    @extend %sectionsSmallHeadsStyle;
+  }
+  .who-am-i:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 595px, -3px, '');
+  }
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+  }
+  .row {
+    .info {
+      h6 {
+        @extend %sectionsChildHeadsStyle;
+      }
+      h6:before {
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0);
+      }
+      p {
+        color: $paragraphsColor;
+        padding-left: 60px;
+        padding-top: 7px;
+        font-style: italic;
+        font-weight: initial;
+        margin-bottom: 40px;
+      }
+    }
+    .skills {
+      h6 {
+        @extend %sectionsChildHeadsStyle;
+      }
+      h6:before {
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0);
+      }
+    }
+  }
+}
+
+//end about
+
 

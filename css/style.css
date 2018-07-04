@@ -1,5 +1,26 @@
-body {
-  background: red; }
+section.about .who-am-i {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: #ADBCCB;
+  font-size: 18px; }
+
+section.about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 80px;
+  font-family: "Questrial", sans-serif;
+  margin-top: 7px;
+  margin-bottom: 80px; }
+
+section.about .row .info h6, section.about .row .skills h6 {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Eagle Lake", cursive;
+  font-size: 30px;
+  margin-left: 25px;
+  padding-top: 20px; }
 
 .home {
   background: #192734;
@@ -93,5 +114,62 @@ body {
         @media (max-width: 575.98px) {
           .home section.my-name .row .col .name .job-title h4 {
             font-size: 15px; } }
+
+section.about {
+  padding: 145px 0;
+  background: #213243;
+  color: #fff; }
+  section.about .who-am-i:before {
+    content: '';
+    position: absolute;
+    background: #C1C5C8;
+    opacity: 0.4;
+    height: 65px;
+    width: 2px;
+    bottom: -3px;
+    right: 595px;
+    top: "";
+    left: "";
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px; }
+  section.about .row .info h6:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    opacity: 1;
+    height: 4px;
+    width: 50px;
+    bottom: -8px;
+    right: "";
+    top: "";
+    left: 0;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px; }
+  section.about .row .info p {
+    color: #C3D6E9;
+    padding-left: 60px;
+    padding-top: 7px;
+    font-style: italic;
+    font-weight: initial;
+    margin-bottom: 40px; }
+  section.about .row .skills h6:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    opacity: 1;
+    height: 4px;
+    width: 50px;
+    bottom: -8px;
+    right: "";
+    top: "";
+    left: 0;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px; }
 
 /*# sourceMappingURL=style.css.map */

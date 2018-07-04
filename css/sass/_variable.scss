@@ -2,12 +2,64 @@
 $darkColor: #192734;
 $darkLightColor: #213243;
 $borderColor: #21AE62;
+$sectionsHeadsColor: #ADBCCB;
+$lineBeforeColor: #C1C5C8;
+$paragraphsColor: #C3D6E9;
 
 //border
 $borderRadius: 9px;
+
+//padding
+$sectionsPadding: 145px 0;
 
 //font family
 $brandFontFamily: 'Questrial', sans-serif;
 $firstNameFontFamily: 'Quicksand', sans-serif;
 $secondNameFontFamily: 'Prompt', sans-serif;
 $jobTitleFontFamily: 'Julius Sans One', sans-serif;
+$sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
+
+//mixins
+@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left) {
+  content: '';
+  position: absolute;
+  background: $background;
+  opacity: $opacity;
+  height: $height;
+  width: $width;
+  bottom: $bottom;
+  right: $right;
+  top: $top;
+  left: $left;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+//shared
+%sectionsSmallHeadsStyle {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: $sectionsHeadsColor;
+  font-size: 18px;
+}
+
+%sectionsMainHeadsStyle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 80px;
+  font-family: $brandFontFamily;
+  margin-top: 7px;
+  margin-bottom: 80px;
+}
+%sectionsChildHeadsStyle{
+  position: relative;
+  text-transform: uppercase;
+  font-family: $sectionsChildHeadsFontFamily;
+  font-size: 30px;
+  margin-left: 25px;
+  padding-top: 20px;
+}
