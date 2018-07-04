@@ -1,0 +1,27 @@
+@import "_variable";
+
+%sectionsSmallHeadsStyle {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: $sectionsHeadsColor;
+  font-size: 18px;
+}
+
+%sectionsMainHeadsStyle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 80px;
+  font-family: $brandFontFamily;
+  margin-top: 7px;
+  margin-bottom: 80px;
+}
+%sectionsChildHeadsStyle{
+  position: relative;
+  text-transform: uppercase;
+  font-family: $sectionsChildHeadsFontFamily;
+  font-size: 30px;
+  margin-left: 25px;
+  padding-top: 20px;
+}

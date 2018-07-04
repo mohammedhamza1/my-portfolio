@@ -20,46 +20,6 @@ $jobTitleFontFamily: 'Julius Sans One', sans-serif;
 $sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
 
 //mixins
-@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left,$bradius) {
-  content: '';
-  position: absolute;
-  background: $background;
-  opacity: $opacity;
-  height: $height;
-  width: $width;
-  bottom: $bottom;
-  right: $right;
-  top: $top;
-  left: $left;
-  border-bottom-left-radius: $bradius;
-  border-top-left-radius: $bradius;
-  border-bottom-right-radius: $bradius;
-  border-top-right-radius: $bradius;
-}
+
 
 //shared
-%sectionsSmallHeadsStyle {
-  position: relative;
-  display: block;
-  text-align: center;
-  color: $sectionsHeadsColor;
-  font-size: 18px;
-}
-
-%sectionsMainHeadsStyle {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  font-size: 80px;
-  font-family: $brandFontFamily;
-  margin-top: 7px;
-  margin-bottom: 80px;
-}
-%sectionsChildHeadsStyle{
-  position: relative;
-  text-transform: uppercase;
-  font-family: $sectionsChildHeadsFontFamily;
-  font-size: 30px;
-  margin-left: 25px;
-  padding-top: 20px;
-}
