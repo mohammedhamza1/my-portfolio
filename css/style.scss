@@ -144,8 +144,11 @@ section.about {
   .who-am-i {
     @extend %sectionsSmallHeadsStyle;
   }
-  .who-am-i:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 595px, -3px, '', 8px);
+  .who-am-i > span{
+    position: relative;
+  }
+  .who-am-i > span:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 77px, -3px, '', 8px);
   }
   h1 {
     @extend %sectionsMainHeadsStyle;
