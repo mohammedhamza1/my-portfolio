@@ -194,7 +194,9 @@ section.about {
       font-size: 18px;
       font-weight: 300; }
   section.about .education-experience {
-    padding-top: 130px; }
+    padding-top: 130px;
+    margin-left: -57px;
+    margin-right: -55px; }
     section.about .education-experience h6:before {
       content: '';
       position: absolute;
@@ -210,6 +212,8 @@ section.about {
       border-top-left-radius: 8px;
       border-bottom-right-radius: 8px;
       border-top-right-radius: 8px; }
+    section.about .education-experience h6.second {
+      margin-left: 42px; }
     section.about .education-experience h6.second:before {
       content: '';
       position: absolute;
@@ -221,6 +225,78 @@ section.about {
       right: "";
       top: 77px;
       left: 0;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px; }
+    section.about .education-experience .education .stage {
+      position: relative;
+      margin-left: 48px;
+      margin-top: 50px;
+      padding: 0 0 30px 45px;
+      background: #192734;
+      border-radius: 13px;
+      box-shadow: 0px 5px 7px 1px #192734; }
+      section.about .education-experience .education .stage .when {
+        padding: 30px 0 15px 0;
+        color: #ADBCCB;
+        text-transform: capitalize;
+        font-size: 10px;
+        margin-left: -15px; }
+      section.about .education-experience .education .stage p {
+        padding: 0;
+        margin: 0;
+        font-size: 17px;
+        text-transform: capitalize; }
+    section.about .education-experience .education .stage:nth-of-type(2) {
+      margin-top: 30px; }
+    section.about .education-experience .education .stage:before {
+      content: '';
+      position: absolute;
+      background: #00C853;
+      opacity: 1;
+      height: 85%;
+      width: 9px;
+      bottom: "";
+      right: 10px;
+      top: 13px;
+      left: -21px;
+      border-bottom-left-radius: 8px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px; }
+    section.about .education-experience .experience .stage {
+      position: relative;
+      margin-left: 57px;
+      margin-top: 50px;
+      padding: 0 0 30px 45px;
+      background: #192734;
+      border-radius: 13px;
+      box-shadow: 0px 5px 7px 1px #192734; }
+      section.about .education-experience .experience .stage .when {
+        padding: 30px 0 15px 0;
+        color: #ADBCCB;
+        text-transform: capitalize;
+        font-size: 10px;
+        margin-left: -15px; }
+      section.about .education-experience .experience .stage p {
+        padding: 0;
+        margin: 0;
+        font-size: 17px;
+        text-transform: capitalize; }
+    section.about .education-experience .experience .stage:nth-of-type(2) {
+      margin-top: 30px; }
+    section.about .education-experience .experience .stage:before {
+      content: '';
+      position: absolute;
+      background: #03A9F4;
+      opacity: 1;
+      height: 85%;
+      width: 9px;
+      bottom: "";
+      right: 10px;
+      top: 13px;
+      left: -21px;
       border-bottom-left-radius: 8px;
       border-top-left-radius: 8px;
       border-bottom-right-radius: 8px;

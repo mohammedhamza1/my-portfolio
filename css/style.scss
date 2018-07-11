@@ -144,7 +144,7 @@ section.about {
   .who-am-i {
     @extend %sectionsSmallHeadsStyle;
   }
-  .who-am-i > span{
+  .who-am-i > span {
     position: relative;
   }
   .who-am-i > span:before {
@@ -179,10 +179,10 @@ section.about {
         //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
         @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
       }
-      .skill-wrapper{
+      .skill-wrapper {
         margin-top: 35px;
         margin-left: 40px;
-        .skill{
+        .skill {
           height: 110px;
           line-height: 110px;
           width: 110px;
@@ -197,17 +197,93 @@ section.about {
       }
     }
   }
-  .education-experience{
+  .education-experience {
     padding-top: 130px;
+    margin-left: -57px;
+    margin-right: -55px;
     h6 {
+      //margin-left: -22px;
       @extend %sectionsChildHeadsStyle2;
     }
     h6:before {
       //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
       @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
     }
-    h6.second:before{
+    h6.second {
+      margin-left: 42px;
+    }
+    h6.second:before {
       @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+    }
+    .education {
+      .stage {
+        position: relative;
+        margin-left: 48px;
+        margin-top: 50px;
+        padding: 0 0 30px 45px;
+        background: $stageColor;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px $stageColor;
+        .when {
+          padding: 30px 0 15px 0;
+          color: $sectionsHeadsColor;
+          text-transform: capitalize;
+          font-size: 10px;
+          margin-left: -15px;
+          .from {
+          }
+          .to {
+          }
+        }
+        p {
+          padding: 0;
+          margin: 0;
+          font-size: 17px;
+          text-transform: capitalize;
+        }
+      }
+      .stage:nth-of-type(2) {
+        margin-top: 30px;
+      }
+      .stage:before {
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads($borderColor, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+      }
+    }
+    .experience{
+      .stage {
+        position: relative;
+        margin-left: 57px;
+        margin-top: 50px;
+        padding: 0 0 30px 45px;
+        background: $stageColor;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px $stageColor;
+        .when {
+          padding: 30px 0 15px 0;
+          color: $sectionsHeadsColor;
+          text-transform: capitalize;
+          font-size: 10px;
+          margin-left: -15px;
+          .from {
+          }
+          .to {
+          }
+        }
+        p {
+          padding: 0;
+          margin: 0;
+          font-size: 17px;
+          text-transform: capitalize;
+        }
+      }
+      .stage:nth-of-type(2) {
+        margin-top: 30px;
+      }
+      .stage:before {
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads($borderColorSecond, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+      }
     }
   }
 }
@@ -215,14 +291,14 @@ section.about {
 //end about
 
 //to top
-.to-top{
+.to-top {
   position: relative;
   display: none;
-  a{
+  a {
     position: fixed;
     right: 25px;
     bottom: 25px;
-    color: #fff;
+    color: $toTopColor;
     text-decoration: none;
   }
 }
