@@ -214,4 +214,17 @@ section.about {
 
 //end about
 
+//to top
+.to-top{
+  position: relative;
+  display: none;
+  a{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 

@@ -226,4 +226,14 @@ section.about {
       border-bottom-right-radius: 8px;
       border-top-right-radius: 8px; }
 
+.to-top {
+  position: relative;
+  display: none; }
+  .to-top a {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: #fff;
+    text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
