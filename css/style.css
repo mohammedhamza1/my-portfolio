@@ -20,7 +20,7 @@ section.about .row .info h6, section.about .row .skills h6 {
   margin-left: 25px;
   padding-top: 20px; }
 
-section.about .education-experience h6 {
+section.about .education-experience .row h6 {
   position: relative;
   text-transform: capitalize;
   font-family: "Merienda", cursive;
@@ -262,112 +262,202 @@ section.about {
     padding-top: 130px;
     margin-left: -65px;
     margin-right: -55px; }
-    section.about .education-experience h6 {
-      margin-left: 30px; }
-    section.about .education-experience h6:before {
-      content: '';
-      position: absolute;
-      background: #00C853;
-      opacity: 1;
-      height: 5px;
-      width: 70px;
-      bottom: -8px;
-      right: "";
-      top: 77px;
-      left: 0;
-      border-bottom-left-radius: 8px;
-      border-top-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-top-right-radius: 8px; }
-    section.about .education-experience h6.second {
-      margin-left: 40px; }
-    section.about .education-experience h6.second:before {
-      content: '';
-      position: absolute;
-      background: #03A9F4;
-      opacity: 1;
-      height: 5px;
-      width: 70px;
-      bottom: -8px;
-      right: "";
-      top: 77px;
-      left: 0;
-      border-bottom-left-radius: 8px;
-      border-top-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-top-right-radius: 8px; }
-    section.about .education-experience .education .stage {
-      position: relative;
-      margin-left: 48px;
-      margin-top: 55px;
-      padding: 0 0 30px 45px;
-      background: #192734;
-      border-radius: 13px;
-      box-shadow: 0px 5px 7px 1px #192734; }
-      section.about .education-experience .education .stage .when {
-        padding: 30px 0 15px 0;
-        color: #ADBCCB;
-        text-transform: capitalize;
-        font-size: 10px;
-        margin-left: -15px; }
-      section.about .education-experience .education .stage p {
-        padding: 0;
-        margin: 0;
-        font-size: 17px;
-        text-transform: capitalize; }
-    section.about .education-experience .education .stage:nth-of-type(2) {
-      margin-top: 30px; }
-    section.about .education-experience .education .stage:before {
-      content: '';
-      position: absolute;
-      background: #00C853;
-      opacity: 1;
-      height: 85%;
-      width: 9px;
-      bottom: "";
-      right: 10px;
-      top: 13px;
-      left: -21px;
-      border-bottom-left-radius: 8px;
-      border-top-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-top-right-radius: 8px; }
-    section.about .education-experience .experience .stage {
-      position: relative;
-      margin-left: 57px;
-      margin-top: 55px;
-      padding: 0 0 30px 45px;
-      background: #192734;
-      border-radius: 13px;
-      box-shadow: 0px 5px 7px 1px #192734; }
-      section.about .education-experience .experience .stage .when {
-        padding: 30px 0 15px 0;
-        color: #ADBCCB;
-        text-transform: capitalize;
-        font-size: 10px;
-        margin-left: -15px; }
-      section.about .education-experience .experience .stage p {
-        padding: 0;
-        margin: 0;
-        font-size: 17px;
-        text-transform: capitalize; }
-    section.about .education-experience .experience .stage:nth-of-type(2) {
-      margin-top: 30px; }
-    section.about .education-experience .experience .stage:before {
-      content: '';
-      position: absolute;
-      background: #03A9F4;
-      opacity: 1;
-      height: 85%;
-      width: 9px;
-      bottom: "";
-      right: 10px;
-      top: 13px;
-      left: -21px;
-      border-bottom-left-radius: 8px;
-      border-top-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      border-top-right-radius: 8px; }
+    @media (max-width: 1270px) {
+      section.about .education-experience {
+        margin-left: 0;
+        margin-right: 0; } }
+    @media (max-width: 575.98px) {
+      section.about .education-experience {
+        padding-top: 80px;
+        text-align: center; } }
+    section.about .education-experience .row {
+      margin-right: 0;
+      margin-left: 0; }
+      @media (max-width: 992px) {
+        section.about .education-experience .row {
+          margin-left: 0;
+          margin-right: 0; } }
+      section.about .education-experience .row h6 {
+        margin-left: 30px; }
+        @media (max-width: 992px) {
+          section.about .education-experience .row h6 {
+            font-size: 35px; } }
+        @media (max-width: 575.98px) {
+          section.about .education-experience .row h6 {
+            font-size: 30px;
+            display: inline-block; } }
+      section.about .education-experience .row h6:before {
+        content: '';
+        position: absolute;
+        background: #00C853;
+        opacity: 1;
+        height: 5px;
+        width: 70px;
+        bottom: -8px;
+        right: "";
+        top: 77px;
+        left: 0;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+        @media (max-width: 575.98px) {
+          section.about .education-experience .row h6:before {
+            content: '';
+            position: absolute;
+            background: #00C853;
+            opacity: 1;
+            height: 5px;
+            width: 70px;
+            bottom: -8px;
+            right: "";
+            top: 65px;
+            left: 30%;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px; } }
+      section.about .education-experience .row h6.second {
+        margin-left: 40px; }
+        @media (max-width: 1270px) {
+          section.about .education-experience .row h6.second {
+            margin-left: 30px; } }
+        @media (max-width: 992px) {
+          section.about .education-experience .row h6.second {
+            margin-left: 30px; } }
+      section.about .education-experience .row h6.second:before {
+        content: '';
+        position: absolute;
+        background: #03A9F4;
+        opacity: 1;
+        height: 5px;
+        width: 70px;
+        bottom: -8px;
+        right: "";
+        top: 77px;
+        left: 0;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+        @media (max-width: 575.98px) {
+          section.about .education-experience .row h6.second:before {
+            content: '';
+            position: absolute;
+            background: #03A9F4;
+            opacity: 1;
+            height: 5px;
+            width: 70px;
+            bottom: -8px;
+            right: "";
+            top: 65px;
+            left: 30%;
+            border-bottom-left-radius: 8px;
+            border-top-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top-right-radius: 8px; } }
+      section.about .education-experience .row .education .stage {
+        position: relative;
+        margin-left: 48px;
+        margin-top: 55px;
+        padding: 0 0 30px 45px;
+        background: #192734;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px #192734; }
+        @media (max-width: 1270px) {
+          section.about .education-experience .row .education .stage {
+            padding: 0 0 20px 20px; } }
+        @media (max-width: 575.98px) {
+          section.about .education-experience .row .education .stage {
+            padding-left: 10px;
+            padding-right: 10px; } }
+        section.about .education-experience .row .education .stage .when {
+          padding: 30px 0 15px 0;
+          color: #ADBCCB;
+          text-transform: capitalize;
+          font-size: 10px;
+          margin-left: -15px; }
+        section.about .education-experience .row .education .stage p {
+          padding: 0;
+          margin: 0;
+          font-size: 17px;
+          text-transform: capitalize; }
+          @media (max-width: 1270px) {
+            section.about .education-experience .row .education .stage p {
+              font-size: 14px; } }
+          @media (max-width: 992px) {
+            section.about .education-experience .row .education .stage p {
+              font-size: 15px; } }
+      section.about .education-experience .row .education .stage:nth-of-type(2) {
+        margin-top: 30px; }
+      section.about .education-experience .row .education .stage:before {
+        content: '';
+        position: absolute;
+        background: #00C853;
+        opacity: 1;
+        height: 85%;
+        width: 9px;
+        bottom: "";
+        right: 10px;
+        top: 13px;
+        left: -21px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+      section.about .education-experience .row .experience .stage {
+        position: relative;
+        margin-left: 57px;
+        margin-top: 55px;
+        padding: 0 0 30px 45px;
+        background: #192734;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px #192734; }
+        @media (max-width: 1270px) {
+          section.about .education-experience .row .experience .stage {
+            padding: 0 0 20px 20px;
+            margin-left: 49px; } }
+        @media (max-width: 992px) {
+          section.about .education-experience .row .experience .stage {
+            margin-left: 48px; } }
+        @media (max-width: 575.98px) {
+          section.about .education-experience .row .experience .stage {
+            padding-left: 10px;
+            padding-right: 10px; } }
+        section.about .education-experience .row .experience .stage .when {
+          padding: 30px 0 15px 0;
+          color: #ADBCCB;
+          text-transform: capitalize;
+          font-size: 10px;
+          margin-left: -15px; }
+        section.about .education-experience .row .experience .stage p {
+          padding: 0;
+          margin: 0;
+          font-size: 17px;
+          text-transform: capitalize; }
+          @media (max-width: 1270px) {
+            section.about .education-experience .row .experience .stage p {
+              font-size: 14px; } }
+          @media (max-width: 992px) {
+            section.about .education-experience .row .experience .stage p {
+              font-size: 15px; } }
+      section.about .education-experience .row .experience .stage:nth-of-type(2) {
+        margin-top: 30px; }
+      section.about .education-experience .row .experience .stage:before {
+        content: '';
+        position: absolute;
+        background: #03A9F4;
+        opacity: 1;
+        height: 85%;
+        width: 9px;
+        bottom: "";
+        right: 10px;
+        top: 13px;
+        left: -21px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
   section.about .cv {
     margin-top: 135px; }
   section.about .cv > span {
@@ -399,6 +489,12 @@ section.about {
     border-radius: 22px;
     background: #00C853;
     font-size: 24px; }
+    @media (max-width: 575.98px) {
+      section.about .download-cv {
+        font-size: 18px;
+        width: 190px;
+        height: 50px;
+        line-height: 33px; } }
   section.about .download-cv:hover, section.about .download-cv:focus {
     background: #21AE62; }
 
