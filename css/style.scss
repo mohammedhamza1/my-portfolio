@@ -152,15 +152,27 @@ section.about {
   }
   h1 {
     @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: 60px;
+    }
   }
   .row {
     .info {
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
       h6 {
         @extend %sectionsChildHeadsStyle;
+        @media (max-width: 991.98px) {
+          display: inline-block;
+        }
       }
       h6:before {
         //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
         @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
+        @media (max-width: 991.98px) {
+          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        }
       }
       p {
         color: $paragraphsColor;
@@ -169,15 +181,27 @@ section.about {
         font-style: italic;
         font-weight: initial;
         margin-bottom: 20px;
+        @media (max-width: 991.98px) {
+          padding-left: 0;
+        }
       }
     }
     .skills {
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
       h6 {
         @extend %sectionsChildHeadsStyle;
+        @media (max-width: 991.98px) {
+          display: inline-block;
+        }
       }
       h6:before {
         //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
         @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
+        @media (max-width: 991.98px) {
+          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        }
       }
       .skill-wrapper {
         margin-top: 35px;
@@ -193,6 +217,21 @@ section.about {
           font-family: $secondNameFontFamily;
           font-size: 18px;
           font-weight: 300;
+          @media (max-width: 991.98px) {
+            margin:0 auto 30px;
+          }
+          @media (min-width: 992px) {
+            height: 110px;
+            line-height: 110px;
+            width: 110px;
+            border: 4px solid $borderColor;
+            border-radius: 50%;
+            text-align: center;
+            margin-bottom: 15px;
+            font-family: $secondNameFontFamily;
+            font-size: 18px;
+            font-weight: 300;
+          }
         }
       }
     }
