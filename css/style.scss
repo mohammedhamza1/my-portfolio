@@ -121,7 +121,7 @@
               font-family: $jobTitleFontFamily;
               font-size: 30px;
               letter-spacing: 12px;
-              color: $borderColor;
+              color: $jobTitleColor;
               padding-bottom: 20px;
               @media (max-width: 575.98px) {
                 font-size: 15px;
@@ -195,6 +195,19 @@ section.about {
           font-weight: 300;
         }
       }
+    }
+  }
+  .education-experience{
+    padding-top: 130px;
+    h6 {
+      @extend %sectionsChildHeadsStyle2;
+    }
+    h6:before {
+      //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+      @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+    }
+    h6.second:before{
+      @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
     }
   }
 }
