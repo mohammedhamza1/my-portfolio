@@ -521,6 +521,39 @@ section.portfolio {
       }
     }
   }
+  .more-projects {
+    button.btn {
+      display: block;
+      margin: 35px auto 0;
+      background: $darkLightColor;
+      border-color: $darkLightColor;
+      color: #fff;
+      border-radius: 20px;
+      width: 260px;
+      height: 47px;
+      text-transform: uppercase;
+      font-size: 14px;
+      @media (max-width: 575px) {
+        width: 220px;
+      }
+    }
+    button.btn:hover, button.btn:focus {
+      background: $darkLightColor;
+      border-color: $darkColor;
+    }
+    .modal{
+      .modal-content{
+        background: $darkColor;
+        border-radius: 15px;
+        .modal-header{
+          border-color: $darkLightColor;
+          span{
+            color: $darkLightColor;
+          }
+        }
+      }
+    }
+  }
 }
 
 //end portfolio
