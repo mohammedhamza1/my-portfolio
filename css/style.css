@@ -304,7 +304,8 @@ section.about {
     @media (max-width: 575.98px) {
       section.about .education-experience {
         padding-top: 80px;
-        text-align: center; } }
+        text-align: center;
+        margin-left: -30px; } }
     section.about .education-experience .row {
       margin-right: 0;
       margin-left: 0; }
