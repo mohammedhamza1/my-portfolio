@@ -3,7 +3,7 @@ section.about .who-am-i, section.about .cv {
   color: #ADBCCB;
   font-size: 18px; }
 
-section.about h1 {
+section.about h1, section.portfolio h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -532,6 +532,50 @@ section.about {
         line-height: 33px; } }
   section.about .download-cv:hover, section.about .download-cv:focus {
     background: #21AE62; }
+
+section.portfolio {
+  padding: 145px 0;
+  background: #192734;
+  color: #fff; }
+  section.portfolio h1 {
+    margin-bottom: 45px; }
+    @media (max-width: 575.98px) {
+      section.portfolio h1 {
+        font-size: 60px; } }
+  section.portfolio .portfolio-controls {
+    background: #213243;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-bottom: 55px; }
+    section.portfolio .portfolio-controls .nav-btn {
+      margin-right: 50px;
+      border-bottom: 5px solid transparent;
+      padding: 10px 0;
+      box-sizing: border-box;
+      transition: all ease-in-out .2s;
+      cursor: pointer; }
+      @media (max-width: 991.98px) {
+        section.portfolio .portfolio-controls .nav-btn {
+          border: none;
+          padding: 5px 0; } }
+      section.portfolio .portfolio-controls .nav-btn .nav-link {
+        color: #fff;
+        transition: all ease-in-out .2s; }
+      @media (max-width: 991.98px) {
+        section.portfolio .portfolio-controls .nav-btn .nav-link:hover {
+          color: #00C853; } }
+    section.portfolio .portfolio-controls .nav-btn:last-of-type {
+      margin-right: 0; }
+    section.portfolio .portfolio-controls .nav-btn.active {
+      border-color: #00C853; }
+    section.portfolio .portfolio-controls .nav-btn:hover {
+      border-color: #00C853; }
+  section.portfolio .projects-wrapper .project {
+    margin-bottom: 50px;
+    transition: all ease-in-out .3s; }
+    section.portfolio .projects-wrapper .project img {
+      width: 90%;
+      border-radius: 15px; }
 
 .to-top {
   position: relative;

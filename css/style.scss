@@ -461,6 +461,68 @@ section.about {
 
 //end about
 
+//start portfolio
+section.portfolio {
+  padding: $sectionsPadding;
+  background: $darkColor;
+  color: #fff;
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    margin-bottom: 45px;
+    @media (max-width: 575.98px) {
+      font-size: 60px;
+    }
+  }
+  .portfolio-controls {
+    background: $darkLightColor;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    .nav-btn {
+      margin-right: 50px;
+      border-bottom: 5px solid transparent;
+      padding: 10px 0;
+      box-sizing: border-box;
+      transition: all ease-in-out .2s;
+      cursor: pointer;
+      @media (max-width: 991.98px) {
+        border: none;
+        padding: 5px 0;
+      }
+      .nav-link {
+        color: #fff;
+        transition: all ease-in-out .2s;
+      }
+      .nav-link:hover {
+        @media (max-width: 991.98px) {
+          color: $borderColor;
+        }
+      }
+    }
+    .nav-btn:last-of-type {
+      margin-right: 0;
+    }
+    .nav-btn.active {
+      border-color: $borderColor;
+    }
+    .nav-btn:hover {
+      border-color: $borderColor;
+    }
+  }
+  .projects-wrapper {
+    .project {
+      margin-bottom: 50px;
+      transition: all ease-in-out .3s;
+      img {
+        width: 90%;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+//end portfolio
+
 //to top
 .to-top {
   position: relative;
