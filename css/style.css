@@ -554,10 +554,11 @@ section.portfolio {
       box-sizing: border-box;
       transition: all ease-in-out .2s;
       cursor: pointer; }
-      @media (max-width: 991.98px) {
+      @media (max-width: 992px) {
         section.portfolio .portfolio-controls .nav-btn {
           border: none;
-          padding: 5px 0; } }
+          padding: 5px 0;
+          margin: 0; } }
       section.portfolio .portfolio-controls .nav-btn .nav-link {
         color: #fff;
         transition: all ease-in-out .2s; }
@@ -584,7 +585,7 @@ section.portfolio {
     position: fixed;
     right: 25px;
     bottom: 25px;
-    color: #fff;
+    color: #21AE62;
     text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -485,9 +485,10 @@ section.portfolio {
       box-sizing: border-box;
       transition: all ease-in-out .2s;
       cursor: pointer;
-      @media (max-width: 991.98px) {
+      @media (max-width: 992px) {
         border: none;
         padding: 5px 0;
+        margin: 0;
       }
       .nav-link {
         color: #fff;
