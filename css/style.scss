@@ -153,7 +153,7 @@ section.about {
   h1 {
     @extend %sectionsMainHeadsStyle;
     @media (max-width: 575.98px) {
-      font-size: 60px;
+      font-size: $sections_main_head_sm_font_size;
     }
   }
   .row {
@@ -471,7 +471,7 @@ section.portfolio {
     @extend %sectionsMainHeadsStyle;
     margin-bottom: 45px;
     @media (max-width: 575.98px) {
-      font-size: 60px;
+      font-size: $sections_main_head_sm_font_size;
     }
   }
   .portfolio-controls {
@@ -565,7 +565,7 @@ section.services {
   h1 {
     @extend %sectionsMainHeadsStyle;
     @media (max-width: 575.98px) {
-      font-size: 35px;
+      font-size: $sections_main_head_sm_font_size;
     }
   }
   .services-wrapper {

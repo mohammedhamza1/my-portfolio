@@ -144,7 +144,7 @@ section.about {
     border-top-right-radius: 8px; }
   @media (max-width: 575.98px) {
     section.about h1 {
-      font-size: 60px; } }
+      font-size: 40px; } }
   @media (max-width: 991.98px) {
     section.about .row .info {
       text-align: center; } }
@@ -542,7 +542,7 @@ section.portfolio {
     margin-bottom: 45px; }
     @media (max-width: 575.98px) {
       section.portfolio h1 {
-        font-size: 60px; } }
+        font-size: 40px; } }
   section.portfolio .portfolio-controls {
     background: #213243;
     border-radius: 15px;
@@ -609,7 +609,7 @@ section.services {
   color: #fff; }
   @media (max-width: 575.98px) {
     section.services h1 {
-      font-size: 35px; } }
+      font-size: 40px; } }
   section.services .services-wrapper .service-wrapper {
     background: #192734;
     margin-bottom: 40px;
