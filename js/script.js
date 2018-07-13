@@ -36,9 +36,15 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
     //end tooltip
 
+    //start popover
     $('[data-toggle="popover"]').popover({
         container: 'footer'
     });
+    //end popover
+
+    //start wow
+    new WOW().init();
+    //end wow
     //End general
 
 
