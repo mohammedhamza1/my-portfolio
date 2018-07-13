@@ -1,13 +1,36 @@
 //color
 $darkColor: #192734;
 $darkLightColor: #213243;
-$borderColor: #21AE62;
+$jobTitleColor: #21AE62;
+$borderColor: #00C853;
+$borderColorSecond: #03A9F4;
+$sectionsHeadsColor: #ADBCCB;
+$lineBeforeColor: #C1C5C8;
+$paragraphsColor: #C3D6E9;
+$stageColor: #192734;
+$toTopColor: #21AE62;
+$serviceColor1: #00C853;
+$serviceColor2: #03A9F4;
+$serviceColor3: #FFAB40;
+$serviceColor4: #EC407A;
 
 //border
 $borderRadius: 9px;
+
+//padding
+$sectionsPadding: 145px 0;
 
 //font family
 $brandFontFamily: 'Questrial', sans-serif;
 $firstNameFontFamily: 'Quicksand', sans-serif;
 $secondNameFontFamily: 'Prompt', sans-serif;
 $jobTitleFontFamily: 'Julius Sans One', sans-serif;
+$sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
+$sectionsChildHeadsFontFamily2: 'Merienda', cursive;
+$arabic_font_family: 'Cairo', sans-serif;
+
+//font size
+$sections_main_head_sm_font_size: 50px;
+
+//lists
+$service_icon_colors: $serviceColor1 $serviceColor2 $serviceColor3 $serviceColor4;

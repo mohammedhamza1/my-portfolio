@@ -2,31 +2,33 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--fontawesome-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!--google fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Prompt:700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:100,200,300,400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-    <!--main style-->
+    <link href="https://fonts.googleapis.com/css?family=Eagle+Lake" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
-<div class="home">
+<!--start section home-->
+<section class="home" id="home">
     <header>
         <div class="navbar-wrapper">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container">
-                    <a class="navbar-brand" href="#">hamza</a>
+                    <a class="navbar-brand" href="#home" data-target="home">hamza</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -36,19 +38,20 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#home" data-target="home">Home <span
+                                        class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">about</a>
+                                <a class="nav-link" href="#about" data-target="about">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">my work</a>
+                                <a class="nav-link" href="#portfolio" data-target="portfolio">my work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">services</a>
+                                <a class="nav-link" href="#services" data-target="services">services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
+                                <a class="nav-link" href="#contact" data-target="contact">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -81,14 +84,446 @@
         </div>
     </section>
     <!--end section my name-->
-</div>
-<!--end home-->
+</section>
+<!--end section home-->
 
-<!--scritps-->
+<!--start section about-->
+<section class="about" id="about">
+    <div class="container">
+        <div class="who-am-i">
+            <span class="">about me</span>
+        </div>
+        <h1>hello</h1>
+        <div class="row">
+            <div class="col-lg-6 offset-lg-0 col-md-6 offset-md-3 col-sm-6 offset-sm-3">
+                <div class="profile-pic">
+                    <img src="img/profile.png" class="img-fluid img-thumbnail" alt="My photo">
+                </div>
+            </div>
+            <!--end col-->
+            <div class="col-lg-6 offset-lg-0 col-md-12 offset-md-0 col-sm-12 offset-sm-0">
+                <div class="info">
+                    <h6>who am i</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur
+                        expedita itaque molestiae, non quasi quibusdam quo! Alias beatae culpa cumque facere hic iusto
+                        necessitatibus nihil nisi quisquam, tempore totam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur
+                        expedita itaque molestiae.</p>
+                </div>
+                <div class="skills">
+                    <h6>my skills</h6>
+                    <div class="skill-wrapper">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill"><span>HTML5</span></div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">CSS3</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">JavaScript</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">jQuery</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">Bootstrap</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">Sass</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">Angular</div>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-lg-3">
+                                <div class="skill">WordPress</div>
+                            </div>
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end skill wrapper-->
+                </div>
+                <!--end skills-->
+            </div>
+            <!--end col-->
+        </div>
+        <!--end row-->
+        <div class="education-experience">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="education">
+                        <h6>Education</h6>
+                        <div class="stage">
+                            <div class="when">
+                                <span class="from">oct 2014</span> - <span class="to">jul 2018</span>
+                            </div>
+                            <p>Bachelor of Computer Science, <br> Faculty of computer and information sciences -
+                                mans-uni.</p>
+                        </div>
+                        <div class="stage">
+                            <div class="when">
+                                <span class="from">sep 2011</span> - <span class="to">jul 2014</span>
+                            </div>
+                            <p>High School Diploma, <br> Zarka High School.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="experience">
+                        <h6 class="second">Experience</h6>
+                        <div class="stage">
+                            <div class="when">
+                                <span class="from">oct 2014</span> - <span class="to">jul 2018</span>
+                            </div>
+                            <p>Bachelor of Computer Science, <br> Faculty of computer and information sciences -
+                                mans-uni.</p>
+                        </div>
+                        <div class="stage">
+                            <div class="when">
+                                <span class="from">oct 2014</span> - <span class="to">jul 2018</span>
+                            </div>
+                            <p>Bachelor of Computer Science, <br> Faculty of computer and information sciences -
+                                mans-uni.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+        <!--end education-experience-->
+        <div class="cv">
+            <span class="">more details</span>
+        </div>
+        <a class="btn btn-lg download-cv text-center"
+           href="https://drive.google.com/file/d/14mbdXKL8DqZ7lr53bCYTpxl3oTD95PUS/view?usp=sharing" target="_blank">download
+            cv</a>
+
+    </div>
+    <!--end container-->
+</section>
+<!--end section about-->
+
+<!--start section portfolio-->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h1>my work</h1>
+        <div class="portfolio-controls">
+            <ul class="nav justify-content-center">
+                <li class="nav-btn active" data-class="all">
+                    <a class="nav-link">all</a>
+                </li>
+                <li class="nav-btn" data-class=".css">
+                    <a class="nav-link">css</a>
+                </li>
+                <li class="nav-btn" data-class=".bootstrap">
+                    <a class="nav-link">Bootstrap</a>
+                </li>
+                <li class="nav-btn" data-class=".sass">
+                    <a class="nav-link">Sass</a>
+                </li>
+                <li class="nav-btn" data-class=".wordpress">
+                    <a class="nav-link">WordPress</a>
+                </li>
+                <li class="nav-btn" data-class=".angular">
+                    <a class="nav-link">Angular</a>
+                </li>
+            </ul>
+        </div>
+        <!--end portfolio controls-->
+        <div class="projects-wrapper text-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid angular" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid css" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid css" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid wordpress" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid sass" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid bootstrap" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid sass" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid sass" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="project">
+                        <img class="img-fluid angular" src="img/images%20(5).jpg" alt="Web project">
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+        <!--end projects wrapper-->
+        <!--start more projects-->
+        <div class="more-projects">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#allProjects">
+                load more projects
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="allProjects" tabindex="-1" role="dialog" aria-labelledby="allProjectsTitle"
+                 aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="allProjectsTitle">All projects</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="projects-wrapper text-center">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid css" src="img/images%20(5).jpg" alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid css" src="img/images%20(5).jpg" alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid wordpress" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid sass" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid bootstrap" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid sass" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid sass" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-4">
+                                            <div class="project">
+                                                <img class="img-fluid angular" src="img/images%20(5).jpg"
+                                                     alt="Web project">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end row-->
+                                </div>
+                                <!--end projects wrapper-->
+                            </div>
+                        </div>
+                        <!--end modal body-->
+                    </div>
+                </div>
+            </div>
+            <!--end modal-->
+        </div>
+        <!--end more projects-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section portfolio-->
+
+<!--start section services-->
+<section class="services" id="services">
+    <div class="container">
+        <h1>services</h1>
+        <div class="services-wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="service-wrapper icon1 left">
+                        <div class="service-icon icon1">
+                            <i class="fas fa-code fa-4x fa-fw"></i>
+                            <!--<img src="img/icons/wd.png" alt="">-->
+                        </div>
+                        <div class="service icon1">
+                            <h6>web development</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur deleniti eos
+                                magni vitae voluptatem.</p>
+                        </div>
+                        <!--end service-->
+                    </div>
+                    <!--end service wrapper-->
+                </div>
+                <!--end col-->
+                <div class="col-lg-6">
+                    <div class="service-wrapper icon2 right">
+                        <div class="service-icon icon2">
+                            <i class="fab fa-wordpress fa-4x fa-fw"></i>
+                            <!--<img src="img/icons/wd.png" alt="">-->
+                        </div>
+                        <div class="service icon2">
+                            <h6>wordpress</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur deleniti eos
+                                magni vitae voluptatem.</p>
+                        </div>
+                        <!--end service-->
+                    </div>
+                    <!--end service wrapper-->
+                </div>
+                <!--end col-->
+                <div class="col-lg-6">
+                    <div class="service-wrapper icon3 left">
+                        <div class="service-icon icon3">
+                            <i class="fas fa-paint-brush fa-4x fa-fw"></i>
+                            <!--<img src="img/icons/wds.png" alt="">-->
+                        </div>
+                        <div class="service icon3">
+                            <h6>web design</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur deleniti eos
+                                magni vitae voluptatem.</p>
+                        </div>
+                        <!--end service-->
+                    </div>
+                    <!--end service wrapper-->
+                </div>
+                <!--end col-->
+                <div class="col-lg-6">
+                    <div class="service-wrapper icon4 right">
+                        <div class="service-icon icon4">
+                            <i class="fas fa-chart-line fa-4x fa-fw"></i>
+                            <!--<img src="img/icons/seo.png" alt="">-->
+                        </div>
+                        <div class="service icon4">
+                            <h6>seo</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur deleniti eos
+                                magni vitae voluptatem.</p>
+                        </div>
+                        <!--end service-->
+                    </div>
+                    <!--end service wrapper-->
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end services wrapper-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section services-->
+
+<!--start section contact-->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="get-in-touch">
+            <span class="">get in touch</span>
+        </div>
+        <h1>contact</h1>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="email" class="form-control" placeholder="email">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <input type="text" class="form-control" placeholder="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageArea">how can i help you?</label>
+                        <textarea class="form-control" id="messageArea" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn">send</button>
+                </form>
+            </div>
+        </div>
+        <!--end row-->
+    </div>
+    <!--end container-->
+</section>
+<!--end section contact-->
+
+<!--start to top-->
+<div class="to-top">
+    <a class="fa fa-arrow-circle-up fa-3x fa-fw" href="#home" data-target="home"></a>
+</div>
+<!--end to top-->
+
+<!--Start scripts-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/script.js"></script>
+<!--End scripts-->
 </body>
 
 </html>

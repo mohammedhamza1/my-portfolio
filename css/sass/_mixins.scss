@@ -1,0 +1,15 @@
+@import "_variable";
+
+@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left,$bradius) {
+  content: '';
+  position: absolute;
+  background: $background;
+  opacity: $opacity;
+  height: $height;
+  width: $width;
+  bottom: $bottom;
+  right: $right;
+  top: $top;
+  left: $left;
+  border-radius: $bradius;
+}

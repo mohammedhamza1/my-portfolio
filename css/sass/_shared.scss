@@ -1,0 +1,62 @@
+@import "_variable";
+
+%sectionsSmallHeadsStyle {
+  text-align: center;
+  color: $sectionsHeadsColor;
+  font-size: 18px;
+}
+
+%sectionsMainHeadsStyle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 80px;
+  font-family: $brandFontFamily;
+  margin-top: 7px;
+  margin-bottom: 80px;
+}
+
+%sectionsChildHeadsStyle {
+  position: relative;
+  text-transform: uppercase;
+  font-family: $sectionsChildHeadsFontFamily;
+  font-size: 30px;
+  margin-left: 25px;
+  padding-top: 20px;
+}
+
+%sectionsChildHeadsStyle2 {
+  position: relative;
+  text-transform: capitalize;
+  font-family: $sectionsChildHeadsFontFamily2;
+  font-size: 40px;
+  margin-left: 25px;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+
+%form_inputs_style {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $darkLightColor;
+  color: #fff;
+  font-size: 20px;
+  font-family: $arabic_font_family;
+}
+
+%form_inputs_hover_focus_style {
+  background: $darkLightColor;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 5px 7px 1px $darkColor;
+  border-color: $darkLightColor;
+}
+%form_inputs_placeholder_style{
+  margin-left: 0;
+  text-transform: capitalize;
+  color: $lineBeforeColor;
+  font-family: $brandFontFamily;
+  font-size: 19px;
+  text-align: center;
+}

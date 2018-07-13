@@ -1,9 +1,9 @@
 @import 'sass/_variable.scss';
-body{
-  background: red;
-}
+@import "sass/_mixins.scss";
+@import "sass/_shared.scss";
+
 //start home
-.home {
+section.home {
   background: $darkColor;
   color: #fff;
   padding: 50px 0;
@@ -23,15 +23,15 @@ body{
             font-size: 25px;
           }
         }
-        .navbar-toggler{
+        .navbar-toggler {
           @media (max-width: 575.98px) {
             padding: 5px;
           }
         }
-        .navbar-collapse{
-          margin-top: 20px;
+        .navbar-collapse {
           @media (max-width: 991.98px) {
-            margin-bottom: -135px;
+            margin-bottom: -110px;
+            margin-top: 20px;
           }
           .navbar-nav {
             background: $darkLightColor;
@@ -46,12 +46,13 @@ body{
               transition: all ease-in-out .2s;
               @media (max-width: 991.98px) {
                 border: none;
+                padding: 5px 0;
               }
               .nav-link {
                 color: #fff;
                 transition: all ease-in-out .2s;
               }
-              .nav-link:hover{
+              .nav-link:hover {
                 @media (max-width: 991.98px) {
                   color: $borderColor;
                 }
@@ -60,7 +61,7 @@ body{
             .nav-item:last-of-type {
               margin-right: 0;
             }
-            .nav-item.active{
+            .nav-item.active {
               border-color: $borderColor;
             }
             .nav-item:hover {
@@ -74,8 +75,8 @@ body{
   //end header
 
   //start section my name
-  section.my-name{
-    .row{
+  section.my-name {
+    .row {
       min-height: 470px;
       @media (max-width: 575.98px) {
         min-height: 420px;
@@ -84,14 +85,14 @@ body{
         min-height: 470px;
       }
       @media (min-width: 991.98px) {
-        min-height: 500px;
+        min-height: 490px;
       }
-      .col{
-        .name{
+      .col {
+        .name {
           text-align: center;
           text-transform: uppercase;
-          .first-name{
-            h1{
+          .first-name {
+            h1 {
               font-family: $firstNameFontFamily;
               font-weight: 300;
               font-size: 64px;
@@ -100,10 +101,13 @@ body{
                 font-size: 32px;
                 margin-bottom: -10px;
               }
+              @media (min-width: 1367px) {
+                font-size: 100px;
+              }
             }
           }
-          .second-name{
-            h1{
+          .second-name {
+            h1 {
               font-family: $secondNameFontFamily;
               font-weight: 700;
               font-size: 130px;
@@ -113,18 +117,23 @@ body{
                 margin-bottom: -10px;
                 font-size: 60px;
               }
+              @media (min-width: 1367px) {
+                font-size: 200px;
+              }
             }
           }
-          .job-title{
-            h4{
+          .job-title {
+            h4 {
               font-family: $jobTitleFontFamily;
               font-size: 30px;
               letter-spacing: 12px;
-              color: $borderColor;
-              padding-bottom: 10px;
+              color: $jobTitleColor;
+              padding-bottom: 20px;
               @media (max-width: 575.98px) {
                 font-size: 15px;
-                padding-bottom: 20px;
+              }
+              @media (min-width: 1367px) {
+                font-size: 60px;
               }
             }
           }
@@ -133,8 +142,651 @@ body{
     }
   }
   //end section my name
+}
+//end home
 
+//start about
+section.about {
+  padding: $sectionsPadding;
+  background: $darkLightColor;
+  color: #fff;
+  .who-am-i {
+    @extend %sectionsSmallHeadsStyle;
+  }
+  .who-am-i > span {
+    position: relative;
+  }
+  .who-am-i > span:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 79px, -3px, '', 8px);
+  }
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .row {
+    .info {
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
+      h6 {
+        @extend %sectionsChildHeadsStyle;
+        @media (max-width: 991.98px) {
+          display: inline-block;
+          margin-left: 0;
+        }
+        @media (min-width: 992px) {
+          padding-top: 0;
+        }
+        @media (min-width: 1200px) {
+          padding-top: 20px;
+        }
+      }
+      h6:before {
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
+        @media (max-width: 991.98px) {
+          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        }
+      }
+      p {
+        color: $paragraphsColor;
+        padding-left: 60px;
+        padding-top: 7px;
+        font-style: italic;
+        font-weight: initial;
+        margin-bottom: 20px;
+        font-size: 20px;
+        @media (max-width: 991.98px) {
+          padding-left: 0;
+          font-style: normal;
+        }
+        @media (min-width: 992px) {
+          padding-left: 30px;
+          font-size: 17px;
+        }
+        @media (min-width: 1200px) {
+          padding-left: 60px;
+          font-size: 20px;
+        }
+      }
+    }
+    .skills {
+      @media (max-width: 991.98px) {
+        text-align: center;
+      }
+      h6 {
+        @extend %sectionsChildHeadsStyle;
+        @media (max-width: 991.98px) {
+          display: inline-block;
+          margin-left: 0;
+        }
+        @media (min-width: 992px) {
+          padding-top: 0;
+        }
+        @media (min-width: 1200px) {
+          padding-top: 20px;
+        }
+      }
+      h6:before {
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
+        @media (max-width: 991.98px) {
+          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        }
+      }
+      .skill-wrapper {
+        margin-top: 35px;
+        margin-left: 40px;
+        @media (max-width: 991.98px) {
+          margin-left: 0;
+        }
+        @media (min-width: 992px) {
+          margin-top: 28px;
+          margin-left: 15px;
+        }
+        @media (min-width: 1200px) {
+          margin-top: 35px;
+          margin-left: 40px;
+        }
+        .skill {
+          height: 110px;
+          line-height: 110px;
+          width: 110px;
+          border: 4px solid $borderColor;
+          border-radius: 50%;
+          text-align: center;
+          margin-bottom: 15px;
+          font-family: $secondNameFontFamily;
+          font-size: 18px;
+          font-weight: 300;
+          @media (max-width: 991.98px) {
+            margin: 0 auto 30px;
+          }
+          @media (min-width: 992px) {
+            height: 110px;
+            line-height: 110px;
+            width: 110px;
+            border: 4px solid $borderColor;
+            border-radius: 50%;
+            text-align: center;
+            margin-bottom: 15px;
+            font-family: $secondNameFontFamily;
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+  .education-experience {
+    padding-top: 130px;
+    margin-left: -65px;
+    margin-right: -55px;
+    @media (max-width: 1270px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (max-width: 575.98px) {
+      padding-top: 80px;
+      text-align: center;
+      margin-left: -30px;
+    }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+      @media (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      h6 {
+        margin-left: 30px;
+        @extend %sectionsChildHeadsStyle2;
+        @media (max-width: 992px) {
+          font-size: 35px;
+        }
+        @media (max-width: 575.98px) {
+          font-size: 30px;
+          display: inline-block;
+        }
+      }
+      h6:before {
+        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+        @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+        @media (max-width: 575.98px) {
+          @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        }
+      }
+      h6.second {
+        margin-left: 40px;
+        @media (max-width: 1270px) {
+          margin-left: 30px;
+        }
+        @media (max-width: 992px) {
+          margin-left: 30px;
+        }
+      }
+      h6.second:before {
+        @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+        @media (max-width: 575.98px) {
+          @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        }
+      }
+      .education {
+        .stage {
+          position: relative;
+          margin-left: 48px;
+          margin-top: 55px;
+          padding: 0 0 30px 45px;
+          background: $stageColor;
+          border-radius: 13px;
+          box-shadow: 0px 5px 7px 1px $stageColor;
+          @media (max-width: 1270px) {
+            padding: 0 0 20px 20px;
+          }
+          @media (max-width: 575.98px) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .when {
+            padding: 30px 0 15px 0;
+            color: $sectionsHeadsColor;
+            text-transform: capitalize;
+            font-size: 10px;
+            margin-left: -15px;
+            .from {
+            }
+            .to {
+            }
+          }
+          p {
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+            text-transform: capitalize;
+            @media (max-width: 1270px) {
+              font-size: 14px;
+            }
+            @media (max-width: 992px) {
+              font-size: 15px;
+            }
+          }
+        }
+        .stage:nth-of-type(2) {
+          margin-top: 30px;
+        }
+        .stage:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include lineBeforeSmallHeads($borderColor, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+        }
+      }
+      .experience {
+        .stage {
+          position: relative;
+          margin-left: 57px;
+          margin-top: 55px;
+          padding: 0 0 30px 45px;
+          background: $stageColor;
+          border-radius: 13px;
+          box-shadow: 0px 5px 7px 1px $stageColor;
+          @media (max-width: 1270px) {
+            padding: 0 0 20px 20px;
+            margin-left: 49px;
+          }
+          @media (max-width: 992px) {
+            margin-left: 48px;
+          }
+          @media (max-width: 575.98px) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .when {
+            padding: 30px 0 15px 0;
+            color: $sectionsHeadsColor;
+            text-transform: capitalize;
+            font-size: 10px;
+            margin-left: -15px;
+            .from {
+            }
+            .to {
+            }
+          }
+          p {
+            padding: 0;
+            margin: 0;
+            font-size: 17px;
+            text-transform: capitalize;
+            @media (max-width: 1270px) {
+              font-size: 14px;
+            }
+            @media (max-width: 992px) {
+              font-size: 15px;
+            }
+          }
+        }
+        .stage:nth-of-type(2) {
+          margin-top: 30px;
+        }
+        .stage:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include lineBeforeSmallHeads($borderColorSecond, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+        }
+      }
+    }
+  }
+  .cv {
+    @extend %sectionsSmallHeadsStyle;
+    margin-top: 135px;
+  }
+  .cv > span {
+    position: relative;
+  }
+  .cv > span:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', "", -3px, -6px, 8px);
+  }
+  .download-cv {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    width: 360px;
+    height: 65px;
+    line-height: 48px;
+    margin: 25px auto;
+    display: block;
+    border-radius: 22px;
+    background: $borderColor;
+    font-size: 24px;
+    @media (max-width: 575.98px) {
+      font-size: 18px;
+      width: 190px;
+      height: 50px;
+      line-height: 33px;
+    }
+  }
+  .download-cv:hover, .download-cv:focus {
+    background: $jobTitleColor;
+  }
+}
+//end about
+
+//start portfolio
+section.portfolio {
+  padding: $sectionsPadding;
+  background: $darkColor;
+  color: #fff;
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    margin-bottom: 45px;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .portfolio-controls {
+    background: $darkLightColor;
+    border-radius: 15px;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+    .nav-btn {
+      margin-right: 50px;
+      border-bottom: 5px solid transparent;
+      padding: 10px 0;
+      box-sizing: border-box;
+      transition: all ease-in-out .2s;
+      cursor: pointer;
+      @media (max-width: 992px) {
+        border: none;
+        padding: 5px 0;
+        margin: 0;
+      }
+      .nav-link {
+        color: #fff;
+        transition: all ease-in-out .2s;
+      }
+      .nav-link:hover {
+        @media (max-width: 991.98px) {
+          color: $borderColor;
+        }
+      }
+    }
+    .nav-btn:last-of-type {
+      margin-right: 0;
+    }
+    .nav-btn.active {
+      border-color: $borderColor;
+    }
+    .nav-btn:hover {
+      border-color: $borderColor;
+    }
+  }
+  .projects-wrapper {
+    .project {
+      margin-bottom: 50px;
+      transition: all ease-in-out .3s;
+      img {
+        width: 90%;
+        border-radius: 15px;
+      }
+    }
+  }
+  .more-projects {
+    button.btn {
+      display: block;
+      margin: 35px auto 0;
+      background: $darkLightColor;
+      border-color: $darkLightColor;
+      color: #fff;
+      border-radius: 20px;
+      width: 260px;
+      height: 47px;
+      text-transform: uppercase;
+      font-size: 14px;
+      @media (max-width: 575px) {
+        width: 220px;
+      }
+    }
+    button.btn:hover, button.btn:focus {
+      background: $darkLightColor;
+      border-color: $darkColor;
+    }
+    .modal {
+      .modal-content {
+        background: $darkColor;
+        border-radius: 15px;
+        .modal-header {
+          border-color: $darkLightColor;
+          span {
+            color: $darkLightColor;
+          }
+        }
+      }
+    }
+  }
+}
+//end portfolio
+
+//start services
+section.services {
+  padding: $sectionsPadding;
+  background: $darkLightColor;
+  color: #fff;
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .services-wrapper {
+    margin-left: -65px;
+    margin-right: -55px;
+    @media (max-width: 1270px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (max-width: 575.98px) {
+      padding-top: 80px;
+      text-align: center;
+      margin-left: -30px;
+    }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+      @media (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .service-wrapper {
+        position: relative;
+        background: $darkColor;
+        margin-bottom: 40px;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px $stageColor;
+        .service-icon {
+          width: 40%;
+          padding: 62px 0;
+          border-radius: 13px;
+          display: inline-block;
+          @media (max-width: 420px){
+            padding: 100px 0;
+          }
+          @media (max-width: 360px){
+            padding: 150px 0;
+          }
+          i {
+            display: block;
+            margin: auto;
+            @media (max-width: 767.98px) {
+              font-size: 50px;
+            }
+            @media (max-width: 575px) {
+              font-size: 40px;
+            }
+          }
+          img {
+            display: block;
+            margin: auto;
+          }
+        }
+        @for $i from 1 through 4 {
+          .service-icon.#{icon}#{$i} {
+            background: nth($service_icon_colors, $i);
+          }
+        }
+        .service {
+          width: 60%;
+          background: $darkColor;
+          display: inline-block;
+          float: right;
+          h6{
+            font-family: $sectionsChildHeadsFontFamily2;
+            text-transform: uppercase;
+            margin-left: 11px;
+            margin-top: 25px;
+            @media (max-width: 575px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 420px){
+              margin-left: 0;
+              padding: 2px;
+            }
+            @media (max-width: 360px){
+              font-size: 13px;
+              margin-left: 0;
+            }
+          }
+          p{
+            color: $lineBeforeColor;
+            font-size: 13px;
+            margin-left: 30px;
+            margin-top: 15px;
+            line-height: 1.7;
+            @media (max-width: 575px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 420px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 360px){
+              font-size: 14px;
+              margin-left: 0;
+            }
+          }
+        }
+        @for $i from 1 through 4 {
+          .service.#{icon}#{$i} h6 {
+            color: nth($service_icon_colors, $i);
+          }
+        }
+      }
+      .service-wrapper.#{left} {
+        margin-left: 48px;
+      }
+      .service-wrapper.#{right} {
+        margin-left: 57px;
+      }
+      @for $i from 1 through 4 {
+        .service-wrapper.#{icon}#{$i}:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include lineBeforeSmallHeads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
+        }
+      }
+    }
+  }
+}
+//end services
+
+//start contact
+section.contact{
+  padding: $sectionsPadding;
+  background: $darkColor;
+  color: #fff;
+  .get-in-touch {
+    @extend %sectionsSmallHeadsStyle;
+  }
+  .get-in-touch > span {
+    position: relative;
+  }
+  .get-in-touch > span:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 99px, -3px, '', 8px);
+    @media (max-width: 575.98px) {
+      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 108px, -3px, '', 8px);
+    }
+  }
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  form{
+    input{
+      @extend %form_inputs_style;
+      height: 45px;
+    }
+    input:focus{
+      @extend %form_inputs_hover_focus_style;
+    }
+    input::placeholder{
+      @extend %form_inputs_placeholder_style;
+      @media  (max-width: 575px){
+        text-align: left;
+      }
+    }
+    label{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 12px;
+      text-transform: capitalize;
+      font-size: 19px;
+      font-family: $brandFontFamily;
+      color: $lineBeforeColor;
+      display: block;
+      text-align: center;
+    }
+    textarea{
+      @extend %form_inputs_style;
+      border: 1px solid $darkLightColor;
+      resize: none;
+    }
+    textarea:focus{
+      @extend %form_inputs_hover_focus_style;
+    }
+    button{
+      display: block;
+      margin: 80px auto;
+      background: transparent;
+      border: 2px solid $darkLightColor;
+      color: #fff;
+      border-radius: 20px;
+      width: 260px;
+      height: 47px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 22px;
+    }
+    button:focus, button:hover{
+      background: $darkLightColor;
+      border-color: $darkLightColor;
+    }
+
+  }
+}
+//end contact
+
+//to top
+.to-top {
+  position: relative;
+  display: none;
+  a {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: $toTopColor;
+    text-decoration: none;
+  }
 }
 
-//end home
 
