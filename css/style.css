@@ -144,7 +144,7 @@ section.about {
     border-top-right-radius: 8px; }
   @media (max-width: 575.98px) {
     section.about h1 {
-      font-size: 40px; } }
+      font-size: 50px; } }
   @media (max-width: 991.98px) {
     section.about .row .info {
       text-align: center; } }
@@ -542,7 +542,7 @@ section.portfolio {
     margin-bottom: 45px; }
     @media (max-width: 575.98px) {
       section.portfolio h1 {
-        font-size: 40px; } }
+        font-size: 50px; } }
   section.portfolio .portfolio-controls {
     background: #213243;
     border-radius: 15px;
@@ -609,30 +609,175 @@ section.services {
   color: #fff; }
   @media (max-width: 575.98px) {
     section.services h1 {
-      font-size: 40px; } }
-  section.services .services-wrapper .service-wrapper {
-    background: #192734;
-    margin-bottom: 40px;
-    border-radius: 13px;
-    box-shadow: 0px 5px 7px 1px #192734; }
-    section.services .services-wrapper .service-wrapper .service-icon {
-      width: 40%;
-      padding: 62px 0;
-      border-radius: 13px; }
-      section.services .services-wrapper .service-wrapper .service-icon i {
-        display: block;
-        margin: auto; }
-    section.services .services-wrapper .service-wrapper .service-icon.icon1 {
-      background: #00C853; }
-    section.services .services-wrapper .service-wrapper .service-icon.icon2 {
-      background: #03A9F4; }
-    section.services .services-wrapper .service-wrapper .service-icon.icon3 {
-      background: #FFAB40; }
-    section.services .services-wrapper .service-wrapper .service-icon.icon4 {
-      background: #EC407A; }
-    section.services .services-wrapper .service-wrapper .service {
-      width: 60%;
-      background: #192734; }
+      font-size: 50px; } }
+  section.services .services-wrapper {
+    margin-left: -65px;
+    margin-right: -55px; }
+    @media (max-width: 1270px) {
+      section.services .services-wrapper {
+        margin-left: 0;
+        margin-right: 0; } }
+    @media (max-width: 575.98px) {
+      section.services .services-wrapper {
+        padding-top: 80px;
+        text-align: center;
+        margin-left: -30px; } }
+    section.services .services-wrapper .row {
+      margin-right: 0;
+      margin-left: 0; }
+      @media (max-width: 992px) {
+        section.services .services-wrapper .row {
+          margin-left: 0;
+          margin-right: 0; } }
+      section.services .services-wrapper .row .service-wrapper {
+        position: relative;
+        background: #192734;
+        margin-bottom: 40px;
+        border-radius: 13px;
+        box-shadow: 0px 5px 7px 1px #192734; }
+        section.services .services-wrapper .row .service-wrapper .service-icon {
+          width: 40%;
+          padding: 62px 0;
+          border-radius: 13px;
+          display: inline-block; }
+          @media (max-width: 420px) {
+            section.services .services-wrapper .row .service-wrapper .service-icon {
+              padding: 100px 0; } }
+          @media (max-width: 360px) {
+            section.services .services-wrapper .row .service-wrapper .service-icon {
+              padding: 150px 0; } }
+          section.services .services-wrapper .row .service-wrapper .service-icon i {
+            display: block;
+            margin: auto; }
+            @media (max-width: 767.98px) {
+              section.services .services-wrapper .row .service-wrapper .service-icon i {
+                font-size: 50px; } }
+            @media (max-width: 575px) {
+              section.services .services-wrapper .row .service-wrapper .service-icon i {
+                font-size: 40px; } }
+          section.services .services-wrapper .row .service-wrapper .service-icon img {
+            display: block;
+            margin: auto; }
+        section.services .services-wrapper .row .service-wrapper .service-icon.icon1 {
+          background: #00C853; }
+        section.services .services-wrapper .row .service-wrapper .service-icon.icon2 {
+          background: #03A9F4; }
+        section.services .services-wrapper .row .service-wrapper .service-icon.icon3 {
+          background: #FFAB40; }
+        section.services .services-wrapper .row .service-wrapper .service-icon.icon4 {
+          background: #EC407A; }
+        section.services .services-wrapper .row .service-wrapper .service {
+          width: 60%;
+          background: #192734;
+          display: inline-block;
+          float: right; }
+          section.services .services-wrapper .row .service-wrapper .service h6 {
+            font-family: "Merienda", cursive;
+            text-transform: uppercase;
+            margin-left: 11px;
+            margin-top: 25px; }
+            @media (max-width: 575px) {
+              section.services .services-wrapper .row .service-wrapper .service h6 {
+                margin-left: 0;
+                padding: 5px; } }
+            @media (max-width: 420px) {
+              section.services .services-wrapper .row .service-wrapper .service h6 {
+                margin-left: 0;
+                padding: 2px; } }
+            @media (max-width: 360px) {
+              section.services .services-wrapper .row .service-wrapper .service h6 {
+                font-size: 13px;
+                margin-left: 0; } }
+          section.services .services-wrapper .row .service-wrapper .service p {
+            color: #C1C5C8;
+            font-size: 13px;
+            margin-left: 30px;
+            margin-top: 15px;
+            line-height: 1.7; }
+            @media (max-width: 575px) {
+              section.services .services-wrapper .row .service-wrapper .service p {
+                margin-left: 0;
+                padding: 5px; } }
+            @media (max-width: 420px) {
+              section.services .services-wrapper .row .service-wrapper .service p {
+                margin-left: 0;
+                padding: 5px; } }
+            @media (max-width: 360px) {
+              section.services .services-wrapper .row .service-wrapper .service p {
+                font-size: 14px;
+                margin-left: 0; } }
+        section.services .services-wrapper .row .service-wrapper .service.icon1 h6 {
+          color: #00C853; }
+        section.services .services-wrapper .row .service-wrapper .service.icon2 h6 {
+          color: #03A9F4; }
+        section.services .services-wrapper .row .service-wrapper .service.icon3 h6 {
+          color: #FFAB40; }
+        section.services .services-wrapper .row .service-wrapper .service.icon4 h6 {
+          color: #EC407A; }
+      section.services .services-wrapper .row .service-wrapper.left {
+        margin-left: 48px; }
+      section.services .services-wrapper .row .service-wrapper.right {
+        margin-left: 57px; }
+      section.services .services-wrapper .row .service-wrapper.icon1:before {
+        content: '';
+        position: absolute;
+        background: #00C853;
+        opacity: 1;
+        height: 89%;
+        width: 9px;
+        bottom: "";
+        right: "";
+        top: 9px;
+        left: -17px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+      section.services .services-wrapper .row .service-wrapper.icon2:before {
+        content: '';
+        position: absolute;
+        background: #03A9F4;
+        opacity: 1;
+        height: 89%;
+        width: 9px;
+        bottom: "";
+        right: "";
+        top: 9px;
+        left: -17px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+      section.services .services-wrapper .row .service-wrapper.icon3:before {
+        content: '';
+        position: absolute;
+        background: #FFAB40;
+        opacity: 1;
+        height: 89%;
+        width: 9px;
+        bottom: "";
+        right: "";
+        top: 9px;
+        left: -17px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
+      section.services .services-wrapper .row .service-wrapper.icon4:before {
+        content: '';
+        position: absolute;
+        background: #EC407A;
+        opacity: 1;
+        height: 89%;
+        width: 9px;
+        bottom: "";
+        right: "";
+        top: 9px;
+        left: -17px;
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px; }
 
 .to-top {
   position: relative;

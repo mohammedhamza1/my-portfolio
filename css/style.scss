@@ -569,28 +569,121 @@ section.services {
     }
   }
   .services-wrapper {
-    .service-wrapper {
-      background: $darkColor;
-      margin-bottom: 40px;
-      border-radius: 13px;
-      box-shadow: 0px 5px 7px 1px $stageColor;
-      .service-icon {
-        width: 40%;
-        padding: 62px 0;
+    margin-left: -65px;
+    margin-right: -55px;
+    @media (max-width: 1270px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @media (max-width: 575.98px) {
+      padding-top: 80px;
+      text-align: center;
+      margin-left: -30px;
+    }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+      @media (max-width: 992px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .service-wrapper {
+        position: relative;
+        background: $darkColor;
+        margin-bottom: 40px;
         border-radius: 13px;
-        i {
-          display: block;
-          margin: auto;
+        box-shadow: 0px 5px 7px 1px $stageColor;
+        .service-icon {
+          width: 40%;
+          padding: 62px 0;
+          border-radius: 13px;
+          display: inline-block;
+          @media (max-width: 420px){
+            padding: 100px 0;
+          }
+          @media (max-width: 360px){
+            padding: 150px 0;
+          }
+          i {
+            display: block;
+            margin: auto;
+            @media (max-width: 767.98px) {
+              font-size: 50px;
+            }
+            @media (max-width: 575px) {
+              font-size: 40px;
+            }
+          }
+          img {
+            display: block;
+            margin: auto;
+          }
         }
+        @for $i from 1 through 4 {
+          .service-icon.#{icon}#{$i} {
+            background: nth($service_icon_colors, $i);
+          }
+        }
+        .service {
+          width: 60%;
+          background: $darkColor;
+          display: inline-block;
+          float: right;
+          h6{
+            font-family: $sectionsChildHeadsFontFamily2;
+            text-transform: uppercase;
+            margin-left: 11px;
+            margin-top: 25px;
+            @media (max-width: 575px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 420px){
+              margin-left: 0;
+              padding: 2px;
+            }
+            @media (max-width: 360px){
+              font-size: 13px;
+              margin-left: 0;
+            }
+          }
+          p{
+            color: $lineBeforeColor;
+            font-size: 13px;
+            margin-left: 30px;
+            margin-top: 15px;
+            line-height: 1.7;
+            @media (max-width: 575px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 420px){
+              margin-left: 0;
+              padding: 5px;
+            }
+            @media (max-width: 360px){
+              font-size: 14px;
+              margin-left: 0;
+            }
+          }
+        }
+        @for $i from 1 through 4 {
+          .service.#{icon}#{$i} h6 {
+            color: nth($service_icon_colors, $i);
+          }
+        }
+      }
+      .service-wrapper.#{left} {
+        margin-left: 48px;
+      }
+      .service-wrapper.#{right} {
+        margin-left: 57px;
       }
       @for $i from 1 through 4 {
-        .service-icon.#{icon}#{$i} {
-          background: nth($service_icon_colors, $i);
+        .service-wrapper.#{icon}#{$i}:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include lineBeforeSmallHeads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
         }
-      }
-      .service {
-        width: 60%;
-        background: $darkColor;
       }
     }
   }
