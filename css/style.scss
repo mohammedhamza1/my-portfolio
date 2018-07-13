@@ -3,7 +3,7 @@
 @import "sass/_shared.scss";
 
 //start home
-.home {
+section.home {
   background: $darkColor;
   color: #fff;
   padding: 50px 0;
@@ -101,6 +101,9 @@
                 font-size: 32px;
                 margin-bottom: -10px;
               }
+              @media (min-width: 1367px) {
+                font-size: 100px;
+              }
             }
           }
           .second-name {
@@ -114,6 +117,9 @@
                 margin-bottom: -10px;
                 font-size: 60px;
               }
+              @media (min-width: 1367px) {
+                font-size: 200px;
+              }
             }
           }
           .job-title {
@@ -126,6 +132,9 @@
               @media (max-width: 575.98px) {
                 font-size: 15px;
               }
+              @media (min-width: 1367px) {
+                font-size: 60px;
+              }
             }
           }
         }
@@ -134,8 +143,8 @@
   }
   //end section my name
 }
-
 //end home
+
 //start about
 section.about {
   padding: $sectionsPadding;
@@ -148,7 +157,7 @@ section.about {
     position: relative;
   }
   .who-am-i > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 77px, -3px, '', 8px);
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 79px, -3px, '', 8px);
   }
   h1 {
     @extend %sectionsMainHeadsStyle;
@@ -459,7 +468,6 @@ section.about {
     background: $jobTitleColor;
   }
 }
-
 //end about
 
 //start portfolio
@@ -555,8 +563,8 @@ section.portfolio {
     }
   }
 }
-
 //end portfolio
+
 //start services
 section.services {
   padding: $sectionsPadding;
@@ -688,8 +696,82 @@ section.services {
     }
   }
 }
-
 //end services
+
+//start contact
+section.contact{
+  padding: $sectionsPadding;
+  background: $darkColor;
+  color: #fff;
+  .get-in-touch {
+    @extend %sectionsSmallHeadsStyle;
+  }
+  .get-in-touch > span {
+    position: relative;
+  }
+  .get-in-touch > span:before {
+    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 99px, -3px, '', 8px);
+  }
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  form{
+    input{
+      @extend %form_inputs_style;
+      height: 45px;
+    }
+    input:focus{
+      @extend %form_inputs_hover_focus_style;
+    }
+    input::placeholder{
+      @extend %form_inputs_placeholder_style;
+      @media  (max-width: 575px){
+        text-align: left;
+      }
+    }
+    label{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 12px;
+      text-transform: capitalize;
+      font-size: 19px;
+      font-family: $brandFontFamily;
+      color: $lineBeforeColor;
+      display: block;
+      text-align: center;
+    }
+    textarea{
+      @extend %form_inputs_style;
+      border: 1px solid $darkLightColor;
+      resize: none;
+    }
+    textarea:focus{
+      @extend %form_inputs_hover_focus_style;
+    }
+    button{
+      display: block;
+      margin: 80px auto;
+      background: transparent;
+      border: 2px solid $darkLightColor;
+      color: #fff;
+      border-radius: 20px;
+      width: 260px;
+      height: 47px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 22px;
+    }
+    button:focus, button:hover{
+      background: $darkLightColor;
+      border-color: $darkLightColor;
+    }
+
+  }
+}
+//end contact
 
 //to top
 .to-top {

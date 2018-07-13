@@ -15,7 +15,8 @@
   margin-top: 7px;
   margin-bottom: 80px;
 }
-%sectionsChildHeadsStyle{
+
+%sectionsChildHeadsStyle {
   position: relative;
   text-transform: uppercase;
   font-family: $sectionsChildHeadsFontFamily;
@@ -23,7 +24,8 @@
   margin-left: 25px;
   padding-top: 20px;
 }
-%sectionsChildHeadsStyle2{
+
+%sectionsChildHeadsStyle2 {
   position: relative;
   text-transform: capitalize;
   font-family: $sectionsChildHeadsFontFamily2;
@@ -31,4 +33,30 @@
   margin-left: 25px;
   padding-top: 20px;
   letter-spacing: 2px;
+}
+
+%form_inputs_style {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $darkLightColor;
+  color: #fff;
+  font-size: 20px;
+  font-family: $arabic_font_family;
+}
+
+%form_inputs_hover_focus_style {
+  background: $darkLightColor;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 5px 7px 1px $darkColor;
+  border-color: $darkLightColor;
+}
+%form_inputs_placeholder_style{
+  margin-left: 0;
+  text-transform: capitalize;
+  color: $lineBeforeColor;
+  font-family: $brandFontFamily;
+  font-size: 19px;
+  text-align: center;
 }
