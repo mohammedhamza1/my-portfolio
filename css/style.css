@@ -3,7 +3,7 @@ section.about .who-am-i, section.about .cv {
   color: #ADBCCB;
   font-size: 18px; }
 
-section.about h1, section.portfolio h1 {
+section.about h1, section.portfolio h1, section.services h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -602,6 +602,37 @@ section.portfolio {
       border-color: #213243; }
       section.portfolio .more-projects .modal .modal-content .modal-header span {
         color: #213243; }
+
+section.services {
+  padding: 145px 0;
+  background: #213243;
+  color: #fff; }
+  @media (max-width: 575.98px) {
+    section.services h1 {
+      font-size: 35px; } }
+  section.services .services-wrapper .service-wrapper {
+    background: #192734;
+    margin-bottom: 40px;
+    border-radius: 13px;
+    box-shadow: 0px 5px 7px 1px #192734; }
+    section.services .services-wrapper .service-wrapper .service-icon {
+      width: 40%;
+      padding: 62px 0;
+      border-radius: 13px; }
+      section.services .services-wrapper .service-wrapper .service-icon i {
+        display: block;
+        margin: auto; }
+    section.services .services-wrapper .service-wrapper .service-icon.icon1 {
+      background: #00C853; }
+    section.services .services-wrapper .service-wrapper .service-icon.icon2 {
+      background: #03A9F4; }
+    section.services .services-wrapper .service-wrapper .service-icon.icon3 {
+      background: #FFAB40; }
+    section.services .services-wrapper .service-wrapper .service-icon.icon4 {
+      background: #EC407A; }
+    section.services .services-wrapper .service-wrapper .service {
+      width: 60%;
+      background: #192734; }
 
 .to-top {
   position: relative;

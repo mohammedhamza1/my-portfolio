@@ -541,13 +541,13 @@ section.portfolio {
       background: $darkLightColor;
       border-color: $darkColor;
     }
-    .modal{
-      .modal-content{
+    .modal {
+      .modal-content {
         background: $darkColor;
         border-radius: 15px;
-        .modal-header{
+        .modal-header {
           border-color: $darkLightColor;
-          span{
+          span {
             color: $darkLightColor;
           }
         }
@@ -557,6 +557,46 @@ section.portfolio {
 }
 
 //end portfolio
+//start services
+section.services {
+  padding: $sectionsPadding;
+  background: $darkLightColor;
+  color: #fff;
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: 35px;
+    }
+  }
+  .services-wrapper {
+    .service-wrapper {
+      background: $darkColor;
+      margin-bottom: 40px;
+      border-radius: 13px;
+      box-shadow: 0px 5px 7px 1px $stageColor;
+      .service-icon {
+        width: 40%;
+        padding: 62px 0;
+        border-radius: 13px;
+        i {
+          display: block;
+          margin: auto;
+        }
+      }
+      @for $i from 1 through 4 {
+        .service-icon.#{icon}#{$i} {
+          background: nth($service_icon_colors, $i);
+        }
+      }
+      .service {
+        width: 60%;
+        background: $darkColor;
+      }
+    }
+  }
+}
+
+//end services
 
 //to top
 .to-top {
