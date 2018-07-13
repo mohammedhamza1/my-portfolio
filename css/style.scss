@@ -792,18 +792,15 @@ footer {
   .social {
     a {
       text-decoration: none;
-      i {
-        background: $darkColor;
-        color: $lineBeforeColor;
-        border: 2px solid $darkColor;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        cursor: pointer;
-      }
     }
-    i{
+    i {
+      background: $darkColor;
+      color: $lineBeforeColor;
+      border: 2px solid $darkColor;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
       cursor: pointer;
     }
   }
