@@ -31,6 +31,14 @@ $(function () {
         );
     }
     //end nice scroll
+
+    //start tooltip
+    $('[data-toggle="tooltip"]').tooltip();
+    //end tooltip
+
+    $('[data-toggle="popover"]').popover({
+        container: 'footer'
+    });
     //End general
 
 

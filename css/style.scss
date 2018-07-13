@@ -143,6 +143,7 @@ section.home {
   }
   //end section my name
 }
+
 //end home
 
 //start about
@@ -468,6 +469,7 @@ section.about {
     background: $jobTitleColor;
   }
 }
+
 //end about
 
 //start portfolio
@@ -563,6 +565,7 @@ section.portfolio {
     }
   }
 }
+
 //end portfolio
 
 //start services
@@ -606,10 +609,10 @@ section.services {
           padding: 62px 0;
           border-radius: 13px;
           display: inline-block;
-          @media (max-width: 420px){
+          @media (max-width: 420px) {
             padding: 100px 0;
           }
-          @media (max-width: 360px){
+          @media (max-width: 360px) {
             padding: 150px 0;
           }
           i {
@@ -637,39 +640,39 @@ section.services {
           background: $darkColor;
           display: inline-block;
           float: right;
-          h6{
+          h6 {
             font-family: $sectionsChildHeadsFontFamily2;
             text-transform: uppercase;
             margin-left: 11px;
             margin-top: 25px;
-            @media (max-width: 575px){
+            @media (max-width: 575px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 420px){
+            @media (max-width: 420px) {
               margin-left: 0;
               padding: 2px;
             }
-            @media (max-width: 360px){
+            @media (max-width: 360px) {
               font-size: 13px;
               margin-left: 0;
             }
           }
-          p{
+          p {
             color: $lineBeforeColor;
             font-size: 13px;
             margin-left: 30px;
             margin-top: 15px;
             line-height: 1.7;
-            @media (max-width: 575px){
+            @media (max-width: 575px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 420px){
+            @media (max-width: 420px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 360px){
+            @media (max-width: 360px) {
               font-size: 14px;
               margin-left: 0;
             }
@@ -696,10 +699,11 @@ section.services {
     }
   }
 }
+
 //end services
 
 //start contact
-section.contact{
+section.contact {
   padding: $sectionsPadding;
   background: $darkColor;
   color: #fff;
@@ -721,21 +725,21 @@ section.contact{
       font-size: $sections_main_head_sm_font_size;
     }
   }
-  form{
-    input{
+  form {
+    input {
       @extend %form_inputs_style;
       height: 45px;
     }
-    input:focus{
+    input:focus {
       @extend %form_inputs_hover_focus_style;
     }
-    input::placeholder{
+    input::placeholder {
       @extend %form_inputs_placeholder_style;
-      @media  (max-width: 575px){
+      @media (max-width: 575px) {
         text-align: left;
       }
     }
-    label{
+    label {
       margin-top: 40px;
       margin-bottom: 20px;
       margin-left: 12px;
@@ -746,15 +750,15 @@ section.contact{
       display: block;
       text-align: center;
     }
-    textarea{
+    textarea {
       @extend %form_inputs_style;
       border: 1px solid $darkLightColor;
       resize: none;
     }
-    textarea:focus{
+    textarea:focus {
       @extend %form_inputs_hover_focus_style;
     }
-    button{
+    button {
       display: block;
       margin: 80px auto;
       background: transparent;
@@ -766,15 +770,59 @@ section.contact{
       text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 22px;
+      @media (max-width: 575px) {
+        width: 220px;
+      }
     }
-    button:focus, button:hover{
+    button:focus, button:hover {
       background: $darkLightColor;
       border-color: $darkLightColor;
     }
 
   }
 }
+
 //end contact
+
+//start footer
+footer {
+  padding: 20px 0;
+  background: $darkLightColor;
+  color: #fff;
+  .social {
+    i {
+      background: $darkColor;
+      color: $lineBeforeColor;
+      border: 2px solid $darkColor;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+  .popover {
+    .arrow:before {
+      border-right-color: $darkColor !important;;
+      @media (max-width: 575px) {
+        border-right-color: $darkColor !important;;
+      }
+    }
+    .arrow:after {
+      border-right-color: $darkColor !important;;
+      @media (max-width: 575px) {
+        border-right-color: $darkColor !important;;
+      }
+    }
+    .popover-body {
+      background: $darkColor;
+      color: $lineBeforeColor;
+      font-size: 15px;
+    }
+  }
+}
+
+//end footer
 
 //to top
 .to-top {
@@ -786,6 +834,9 @@ section.contact{
     bottom: 25px;
     color: $toTopColor;
     text-decoration: none;
+    @media (max-width: 575px) {
+      right: 7px;
+    }
   }
 }
 

@@ -828,9 +828,40 @@ section.contact {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 22px; }
+    @media (max-width: 575px) {
+      section.contact form button {
+        width: 220px; } }
   section.contact form button:focus, section.contact form button:hover {
     background: #213243;
     border-color: #213243; }
+
+footer {
+  padding: 20px 0;
+  background: #213243;
+  color: #fff; }
+  footer .social i {
+    background: #192734;
+    color: #C1C5C8;
+    border: 2px solid #192734;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer; }
+  footer .popover .arrow:before {
+    border-right-color: #192734 !important; }
+    @media (max-width: 575px) {
+      footer .popover .arrow:before {
+        border-right-color: #192734 !important; } }
+  footer .popover .arrow:after {
+    border-right-color: #192734 !important; }
+    @media (max-width: 575px) {
+      footer .popover .arrow:after {
+        border-right-color: #192734 !important; } }
+  footer .popover .popover-body {
+    background: #192734;
+    color: #C1C5C8;
+    font-size: 15px; }
 
 .to-top {
   position: relative;
@@ -841,5 +872,8 @@ section.contact {
     bottom: 25px;
     color: #21AE62;
     text-decoration: none; }
+    @media (max-width: 575px) {
+      .to-top a {
+        right: 7px; } }
 
 /*# sourceMappingURL=style.css.map */
