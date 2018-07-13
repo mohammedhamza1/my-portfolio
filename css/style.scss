@@ -711,6 +711,9 @@ section.contact{
   }
   .get-in-touch > span:before {
     @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 99px, -3px, '', 8px);
+    @media (max-width: 575.98px) {
+      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 108px, -3px, '', 8px);
+    }
   }
   h1 {
     @extend %sectionsMainHeadsStyle;

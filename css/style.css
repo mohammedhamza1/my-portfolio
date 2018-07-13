@@ -782,6 +782,19 @@ section.contact {
     top: "";
     left: "";
     border-radius: 8px; }
+    @media (max-width: 575.98px) {
+      section.contact .get-in-touch > span:before {
+        content: '';
+        position: absolute;
+        background: #C1C5C8;
+        opacity: 0.4;
+        height: 65px;
+        width: 2px;
+        bottom: -3px;
+        right: 108px;
+        top: "";
+        left: "";
+        border-radius: 8px; } }
   @media (max-width: 575.98px) {
     section.contact h1 {
       font-size: 50px; } }

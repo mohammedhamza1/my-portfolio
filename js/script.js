@@ -19,15 +19,17 @@ $(function () {
     //end to top arrow
 
     //start nice scroll
-    let color = '#21AE62';
-    $("body").niceScroll(
-        {
-            cursorcolor: color,
-            cursorwidth: "10px",
-            cursorborder: "none",
-            cursorborderradius: "5px"
-        }
-    );
+    if (window.matchMedia('(min-width: 1200px)').matches) {
+        let color = '#21AE62';
+        $("body").niceScroll(
+            {
+                cursorcolor: color,
+                cursorwidth: "10px",
+                cursorborder: "none",
+                cursorborderradius: "5px"
+            }
+        );
+    }
     //end nice scroll
     //End general
 
