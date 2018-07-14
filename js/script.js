@@ -46,6 +46,7 @@ $(function () {
     new WOW().init();
     //end wow
 
+    //start progress
     var bar = new ProgressBar.Circle(skill1, {
         strokeWidth: 4,
         easing: 'easeInOut',
@@ -111,7 +112,7 @@ $(function () {
         svgStyle: null
     });
 
-    bar.animate(0.5);  // Number from 0.0 to 1.0
+    bar.animate(0.7);  // Number from 0.0 to 1.0
     var bar = new ProgressBar.Circle(skill7, {
         strokeWidth: 4,
         easing: 'easeInOut',
@@ -134,6 +135,19 @@ $(function () {
     });
 
     bar.animate(0.65);  // Number from 0.0 to 1.0
+    //end progress
+
+    //media query
+    if (window.matchMedia('(max-width: 575px)').matches) {
+        $('.services').hide();
+        $('.services-mobile').show();
+    }
+    if (window.matchMedia('(min-width: 575px)').matches) {
+        $('.services-mobile').hide();
+        $('.services').show();
+    }
+
+
     //End general
 
 

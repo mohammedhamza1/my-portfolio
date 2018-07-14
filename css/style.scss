@@ -159,6 +159,9 @@ section.about {
   }
   .who-am-i > span:before {
     @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 79px, -3px, '', 8px);
+    @media (max-width: 575px) {
+      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 86px, -3px, '', 8px);
+    }
   }
   h1 {
     @extend %sectionsMainHeadsStyle;
@@ -176,6 +179,7 @@ section.about {
         @media (max-width: 991.98px) {
           display: inline-block;
           margin-left: 0;
+          margin-top: 10px;
         }
         @media (min-width: 992px) {
           padding-top: 0;
@@ -278,6 +282,34 @@ section.about {
             color: $jobTitleColor;
             opacity: 0.6;
             font-family: $firstNameFontFamily;
+            @media (max-width: 992px) {
+              top: 59%;
+              left: 40%;
+            }
+            @media (min-width: 0px) {
+              top: 60%;
+              left: 43%;
+            }
+            @media (min-width: 277px) {
+              top: 60%;
+              left: 45%;
+            }
+            @media (min-width: 490px) {
+              top: 60%;
+              left: 47%;
+            }
+            @media (min-width: 575px) {
+              top: 60%;
+              left: 41%;
+            }
+            @media (min-width: 992px) {
+              top: 65%;
+              left: 44%;
+            }
+            @media (min-width: 1200px) {
+              top: 65%;
+              left: 41%;
+            }
           }
         }
       }
@@ -328,6 +360,9 @@ section.about {
         }
         @media (max-width: 992px) {
           margin-left: 30px;
+        }
+        @media (max-width: 575px) {
+          margin-top: 30px;
         }
       }
       h6.second:before {
@@ -570,6 +605,7 @@ section.portfolio {
 
 //start services
 section.services {
+  display: none;
   padding: $sectionsPadding;
   background: $darkLightColor;
   color: #fff;
@@ -701,6 +737,48 @@ section.services {
 }
 //end services
 
+//start services mobile
+section.services-mobile{
+  display: none;
+  padding: $sectionsPadding;
+  background: $darkLightColor;
+  color: #fff;
+  h1 {
+    @extend %sectionsMainHeadsStyle;
+    @media (max-width: 575.98px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .services-wrapper-mobile{
+    .service-wrapper-mobile{
+      .service-icon-mobile{
+        padding: 40px 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        h6{
+          margin: 30px 0;
+          font-family: $sectionsChildHeadsFontFamily2;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 19px;
+        }
+        p{
+          font-family: $brandFontFamily;
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+      }
+      @for $i from 1 through 4 {
+        .service-icon-mobile.#{icon}#{$i} {
+          background: nth($service_icon_colors, $i);
+        }
+      }
+    }
+  }
+}
+//end services mobile
+
 //start contact
 section.contact {
   padding: $sectionsPadding;
@@ -722,6 +800,20 @@ section.contact {
     @extend %sectionsMainHeadsStyle;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .status{
+    display: block;
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 45px;
+    text-transform: capitalize;
+    .online{
+      color: $borderColor;
+    }
+    .offline{
+      color: $lineBeforeColor;
+      opacity: 0.6;
     }
   }
   form {

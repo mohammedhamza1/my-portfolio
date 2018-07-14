@@ -3,7 +3,7 @@ section.about .who-am-i, section.about .cv, section.contact .get-in-touch {
   color: #ADBCCB;
   font-size: 18px; }
 
-section.about h1, section.portfolio h1, section.services h1, section.contact h1 {
+section.about h1, section.portfolio h1, section.services h1, section.services-mobile h1, section.contact h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 7px;
@@ -172,6 +172,19 @@ section.about {
     top: "";
     left: "";
     border-radius: 8px; }
+    @media (max-width: 575px) {
+      section.about .who-am-i > span:before {
+        content: '';
+        position: absolute;
+        background: #C1C5C8;
+        opacity: 0.4;
+        height: 65px;
+        width: 2px;
+        bottom: -3px;
+        right: 86px;
+        top: "";
+        left: "";
+        border-radius: 8px; } }
   @media (max-width: 575.98px) {
     section.about h1 {
       font-size: 50px; } }
@@ -181,7 +194,8 @@ section.about {
   @media (max-width: 991.98px) {
     section.about .row .info h6 {
       display: inline-block;
-      margin-left: 0; } }
+      margin-left: 0;
+      margin-top: 10px; } }
   @media (min-width: 992px) {
     section.about .row .info h6 {
       padding-top: 0; } }
@@ -308,6 +322,34 @@ section.about {
         color: #21AE62;
         opacity: 0.6;
         font-family: "Quicksand", sans-serif; }
+        @media (max-width: 992px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 59%;
+            left: 40%; } }
+        @media (min-width: 0px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 60%;
+            left: 43%; } }
+        @media (min-width: 277px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 60%;
+            left: 45%; } }
+        @media (min-width: 490px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 60%;
+            left: 47%; } }
+        @media (min-width: 575px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 60%;
+            left: 41%; } }
+        @media (min-width: 992px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 65%;
+            left: 44%; } }
+        @media (min-width: 1200px) {
+          section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+            top: 65%;
+            left: 41%; } }
   section.about .education-experience {
     padding-top: 130px;
     margin-left: -65px;
@@ -370,6 +412,9 @@ section.about {
         @media (max-width: 992px) {
           section.about .education-experience .row h6.second {
             margin-left: 30px; } }
+        @media (max-width: 575px) {
+          section.about .education-experience .row h6.second {
+            margin-top: 30px; } }
       section.about .education-experience .row h6.second:before {
         content: '';
         position: absolute;
@@ -598,6 +643,7 @@ section.portfolio {
         color: #213243; }
 
 section.services {
+  display: none;
   padding: 145px 0;
   background: #213243;
   color: #fff; }
@@ -761,6 +807,38 @@ section.services {
         left: -17px;
         border-radius: 8px; }
 
+section.services-mobile {
+  display: none;
+  padding: 145px 0;
+  background: #213243;
+  color: #fff; }
+  @media (max-width: 575.98px) {
+    section.services-mobile h1 {
+      font-size: 50px; } }
+  section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile {
+    padding: 40px 30px;
+    border-radius: 15px;
+    margin-bottom: 20px; }
+    section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile h6 {
+      margin: 30px 0;
+      font-family: "Merienda", cursive;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 19px; }
+    section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile p {
+      font-family: "Questrial", sans-serif;
+      font-size: 16px;
+      margin-bottom: 0; }
+  section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile.icon1 {
+    background: #00C853; }
+  section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile.icon2 {
+    background: #03A9F4; }
+  section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile.icon3 {
+    background: #FFAB40; }
+  section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile.icon4 {
+    background: #EC407A; }
+
 section.contact {
   padding: 145px 0;
   background: #192734;
@@ -795,6 +873,17 @@ section.contact {
   @media (max-width: 575.98px) {
     section.contact h1 {
       font-size: 50px; } }
+  section.contact .status {
+    display: block;
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 45px;
+    text-transform: capitalize; }
+    section.contact .status .online {
+      color: #00C853; }
+    section.contact .status .offline {
+      color: #C1C5C8;
+      opacity: 0.6; }
   section.contact form input {
     height: 45px; }
   @media (max-width: 575px) {
