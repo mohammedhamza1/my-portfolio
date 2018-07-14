@@ -45,6 +45,95 @@ $(function () {
     //start wow
     new WOW().init();
     //end wow
+
+    var bar = new ProgressBar.Circle(skill1, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 6000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.9);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill2, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 7000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.8);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill3, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 5000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.6);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill4, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 4000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.7);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill5, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 9000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.8);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill6, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 6000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.5);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill7, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 9000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.75);  // Number from 0.0 to 1.0
+    var bar = new ProgressBar.Circle(skill8, {
+        strokeWidth: 4,
+        easing: 'easeInOut',
+        duration: 8000,
+        color: '#00C853',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar.animate(0.65);  // Number from 0.0 to 1.0
     //End general
 
 

@@ -272,7 +272,7 @@ section.about {
         left: 39%;
         border-radius: 8px; } }
   section.about .row .skills .skill-wrapper {
-    margin-top: 35px;
+    margin-top: 10px !important;
     margin-left: 40px; }
     @media (max-width: 991.98px) {
       section.about .row .skills .skill-wrapper {
@@ -285,32 +285,29 @@ section.about {
       section.about .row .skills .skill-wrapper {
         margin-top: 35px;
         margin-left: 40px; } }
-    section.about .row .skills .skill-wrapper .skill {
-      height: 110px;
-      line-height: 110px;
+    section.about .row .skills .skill-wrapper #skill1, section.about .row .skills .skill-wrapper #skill2, section.about .row .skills .skill-wrapper #skill3, section.about .row .skills .skill-wrapper #skill4, section.about .row .skills .skill-wrapper #skill5, section.about .row .skills .skill-wrapper #skill6, section.about .row .skills .skill-wrapper #skill7, section.about .row .skills .skill-wrapper #skill8 {
       width: 110px;
-      border: 4px solid #00C853;
-      border-radius: 50%;
+      height: 110px;
       text-align: center;
       margin-bottom: 15px;
       font-family: "Prompt", sans-serif;
       font-size: 18px;
       font-weight: 300; }
-      @media (max-width: 991.98px) {
-        section.about .row .skills .skill-wrapper .skill {
+      @media (max-width: 992px) {
+        section.about .row .skills .skill-wrapper #skill1, section.about .row .skills .skill-wrapper #skill2, section.about .row .skills .skill-wrapper #skill3, section.about .row .skills .skill-wrapper #skill4, section.about .row .skills .skill-wrapper #skill5, section.about .row .skills .skill-wrapper #skill6, section.about .row .skills .skill-wrapper #skill7, section.about .row .skills .skill-wrapper #skill8 {
           margin: 0 auto 30px; } }
-      @media (min-width: 992px) {
-        section.about .row .skills .skill-wrapper .skill {
-          height: 110px;
-          line-height: 110px;
-          width: 110px;
-          border: 4px solid #00C853;
-          border-radius: 50%;
-          text-align: center;
-          margin-bottom: 15px;
-          font-family: "Prompt", sans-serif;
-          font-size: 18px;
-          font-weight: 300; } }
+      section.about .row .skills .skill-wrapper #skill1 .skill-name, section.about .row .skills .skill-wrapper #skill2 .skill-name, section.about .row .skills .skill-wrapper #skill3 .skill-name, section.about .row .skills .skill-wrapper #skill4 .skill-name, section.about .row .skills .skill-wrapper #skill5 .skill-name, section.about .row .skills .skill-wrapper #skill6 .skill-name, section.about .row .skills .skill-wrapper #skill7 .skill-name, section.about .row .skills .skill-wrapper #skill8 .skill-name {
+        position: relative;
+        top: 55%; }
+      section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
+        text-align: center;
+        position: absolute;
+        top: 65%;
+        left: 40%;
+        font-size: 16px;
+        color: #21AE62;
+        opacity: 0.6;
+        font-family: "Quicksand", sans-serif; }
   section.about .education-experience {
     padding-top: 130px;
     margin-left: -65px;
