@@ -53,6 +53,81 @@ section.contact form input::placeholder {
   font-size: 19px;
   text-align: center; }
 
+.download-cv {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  width: 360px;
+  height: 65px;
+  line-height: 48px;
+  margin: 25px auto;
+  display: block;
+  border-radius: 22px;
+  background: #00C853;
+  font-size: 24px; }
+  @media (max-width: 575.98px) {
+    .download-cv {
+      font-size: 18px;
+      width: 190px;
+      height: 50px;
+      line-height: 33px; } }
+
+.download-cv:hover, .download-cv:focus {
+  background: #21AE62;
+  color: #fff; }
+
+button.all-projects {
+  display: block;
+  margin: 35px auto 0;
+  background: #213243;
+  border-color: #213243;
+  color: #fff;
+  border-radius: 20px;
+  width: 260px;
+  height: 47px;
+  text-transform: uppercase;
+  font-size: 14px; }
+  @media (max-width: 575px) {
+    button.all-projects {
+      width: 220px; } }
+
+button.all-projects:hover, button.all-projects:focus {
+  background: #213243;
+  border-color: #192734; }
+
+button.contact-btn {
+  display: block;
+  margin: 80px auto;
+  background: transparent;
+  border: 2px solid #213243;
+  color: #fff;
+  border-radius: 20px;
+  width: 260px;
+  height: 47px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px; }
+  @media (max-width: 575px) {
+    button.contact-btn {
+      width: 220px; } }
+
+button.contact-btn:focus, button.contact-btn:hover {
+  background: #213243;
+  border-color: #213243; }
+
+.to-top {
+  position: relative;
+  display: none; }
+  .to-top a {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: #21AE62;
+    text-decoration: none; }
+    @media (max-width: 575px) {
+      .to-top a {
+        right: 7px; } }
+
 section.home {
   background: #192734;
   color: #fff;
@@ -286,18 +361,18 @@ section.about {
         left: 39%;
         border-radius: 8px; } }
   section.about .row .skills .skill-wrapper {
-    margin-top: 10px !important;
+    margin-top: 10px;
     margin-left: 40px; }
     @media (max-width: 991.98px) {
       section.about .row .skills .skill-wrapper {
         margin-left: 0; } }
     @media (min-width: 992px) {
       section.about .row .skills .skill-wrapper {
-        margin-top: 28px;
+        margin-top: -17px;
         margin-left: 15px; } }
     @media (min-width: 1200px) {
       section.about .row .skills .skill-wrapper {
-        margin-top: 35px;
+        margin-top: 11px;
         margin-left: 40px; } }
     section.about .row .skills .skill-wrapper #skill1, section.about .row .skills .skill-wrapper #skill2, section.about .row .skills .skill-wrapper #skill3, section.about .row .skills .skill-wrapper #skill4, section.about .row .skills .skill-wrapper #skill5, section.about .row .skills .skill-wrapper #skill6, section.about .row .skills .skill-wrapper #skill7, section.about .row .skills .skill-wrapper #skill8 {
       width: 110px;
@@ -306,7 +381,8 @@ section.about {
       margin-bottom: 15px;
       font-family: "Prompt", sans-serif;
       font-size: 18px;
-      font-weight: 300; }
+      font-weight: 300;
+      transition: all ease-in-out .5s; }
       @media (max-width: 992px) {
         section.about .row .skills .skill-wrapper #skill1, section.about .row .skills .skill-wrapper #skill2, section.about .row .skills .skill-wrapper #skill3, section.about .row .skills .skill-wrapper #skill4, section.about .row .skills .skill-wrapper #skill5, section.about .row .skills .skill-wrapper #skill6, section.about .row .skills .skill-wrapper #skill7, section.about .row .skills .skill-wrapper #skill8 {
           margin: 0 auto 30px; } }
@@ -350,6 +426,9 @@ section.about {
           section.about .row .skills .skill-wrapper #skill1 .skill-percentage, section.about .row .skills .skill-wrapper #skill2 .skill-percentage, section.about .row .skills .skill-wrapper #skill3 .skill-percentage, section.about .row .skills .skill-wrapper #skill4 .skill-percentage, section.about .row .skills .skill-wrapper #skill5 .skill-percentage, section.about .row .skills .skill-wrapper #skill6 .skill-percentage, section.about .row .skills .skill-wrapper #skill7 .skill-percentage, section.about .row .skills .skill-wrapper #skill8 .skill-percentage {
             top: 65%;
             left: 41%; } }
+      section.about .row .skills .skill-wrapper #skill1 svg, section.about .row .skills .skill-wrapper #skill2 svg, section.about .row .skills .skill-wrapper #skill3 svg, section.about .row .skills .skill-wrapper #skill4 svg, section.about .row .skills .skill-wrapper #skill5 svg, section.about .row .skills .skill-wrapper #skill6 svg, section.about .row .skills .skill-wrapper #skill7 svg, section.about .row .skills .skill-wrapper #skill8 svg {
+        border-radius: 50%;
+        box-shadow: 0 0 28px 0 #192734; }
   section.about .education-experience {
     padding-top: 130px;
     margin-left: -65px;
@@ -552,26 +631,6 @@ section.about {
     top: "";
     left: -6px;
     border-radius: 8px; }
-  section.about .download-cv {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    width: 360px;
-    height: 65px;
-    line-height: 48px;
-    margin: 25px auto;
-    display: block;
-    border-radius: 22px;
-    background: #00C853;
-    font-size: 24px; }
-    @media (max-width: 575.98px) {
-      section.about .download-cv {
-        font-size: 18px;
-        width: 190px;
-        height: 50px;
-        line-height: 33px; } }
-  section.about .download-cv:hover, section.about .download-cv:focus {
-    background: #21AE62; }
 
 section.portfolio {
   padding: 145px 0;
@@ -612,28 +671,105 @@ section.portfolio {
     section.portfolio .portfolio-controls .nav-btn:hover {
       border-color: #00C853; }
   section.portfolio .projects-wrapper .project {
+    position: relative;
     margin-bottom: 50px;
-    transition: all ease-in-out .3s; }
+    transition: all ease-in-out .3s;
+    overflow: hidden; }
     section.portfolio .projects-wrapper .project img {
       width: 90%;
-      border-radius: 15px; }
-  section.portfolio .more-projects button.btn {
-    display: block;
-    margin: 35px auto 0;
-    background: #213243;
-    border-color: #213243;
-    color: #fff;
-    border-radius: 20px;
-    width: 260px;
-    height: 47px;
-    text-transform: uppercase;
-    font-size: 14px; }
-    @media (max-width: 575px) {
-      section.portfolio .more-projects button.btn {
-        width: 220px; } }
-  section.portfolio .more-projects button.btn:hover, section.portfolio .more-projects button.btn:focus {
-    background: #213243;
-    border-color: #192734; }
+      border-radius: 15px;
+      transition: .3s; }
+    section.portfolio .projects-wrapper .project h6 {
+      position: absolute;
+      margin: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      font-weight: bold;
+      font-family: "Questrial", sans-serif;
+      font-size: 33px;
+      text-transform: uppercase;
+      transform: translate(0, -94%);
+      transition: .3s; }
+      @media (min-width: 0px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 30px; } }
+      @media (min-width: 392px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 40px; } }
+      @media (min-width: 575px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 15px; } }
+      @media (min-width: 766px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 20px; } }
+      @media (min-width: 992px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 30px; } }
+      @media (min-width: 1200px) {
+        section.portfolio .projects-wrapper .project h6 {
+          font-size: 35px; } }
+    section.portfolio .projects-wrapper .project a {
+      position: absolute;
+      text-decoration: none;
+      color: #fff;
+      left: 0;
+      right: 0;
+      transform: translate(0, 725%);
+      transition: .3s;
+      font-weight: normal;
+      font-size: 13px; }
+      @media (min-width: 392px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 20px; } }
+      @media (min-width: 575px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 5px; } }
+      @media (min-width: 766px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 8px; } }
+      @media (min-width: 992px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 12px; } }
+      @media (min-width: 1200px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 15px; } }
+    section.portfolio .projects-wrapper .project:hover h6 {
+      transform: translate(0, 80px); }
+      @media (min-width: 392px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          transform: translate(0, 100px); } }
+      @media (min-width: 575px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          transform: translate(0, 40px); } }
+      @media (min-width: 766px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          transform: translate(0, 50px); } }
+      @media (min-width: 992px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          transform: translate(0, 70px); } }
+      @media (min-width: 1200px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          transform: translate(0, 95px); } }
+    section.portfolio .projects-wrapper .project:hover a {
+      transform: translate(0, 140px); }
+      @media (min-width: 392px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          transform: translate(0, 150px); } }
+      @media (min-width: 575px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          transform: translate(0, 70px); } }
+      @media (min-width: 766px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          transform: translate(0, 80px); } }
+      @media (min-width: 992px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          transform: translate(0, 120px); } }
+      @media (min-width: 1200px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          transform: translate(0, 150px); } }
+    section.portfolio .projects-wrapper .project:hover img {
+      opacity: 0.08; }
   section.portfolio .more-projects .modal .modal-content {
     background: #192734;
     border-radius: 15px; }
@@ -876,14 +1012,16 @@ section.contact {
   section.contact .status {
     display: block;
     text-align: center;
-    margin-top: -45px;
-    margin-bottom: 45px;
+    margin-top: -80px;
+    margin-bottom: 80px;
     text-transform: capitalize; }
     section.contact .status .online {
-      color: #00C853; }
+      color: #00C853;
+      margin-right: 5px; }
     section.contact .status .offline {
       color: #C1C5C8;
-      opacity: 0.6; }
+      opacity: 0.6;
+      margin-right: 5px; }
   section.contact form input {
     height: 45px; }
   @media (max-width: 575px) {
@@ -902,24 +1040,9 @@ section.contact {
   section.contact form textarea {
     border: 1px solid #213243;
     resize: none; }
-  section.contact form button {
-    display: block;
-    margin: 80px auto;
+  section.contact form .form-control:disabled, section.contact form button:disabled {
     background: transparent;
-    border: 2px solid #213243;
-    color: #fff;
-    border-radius: 20px;
-    width: 260px;
-    height: 47px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 22px; }
-    @media (max-width: 575px) {
-      section.contact form button {
-        width: 220px; } }
-  section.contact form button:focus, section.contact form button:hover {
-    background: #213243;
-    border-color: #213243; }
+    cursor: not-allowed; }
 
 footer {
   padding: 20px 0;
@@ -950,18 +1073,5 @@ footer {
     background: #192734;
     color: #C1C5C8;
     font-size: 15px; }
-
-.to-top {
-  position: relative;
-  display: none; }
-  .to-top a {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    color: #21AE62;
-    text-decoration: none; }
-    @media (max-width: 575px) {
-      .to-top a {
-        right: 7px; } }
 
 /*# sourceMappingURL=style.css.map */

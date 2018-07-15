@@ -147,7 +147,6 @@ $(function () {
         $('.services').show();
     }
 
-
     //End general
 
 

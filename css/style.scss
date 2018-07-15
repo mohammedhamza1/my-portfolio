@@ -1,6 +1,7 @@
 @import 'sass/_variable.scss';
 @import "sass/_mixins.scss";
 @import "sass/_shared.scss";
+@import "sass/_button.scss";
 
 //start home
 section.home {
@@ -242,38 +243,36 @@ section.about {
         }
       }
       .skill-wrapper {
-        margin-top: 10px !important;
+        margin-top: 10px;
         margin-left: 40px;
         @media (max-width: 991.98px) {
           margin-left: 0;
         }
         @media (min-width: 992px) {
-          margin-top: 28px;
+          margin-top: -17px;
           margin-left: 15px;
         }
         @media (min-width: 1200px) {
-          margin-top: 35px;
+          margin-top: 11px;
           margin-left: 40px;
         }
-        #skill1,#skill2,#skill3,#skill4,#skill5,#skill6,#skill7,#skill8{
+        #skill1, #skill2, #skill3, #skill4, #skill5, #skill6, #skill7, #skill8 {
           width: 110px;
           height: 110px;
-          //line-height: 80px;
-          //border: 4px solid $borderColor;
-          //border-radius: 50%;
           text-align: center;
           margin-bottom: 15px;
           font-family: $secondNameFontFamily;
           font-size: 18px;
           font-weight: 300;
+          transition: all ease-in-out .5s;
           @media (max-width: 992px) {
             margin: 0 auto 30px;
           }
-          .skill-name{
+          .skill-name {
             position: relative;
             top: 55%;
           }
-          .skill-percentage{
+          .skill-percentage {
             text-align: center;
             position: absolute;
             top: 65%;
@@ -311,6 +310,13 @@ section.about {
               left: 41%;
             }
           }
+          svg {
+            border-radius: 50%;
+            box-shadow: 0 0 28px 0 $darkColor;
+          }
+        }
+        #skill1:hover, #skill2:hover, #skill3:hover, #skill4:hover, #skill5:hover, #skill6:hover, #skill7:hover, #skill8:hover {
+
         }
       }
     }
@@ -483,29 +489,8 @@ section.about {
   .cv > span:before {
     @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', "", -3px, -6px, 8px);
   }
-  .download-cv {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    width: 360px;
-    height: 65px;
-    line-height: 48px;
-    margin: 25px auto;
-    display: block;
-    border-radius: 22px;
-    background: $borderColor;
-    font-size: 24px;
-    @media (max-width: 575.98px) {
-      font-size: 18px;
-      width: 190px;
-      height: 50px;
-      line-height: 33px;
-    }
-  }
-  .download-cv:hover, .download-cv:focus {
-    background: $jobTitleColor;
-  }
 }
+
 //end about
 
 //start portfolio
@@ -559,34 +544,114 @@ section.portfolio {
   }
   .projects-wrapper {
     .project {
+      position: relative;
       margin-bottom: 50px;
       transition: all ease-in-out .3s;
+      overflow: hidden;
       img {
         width: 90%;
         border-radius: 15px;
+        transition: .3s;
+      }
+      h6 {
+        position: absolute;
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-weight: bold;
+        font-family: $brandFontFamily;
+        font-size: 33px;
+        text-transform: uppercase;
+        transform: translate(0, -94%);
+        transition: .3s;
+        @media (min-width: 0px) {
+          font-size: 30px;
+        }
+        @media (min-width: 392px) {
+          font-size: 40px;
+        }
+        @media (min-width: 575px) {
+          font-size: 15px;
+        }
+        @media (min-width: 766px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 30px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 35px;
+        }
+      }
+      a{
+        position: absolute;
+        text-decoration: none;
+        color: #fff;
+        left: 0;
+        right: 0;
+        transform: translate(0,725%);
+        transition: .3s;
+        font-weight: normal;
+        font-size: 13px;
+        @media (min-width: 392px) {
+          font-size: 20px;
+        }
+        @media (min-width: 575px) {
+          font-size: 5px;
+        }
+        @media (min-width: 766px) {
+          font-size: 8px;
+        }
+        @media (min-width: 992px) {
+          font-size: 12px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 15px;
+        }
+      }
+      &:hover h6{
+        transform: translate(0, 80px);
+        @media (min-width: 392px) {
+          transform: translate(0, 100px);
+        }
+        @media (min-width: 575px) {
+          transform: translate(0, 40px);
+        }
+        @media (min-width: 766px) {
+          transform: translate(0, 50px);
+        }
+        @media (min-width: 992px) {
+          transform: translate(0, 70px);
+        }
+        @media (min-width: 1200px) {
+          transform: translate(0, 95px);
+        }
+      }
+      &:hover a{
+        transform: translate(0, 140px);
+        @media (min-width: 392px) {
+          transform: translate(0, 150px);
+        }
+        @media (min-width: 575px) {
+          transform: translate(0, 70px);
+        }
+        @media (min-width: 766px) {
+          transform: translate(0, 80px);
+        }
+        @media (min-width: 992px) {
+          transform: translate(0, 120px);
+        }
+        @media (min-width: 1200px) {
+          transform: translate(0, 150px);
+        }
+      }
+      &:hover img{
+        opacity: 0.08;
       }
     }
   }
   .more-projects {
-    button.btn {
-      display: block;
-      margin: 35px auto 0;
-      background: $darkLightColor;
-      border-color: $darkLightColor;
-      color: #fff;
-      border-radius: 20px;
-      width: 260px;
-      height: 47px;
-      text-transform: uppercase;
-      font-size: 14px;
-      @media (max-width: 575px) {
-        width: 220px;
-      }
-    }
-    button.btn:hover, button.btn:focus {
-      background: $darkLightColor;
-      border-color: $darkColor;
-    }
     .modal {
       .modal-content {
         background: $darkColor;
@@ -601,6 +666,7 @@ section.portfolio {
     }
   }
 }
+
 //end portfolio
 
 //start services
@@ -735,10 +801,11 @@ section.services {
     }
   }
 }
+
 //end services
 
 //start services mobile
-section.services-mobile{
+section.services-mobile {
   display: none;
   padding: $sectionsPadding;
   background: $darkLightColor;
@@ -749,13 +816,13 @@ section.services-mobile{
       font-size: $sections_main_head_sm_font_size;
     }
   }
-  .services-wrapper-mobile{
-    .service-wrapper-mobile{
-      .service-icon-mobile{
+  .services-wrapper-mobile {
+    .service-wrapper-mobile {
+      .service-icon-mobile {
         padding: 40px 30px;
         border-radius: 15px;
         margin-bottom: 20px;
-        h6{
+        h6 {
           margin: 30px 0;
           font-family: $sectionsChildHeadsFontFamily2;
           text-transform: uppercase;
@@ -763,7 +830,7 @@ section.services-mobile{
           letter-spacing: 1px;
           font-size: 19px;
         }
-        p{
+        p {
           font-family: $brandFontFamily;
           font-size: 16px;
           margin-bottom: 0;
@@ -777,6 +844,7 @@ section.services-mobile{
     }
   }
 }
+
 //end services mobile
 
 //start contact
@@ -802,18 +870,20 @@ section.contact {
       font-size: $sections_main_head_sm_font_size;
     }
   }
-  .status{
+  .status {
     display: block;
     text-align: center;
-    margin-top: -45px;
-    margin-bottom: 45px;
+    margin-top: -80px;
+    margin-bottom: 80px;
     text-transform: capitalize;
-    .online{
+    .online {
       color: $borderColor;
+      margin-right: 5px;
     }
-    .offline{
+    .offline {
       color: $lineBeforeColor;
       opacity: 0.6;
+      margin-right: 5px;
     }
   }
   form {
@@ -849,29 +919,13 @@ section.contact {
     textarea:focus {
       @extend %form_inputs_hover_focus_style;
     }
-    button {
-      display: block;
-      margin: 80px auto;
+    .form-control:disabled, button:disabled {
       background: transparent;
-      border: 2px solid $darkLightColor;
-      color: #fff;
-      border-radius: 20px;
-      width: 260px;
-      height: 47px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 22px;
-      @media (max-width: 575px) {
-        width: 220px;
-      }
+      cursor: not-allowed;
     }
-    button:focus, button:hover {
-      background: $darkLightColor;
-      border-color: $darkLightColor;
-    }
-
   }
 }
+
 //end contact
 
 //start footer
@@ -916,19 +970,3 @@ footer {
 }
 
 //end footer
-
-//to top
-.to-top {
-  position: relative;
-  display: none;
-  a {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    color: $toTopColor;
-    text-decoration: none;
-    @media (max-width: 575px) {
-      right: 7px;
-    }
-  }
-}
