@@ -171,6 +171,19 @@ section.about {
     }
   }
   .row {
+    .profile-pic {
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective: 600px;
+      img {
+        display: block;
+        transition: all ease-in-out .3s;
+        &:hover {
+          -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+        }
+      }
+    }
     .info {
       @media (max-width: 991.98px) {
         text-align: center;
@@ -314,9 +327,6 @@ section.about {
             border-radius: 50%;
             box-shadow: 0 0 28px 0 $darkColor;
           }
-        }
-        #skill1:hover, #skill2:hover, #skill3:hover, #skill4:hover, #skill5:hover, #skill6:hover, #skill7:hover, #skill8:hover {
-
         }
       }
     }
@@ -563,6 +573,7 @@ section.portfolio {
         font-family: $brandFontFamily;
         font-size: 33px;
         text-transform: uppercase;
+        -webkit-transform: translate(0, -94%);
         transform: translate(0, -94%);
         transition: .3s;
         @media (min-width: 0px) {
@@ -584,13 +595,13 @@ section.portfolio {
           font-size: 35px;
         }
       }
-      a{
+      a {
         position: absolute;
         text-decoration: none;
         color: #fff;
         left: 0;
         right: 0;
-        transform: translate(0,725%);
+        transform: translate(0, 725%);
         transition: .3s;
         font-weight: normal;
         font-size: 13px;
@@ -610,43 +621,55 @@ section.portfolio {
           font-size: 15px;
         }
       }
-      &:hover h6{
+      &:hover h6 {
+        -webkit-transform: translate(0, 80px);
         transform: translate(0, 80px);
         @media (min-width: 392px) {
+          -webkit-transform: translate(0, 100px);
           transform: translate(0, 100px);
         }
         @media (min-width: 575px) {
+          -webkit-transform: translate(0, 40px);
           transform: translate(0, 40px);
         }
         @media (min-width: 766px) {
+          -webkit-transform: translate(0, 50px);
           transform: translate(0, 50px);
         }
         @media (min-width: 992px) {
+          -webkit-transform: translate(0, 70px);
           transform: translate(0, 70px);
         }
         @media (min-width: 1200px) {
+          -webkit-transform: translate(0, 95px);
           transform: translate(0, 95px);
         }
       }
-      &:hover a{
+      &:hover a {
+        -webkit-transform: translate(0, 140px);
         transform: translate(0, 140px);
         @media (min-width: 392px) {
+          -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px);
         }
         @media (min-width: 575px) {
+          -webkit-transform: translate(0, 70px);
           transform: translate(0, 70px);
         }
         @media (min-width: 766px) {
+          -webkit-transform: translate(0, 80px);
           transform: translate(0, 80px);
         }
         @media (min-width: 992px) {
+          -webkit-transform: translate(0, 120px);
           transform: translate(0, 120px);
         }
         @media (min-width: 1200px) {
+          -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px);
         }
       }
-      &:hover img{
+      &:hover img {
         opacity: 0.08;
       }
     }

@@ -263,6 +263,16 @@ section.about {
   @media (max-width: 575.98px) {
     section.about h1 {
       font-size: 50px; } }
+  section.about .row .profile-pic {
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px; }
+    section.about .row .profile-pic img {
+      display: block;
+      transition: all ease-in-out .3s; }
+      section.about .row .profile-pic img:hover {
+        -webkit-transform: translateZ(100px);
+        transform: translateZ(100px); }
   @media (max-width: 991.98px) {
     section.about .row .info {
       text-align: center; } }
@@ -689,6 +699,7 @@ section.portfolio {
       font-family: "Questrial", sans-serif;
       font-size: 33px;
       text-transform: uppercase;
+      -webkit-transform: translate(0, -94%);
       transform: translate(0, -94%);
       transition: .3s; }
       @media (min-width: 0px) {
@@ -735,38 +746,50 @@ section.portfolio {
         section.portfolio .projects-wrapper .project a {
           font-size: 15px; } }
     section.portfolio .projects-wrapper .project:hover h6 {
+      -webkit-transform: translate(0, 80px);
       transform: translate(0, 80px); }
       @media (min-width: 392px) {
         section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 100px);
           transform: translate(0, 100px); } }
       @media (min-width: 575px) {
         section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 40px);
           transform: translate(0, 40px); } }
       @media (min-width: 766px) {
         section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 50px);
           transform: translate(0, 50px); } }
       @media (min-width: 992px) {
         section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 70px);
           transform: translate(0, 70px); } }
       @media (min-width: 1200px) {
         section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 95px);
           transform: translate(0, 95px); } }
     section.portfolio .projects-wrapper .project:hover a {
+      -webkit-transform: translate(0, 140px);
       transform: translate(0, 140px); }
       @media (min-width: 392px) {
         section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px); } }
       @media (min-width: 575px) {
         section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 70px);
           transform: translate(0, 70px); } }
       @media (min-width: 766px) {
         section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 80px);
           transform: translate(0, 80px); } }
       @media (min-width: 992px) {
         section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 120px);
           transform: translate(0, 120px); } }
       @media (min-width: 1200px) {
         section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px); } }
     section.portfolio .projects-wrapper .project:hover img {
       opacity: 0.08; }
