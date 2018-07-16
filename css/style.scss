@@ -941,16 +941,10 @@ footer {
   }
   .popover {
     .arrow:before {
-      border-right-color: $dark_color !important;;
-      @media (max-width: 575px) {
-        border-right-color: $dark_color !important;;
-      }
+      @extend %popover_arrow;
     }
     .arrow:after {
-      border-right-color: $dark_color !important;;
-      @media (max-width: 575px) {
-        border-right-color: $dark_color !important;;
-      }
+      @extend %popover_arrow;
     }
     .popover-body {
       background: $dark_color;
