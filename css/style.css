@@ -35,7 +35,7 @@ section.about .education-experience .row .education .stage, section.about .educa
   background: #192734;
   border: 2px solid transparent;
   border-radius: 13px;
-  box-shadow: 0px 5px 7px 1px #192734;
+  box-shadow: 0 5px 7px 1px #192734;
   transition: all ease-in-out .3s;
   box-sizing: border-box; }
 
@@ -94,7 +94,7 @@ section.contact form input::placeholder {
   border-radius: 22px;
   background: #00C853;
   font-size: 24px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     .download-cv {
       font-size: 18px;
       width: 190px;
@@ -175,13 +175,13 @@ section.home {
     letter-spacing: 3px;
     font-family: "Questrial", sans-serif;
     font-size: 35px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       section.home header .navbar-wrapper .navbar .navbar-brand {
         font-size: 25px; } }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     section.home header .navbar-wrapper .navbar .navbar-toggler {
       padding: 5px; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     section.home header .navbar-wrapper .navbar .navbar-collapse {
       margin-bottom: -110px;
       margin-top: 20px; } }
@@ -196,14 +196,14 @@ section.home {
       padding: 10px 0;
       box-sizing: border-box;
       transition: all ease-in-out .2s; }
-      @media (max-width: 991.98px) {
+      @media (max-width: 992px) {
         section.home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item {
           border: none;
           padding: 5px 0; } }
       section.home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
         color: #ffffff;
         transition: all ease-in-out .2s; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 992px) {
           section.home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
             color: #00C853; } }
       section.home header .navbar-wrapper .navbar .navbar-collapse .navbar-nav .nav-item:hover {
@@ -214,13 +214,13 @@ section.home {
       border-color: #00C853; }
   section.home section.my-name .row {
     min-height: 470px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       section.home section.my-name .row {
         min-height: 420px; } }
-    @media (min-width: 575.98px) {
+    @media (min-width: 576px) {
       section.home section.my-name .row {
         min-height: 470px; } }
-    @media (min-width: 991.98px) {
+    @media (min-width: 992px) {
       section.home section.my-name .row {
         min-height: 490px; } }
     section.home section.my-name .row .col .name {
@@ -231,7 +231,7 @@ section.home {
         font-weight: 300;
         font-size: 64px;
         margin-bottom: -20px; }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.home section.my-name .row .col .name .first-name h1 {
             font-size: 32px;
             margin-bottom: -10px; } }
@@ -244,7 +244,7 @@ section.home {
         font-size: 130px;
         letter-spacing: 1px;
         margin-bottom: -20px; }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.home section.my-name .row .col .name .second-name h1 {
             margin-bottom: -10px;
             font-size: 60px; } }
@@ -257,7 +257,7 @@ section.home {
         letter-spacing: 12px;
         color: #21AE62;
         padding-bottom: 20px; }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.home section.my-name .row .col .name .job-title h4 {
             font-size: 15px; } }
         @media (min-width: 1367px) {
@@ -295,7 +295,7 @@ section.about {
           top: "";
           left: "";
           border-radius: 8px; } }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     section.about h1 {
       font-size: 50px; } }
   section.about .row .profile-pic {
@@ -308,10 +308,10 @@ section.about {
       section.about .row .profile-pic img:hover {
         -webkit-transform: translateZ(100px);
         transform: translateZ(100px); }
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     section.about .row .info {
       text-align: center; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     section.about .row .info h6 {
       display: inline-block;
       margin-left: 0;
@@ -334,7 +334,7 @@ section.about {
     top: "";
     left: 0;
     border-radius: 8px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 992px) {
       section.about .row .info h6:before {
         content: '';
         position: absolute;
@@ -355,7 +355,7 @@ section.about {
     font-weight: initial;
     margin-bottom: 20px;
     font-size: 20px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 992px) {
       section.about .row .info p {
         padding-left: 0;
         font-style: normal; } }
@@ -367,10 +367,10 @@ section.about {
       section.about .row .info p {
         padding-left: 60px;
         font-size: 20px; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     section.about .row .skills {
       text-align: center; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 992px) {
     section.about .row .skills h6 {
       display: inline-block;
       margin-left: 0; } }
@@ -392,7 +392,7 @@ section.about {
     top: "";
     left: 0;
     border-radius: 8px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 992px) {
       section.about .row .skills h6:before {
         content: '';
         position: absolute;
@@ -408,7 +408,7 @@ section.about {
   section.about .row .skills .skill-wrapper {
     margin-top: 10px;
     margin-left: 40px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 992px) {
       section.about .row .skills .skill-wrapper {
         margin-left: 0; } }
     @media (min-width: 992px) {
@@ -485,7 +485,7 @@ section.about {
       section.about .education-experience {
         margin-left: 0;
         margin-right: 0; } }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       section.about .education-experience {
         padding-top: 80px;
         text-align: center;
@@ -502,7 +502,7 @@ section.about {
         @media (max-width: 992px) {
           section.about .education-experience .row h6 {
             font-size: 35px; } }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.about .education-experience .row h6 {
             font-size: 30px;
             display: inline-block; } }
@@ -518,7 +518,7 @@ section.about {
           top: 77px;
           left: 0;
           border-radius: 8px; }
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             section.about .education-experience .row h6:before {
               content: '';
               position: absolute;
@@ -554,7 +554,7 @@ section.about {
           top: 77px;
           left: 0;
           border-radius: 8px; }
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             section.about .education-experience .row h6.second:before {
               content: '';
               position: absolute;
@@ -573,7 +573,7 @@ section.about {
         @media (max-width: 1270px) {
           section.about .education-experience .row .education .stage {
             padding: 0 0 20px 20px; } }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.about .education-experience .row .education .stage {
             padding-left: 10px;
             padding-right: 10px; } }
@@ -603,7 +603,7 @@ section.about {
         @media (max-width: 992px) {
           section.about .education-experience .row .experience .stage {
             margin-left: 48px; } }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           section.about .education-experience .row .experience .stage {
             padding-left: 10px;
             padding-right: 10px; } }
@@ -646,7 +646,7 @@ section.portfolio {
   color: #ffffff; }
   section.portfolio h1 {
     margin-bottom: 45px; }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       section.portfolio h1 {
         font-size: 50px; } }
   section.portfolio .portfolio-controls {
@@ -669,7 +669,7 @@ section.portfolio {
       section.portfolio .portfolio-controls .nav-btn .nav-link {
         color: #ffffff;
         transition: all ease-in-out .2s; }
-        @media (max-width: 991.98px) {
+        @media (max-width: 992px) {
           section.portfolio .portfolio-controls .nav-btn .nav-link:hover {
             color: #00C853; } }
       section.portfolio .portfolio-controls .nav-btn:hover {
@@ -804,7 +804,7 @@ section.services {
   padding: 145px 0;
   background: #213243;
   color: #ffffff; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     section.services h1 {
       font-size: 50px; } }
   section.services .services-wrapper {
@@ -814,7 +814,7 @@ section.services {
       section.services .services-wrapper {
         margin-left: 0;
         margin-right: 0; } }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       section.services .services-wrapper {
         padding-top: 80px;
         text-align: center;
@@ -831,7 +831,7 @@ section.services {
         background: #192734;
         margin-bottom: 40px;
         border-radius: 13px;
-        box-shadow: 0px 5px 7px 1px #192734; }
+        box-shadow: 0 5px 7px 1px #192734; }
         section.services .services-wrapper .row .service-wrapper .service-icon {
           width: 40%;
           padding: 62px 0;
@@ -846,7 +846,7 @@ section.services {
           section.services .services-wrapper .row .service-wrapper .service-icon i {
             display: block;
             margin: auto; }
-            @media (max-width: 767.98px) {
+            @media (max-width: 768px) {
               section.services .services-wrapper .row .service-wrapper .service-icon i {
                 font-size: 50px; } }
             @media (max-width: 575px) {
@@ -969,7 +969,7 @@ section.services-mobile {
   padding: 145px 0;
   background: #213243;
   color: #ffffff; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     section.services-mobile h1 {
       font-size: 50px; } }
   section.services-mobile .services-wrapper-mobile .service-wrapper-mobile .service-icon-mobile {
@@ -1014,7 +1014,7 @@ section.contact {
       top: "";
       left: "";
       border-radius: 8px; }
-      @media (max-width: 575.98px) {
+      @media (max-width: 576px) {
         section.contact .get-in-touch > span:before {
           content: '';
           position: absolute;
@@ -1027,7 +1027,7 @@ section.contact {
           top: "";
           left: "";
           border-radius: 8px; } }
-  @media (max-width: 575.98px) {
+  @media (max-width: 576px) {
     section.contact h1 {
       font-size: 50px; } }
   section.contact .status {
