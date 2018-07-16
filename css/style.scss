@@ -174,7 +174,7 @@ section.about {
     .profile-pic {
       -webkit-perspective: 600px;
       -moz-perspective: 600px;
-      perspective: 600px;
+      perspective: 1000px;
       img {
         display: block;
         transition: all ease-in-out .3s;
@@ -210,7 +210,7 @@ section.about {
         }
       }
       p {
-        color: $paragraph_color;
+        color: $info_paragraph_color;
         padding-left: 60px;
         padding-top: 7px;
         font-style: italic;
@@ -325,7 +325,11 @@ section.about {
           }
           svg {
             border-radius: 50%;
+            transition: all ease-in-out .3s;
             box-shadow: 0 0 28px 0 $dark_color;
+          }
+          &:hover svg{
+            box-shadow: 0 0 28px 10px $dark_color;
           }
         }
       }
@@ -389,13 +393,9 @@ section.about {
       }
       .education {
         .stage {
-          position: relative;
+          @extend %stage_style;
           margin-left: 48px;
           margin-top: 55px;
-          padding: 0 0 30px 45px;
-          background: $stage_color;
-          border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stage_color;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
           }
@@ -404,31 +404,17 @@ section.about {
             padding-right: 10px;
           }
           .when {
-            padding: 30px 0 15px 0;
-            color: $section_heads_color;
-            text-transform: capitalize;
-            font-size: 10px;
-            margin-left: -15px;
-            .from {
-            }
-            .to {
-            }
+            @extend %stage_when_class;
           }
           p {
-            padding: 0;
-            margin: 0;
-            font-size: 17px;
-            text-transform: capitalize;
-            @media (max-width: 1270px) {
-              font-size: 14px;
-            }
-            @media (max-width: 992px) {
-              font-size: 15px;
-            }
+            @extend %stage_paragraph_style;
           }
           &:before{
             //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
             @include line_before_small_heads($border_color, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
+          &:hover{
+            border-color: $border_color;
           }
         }
         .stage:nth-of-type(2) {
@@ -437,13 +423,9 @@ section.about {
       }
       .experience {
         .stage {
-          position: relative;
+          @extend %stage_style;
           margin-left: 57px;
           margin-top: 55px;
-          padding: 0 0 30px 45px;
-          background: $stage_color;
-          border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stage_color;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
             margin-left: 49px;
@@ -456,31 +438,17 @@ section.about {
             padding-right: 10px;
           }
           .when {
-            padding: 30px 0 15px 0;
-            color: $section_heads_color;
-            text-transform: capitalize;
-            font-size: 10px;
-            margin-left: -15px;
-            .from {
-            }
-            .to {
-            }
+            @extend %stage_when_class;
           }
           p {
-            padding: 0;
-            margin: 0;
-            font-size: 17px;
-            text-transform: capitalize;
-            @media (max-width: 1270px) {
-              font-size: 14px;
-            }
-            @media (max-width: 992px) {
-              font-size: 15px;
-            }
+            @extend %stage_paragraph_style;
           }
           &:before{
             //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
             @include line_before_small_heads($border_color_second, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
+          &:hover{
+            border-color: $border_color_second;
           }
         }
         .stage:nth-of-type(2) {

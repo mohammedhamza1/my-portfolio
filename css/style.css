@@ -29,6 +29,35 @@ section.about .education-experience .row h6 {
   padding-top: 20px;
   letter-spacing: 2px; }
 
+section.about .education-experience .row .education .stage, section.about .education-experience .row .experience .stage {
+  position: relative;
+  padding: 0 0 30px 45px;
+  background: #192734;
+  border: 2px solid transparent;
+  border-radius: 13px;
+  box-shadow: 0px 5px 7px 1px #192734;
+  transition: all ease-in-out .3s;
+  box-sizing: border-box; }
+
+section.about .education-experience .row .education .stage .when, section.about .education-experience .row .experience .stage .when {
+  padding: 30px 0 15px 0;
+  color: #ADBCCB;
+  text-transform: capitalize;
+  font-size: 10px;
+  margin-left: -15px; }
+
+section.about .education-experience .row .education .stage p, section.about .education-experience .row .experience .stage p {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  text-transform: capitalize; }
+  @media (max-width: 1270px) {
+    section.about .education-experience .row .education .stage p, section.about .education-experience .row .experience .stage p {
+      font-size: 14px; } }
+  @media (max-width: 992px) {
+    section.about .education-experience .row .education .stage p, section.about .education-experience .row .experience .stage p {
+      font-size: 15px; } }
+
 section.contact form input, section.contact form textarea {
   background: transparent;
   border: none;
@@ -272,7 +301,7 @@ section.about {
   section.about .row .profile-pic {
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
-    perspective: 600px; }
+    perspective: 1000px; }
     section.about .row .profile-pic img {
       display: block;
       transition: all ease-in-out .3s; }
@@ -444,7 +473,10 @@ section.about {
             left: 41%; } }
       section.about .row .skills .skill-wrapper #skill1 svg, section.about .row .skills .skill-wrapper #skill2 svg, section.about .row .skills .skill-wrapper #skill3 svg, section.about .row .skills .skill-wrapper #skill4 svg, section.about .row .skills .skill-wrapper #skill5 svg, section.about .row .skills .skill-wrapper #skill6 svg, section.about .row .skills .skill-wrapper #skill7 svg, section.about .row .skills .skill-wrapper #skill8 svg {
         border-radius: 50%;
+        transition: all ease-in-out .3s;
         box-shadow: 0 0 28px 0 #192734; }
+      section.about .row .skills .skill-wrapper #skill1:hover svg, section.about .row .skills .skill-wrapper #skill2:hover svg, section.about .row .skills .skill-wrapper #skill3:hover svg, section.about .row .skills .skill-wrapper #skill4:hover svg, section.about .row .skills .skill-wrapper #skill5:hover svg, section.about .row .skills .skill-wrapper #skill6:hover svg, section.about .row .skills .skill-wrapper #skill7:hover svg, section.about .row .skills .skill-wrapper #skill8:hover svg {
+        box-shadow: 0 0 28px 10px #192734; }
   section.about .education-experience {
     padding-top: 130px;
     margin-left: -65px;
@@ -536,13 +568,8 @@ section.about {
               left: 30%;
               border-radius: 8px; } }
       section.about .education-experience .row .education .stage {
-        position: relative;
         margin-left: 48px;
-        margin-top: 55px;
-        padding: 0 0 30px 45px;
-        background: #192734;
-        border-radius: 13px;
-        box-shadow: 0px 5px 7px 1px #192734; }
+        margin-top: 55px; }
         @media (max-width: 1270px) {
           section.about .education-experience .row .education .stage {
             padding: 0 0 20px 20px; } }
@@ -550,23 +577,6 @@ section.about {
           section.about .education-experience .row .education .stage {
             padding-left: 10px;
             padding-right: 10px; } }
-        section.about .education-experience .row .education .stage .when {
-          padding: 30px 0 15px 0;
-          color: #ADBCCB;
-          text-transform: capitalize;
-          font-size: 10px;
-          margin-left: -15px; }
-        section.about .education-experience .row .education .stage p {
-          padding: 0;
-          margin: 0;
-          font-size: 17px;
-          text-transform: capitalize; }
-          @media (max-width: 1270px) {
-            section.about .education-experience .row .education .stage p {
-              font-size: 14px; } }
-          @media (max-width: 992px) {
-            section.about .education-experience .row .education .stage p {
-              font-size: 15px; } }
         section.about .education-experience .row .education .stage:before {
           content: '';
           position: absolute;
@@ -579,16 +589,13 @@ section.about {
           top: 13px;
           left: -21px;
           border-radius: 8px; }
+        section.about .education-experience .row .education .stage:hover {
+          border-color: #00C853; }
       section.about .education-experience .row .education .stage:nth-of-type(2) {
         margin-top: 30px; }
       section.about .education-experience .row .experience .stage {
-        position: relative;
         margin-left: 57px;
-        margin-top: 55px;
-        padding: 0 0 30px 45px;
-        background: #192734;
-        border-radius: 13px;
-        box-shadow: 0px 5px 7px 1px #192734; }
+        margin-top: 55px; }
         @media (max-width: 1270px) {
           section.about .education-experience .row .experience .stage {
             padding: 0 0 20px 20px;
@@ -600,23 +607,6 @@ section.about {
           section.about .education-experience .row .experience .stage {
             padding-left: 10px;
             padding-right: 10px; } }
-        section.about .education-experience .row .experience .stage .when {
-          padding: 30px 0 15px 0;
-          color: #ADBCCB;
-          text-transform: capitalize;
-          font-size: 10px;
-          margin-left: -15px; }
-        section.about .education-experience .row .experience .stage p {
-          padding: 0;
-          margin: 0;
-          font-size: 17px;
-          text-transform: capitalize; }
-          @media (max-width: 1270px) {
-            section.about .education-experience .row .experience .stage p {
-              font-size: 14px; } }
-          @media (max-width: 992px) {
-            section.about .education-experience .row .experience .stage p {
-              font-size: 15px; } }
         section.about .education-experience .row .experience .stage:before {
           content: '';
           position: absolute;
@@ -629,6 +619,8 @@ section.about {
           top: 13px;
           left: -21px;
           border-radius: 8px; }
+        section.about .education-experience .row .experience .stage:hover {
+          border-color: #03A9F4; }
       section.about .education-experience .row .experience .stage:nth-of-type(2) {
         margin-top: 30px; }
   section.about .cv {
