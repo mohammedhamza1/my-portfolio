@@ -1,6 +1,6 @@
 @import "_variable";
 
-@mixin lineBeforeSmallHeads($background,$opacity,$height,$width,$top,$right,$bottom,$left,$bradius) {
+@mixin line_before_small_heads($background,$opacity,$height,$width,$top,$right,$bottom,$left,$bradius) {
   content: '';
   position: absolute;
   background: $background;

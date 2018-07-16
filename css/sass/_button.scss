@@ -1,5 +1,5 @@
 @import "variable.scss";
-
+//start buttons
 //download cv button
 .download-cv {
   text-transform: uppercase;
@@ -11,7 +11,7 @@
   margin: 25px auto;
   display: block;
   border-radius: 22px;
-  background: $borderColor;
+  background: $border_color;
   font-size: 24px;
   @media (max-width: 575.98px) {
     font-size: 18px;
@@ -19,18 +19,22 @@
     height: 50px;
     line-height: 33px;
   }
-}
-.download-cv:hover, .download-cv:focus {
-  background: $jobTitleColor;
-  color: #fff;
+  &:hover {
+    background: $job_title_color;
+    color: #fff;
+  }
+  &:focus {
+    background: $job_title_color;
+    color: #fff;
+  }
 }
 
 //all projects button
 button.all-projects {
   display: block;
   margin: 35px auto 0;
-  background: $darkLightColor;
-  border-color: $darkLightColor;
+  background: $dark_light_color;
+  border-color: $dark_light_color;
   color: #fff;
   border-radius: 20px;
   width: 260px;
@@ -40,10 +44,14 @@ button.all-projects {
   @media (max-width: 575px) {
     width: 220px;
   }
-}
-button.all-projects:hover, button.all-projects:focus {
-  background: $darkLightColor;
-  border-color: $darkColor;
+  &:hover {
+    background: $dark_light_color;
+    border-color: $dark_color;
+  }
+  &:focus {
+    background: $dark_light_color;
+    border-color: $dark_color;
+  }
 }
 
 //contact button
@@ -51,7 +59,7 @@ button.contact-btn {
   display: block;
   margin: 80px auto;
   background: transparent;
-  border: 2px solid $darkLightColor;
+  border: 2px solid $dark_light_color;
   color: #fff;
   border-radius: 20px;
   width: 260px;
@@ -62,10 +70,14 @@ button.contact-btn {
   @media (max-width: 575px) {
     width: 220px;
   }
-}
-button.contact-btn:focus, button.contact-btn:hover {
-  background: $darkLightColor;
-  border-color: $darkLightColor;
+  &:hover {
+    background: $dark_light_color;
+    border-color: $dark_light_color;
+  }
+  &:focus {
+    background: $dark_light_color;
+    border-color: $dark_light_color;
+  }
 }
 
 //to top button
@@ -76,10 +88,11 @@ button.contact-btn:focus, button.contact-btn:hover {
     position: fixed;
     right: 25px;
     bottom: 25px;
-    color: $toTopColor;
+    color: $to_top_color;
     text-decoration: none;
     @media (max-width: 575px) {
       right: 7px;
     }
   }
 }
+//end buttons

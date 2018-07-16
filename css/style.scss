@@ -5,20 +5,20 @@
 
 //start home
 section.home {
-  background: $darkColor;
-  color: #fff;
+  background: $dark_color;
+  color: $main_text_color;
   padding: 50px 0;
   //start header
   header {
     .navbar-wrapper {
       .navbar {
         .navbar-brand {
-          background: $darkLightColor;
+          background: $dark_light_color;
           padding: 5px 20px;
-          border-radius: $borderRadius;
+          border-radius: $border_radius;
           text-transform: uppercase;
           letter-spacing: 3px;
-          font-family: $brandFontFamily;
+          font-family: $brand_font;
           font-size: 35px;
           @media (max-width: 575.98px) {
             font-size: 25px;
@@ -35,9 +35,9 @@ section.home {
             margin-top: 20px;
           }
           .navbar-nav {
-            background: $darkLightColor;
+            background: $dark_light_color;
             padding: 0 30px;
-            border-radius: $borderRadius;
+            border-radius: $border_radius;
             text-transform: uppercase;
             .nav-item {
               margin-right: 50px;
@@ -50,23 +50,23 @@ section.home {
                 padding: 5px 0;
               }
               .nav-link {
-                color: #fff;
+                color: $main_text_color;
                 transition: all ease-in-out .2s;
-              }
-              .nav-link:hover {
-                @media (max-width: 991.98px) {
-                  color: $borderColor;
+                &:hover {
+                  @media (max-width: 991.98px) {
+                    color: $border_color;
+                  }
                 }
+              }
+              &:hover {
+                border-color: $border_color;
               }
             }
             .nav-item:last-of-type {
               margin-right: 0;
             }
             .nav-item.active {
-              border-color: $borderColor;
-            }
-            .nav-item:hover {
-              border-color: $borderColor;
+              border-color: $border_color;
             }
           }
         }
@@ -94,7 +94,7 @@ section.home {
           text-transform: uppercase;
           .first-name {
             h1 {
-              font-family: $firstNameFontFamily;
+              font-family: $first_name_font;
               font-weight: 300;
               font-size: 64px;
               margin-bottom: -20px;
@@ -109,7 +109,7 @@ section.home {
           }
           .second-name {
             h1 {
-              font-family: $secondNameFontFamily;
+              font-family: $second_name_font;
               font-weight: 700;
               font-size: 130px;
               letter-spacing: 1px;
@@ -125,10 +125,10 @@ section.home {
           }
           .job-title {
             h4 {
-              font-family: $jobTitleFontFamily;
+              font-family: $job_title_font;
               font-size: 30px;
               letter-spacing: 12px;
-              color: $jobTitleColor;
+              color: $job_title_color;
               padding-bottom: 20px;
               @media (max-width: 575.98px) {
                 font-size: 15px;
@@ -149,23 +149,23 @@ section.home {
 
 //start about
 section.about {
-  padding: $sectionsPadding;
-  background: $darkLightColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   .who-am-i {
-    @extend %sectionsSmallHeadsStyle;
+    @extend %sections_small_heads_style;
   }
   .who-am-i > span {
     position: relative;
-  }
-  .who-am-i > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 79px, -3px, '', 8px);
-    @media (max-width: 575px) {
-      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 86px, -3px, '', 8px);
+    &:before{
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 79px, -3px, '', 8px);
+      @media (max-width: 575px) {
+        @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 86px, -3px, '', 8px);
+      }
     }
   }
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
     }
@@ -189,7 +189,7 @@ section.about {
         text-align: center;
       }
       h6 {
-        @extend %sectionsChildHeadsStyle;
+        @extend %sections_child_heads_style;
         @media (max-width: 991.98px) {
           display: inline-block;
           margin-left: 0;
@@ -201,16 +201,16 @@ section.about {
         @media (min-width: 1200px) {
           padding-top: 20px;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
-        @media (max-width: 991.98px) {
-          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        &:before{
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 0, 8px);
+          @media (max-width: 991.98px) {
+            @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+          }
         }
       }
       p {
-        color: $paragraphsColor;
+        color: $paragraph_color;
         padding-left: 60px;
         padding-top: 7px;
         font-style: italic;
@@ -236,7 +236,7 @@ section.about {
         text-align: center;
       }
       h6 {
-        @extend %sectionsChildHeadsStyle;
+        @extend %sections_child_heads_style;
         @media (max-width: 991.98px) {
           display: inline-block;
           margin-left: 0;
@@ -247,12 +247,12 @@ section.about {
         @media (min-width: 1200px) {
           padding-top: 20px;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
-        @media (max-width: 991.98px) {
-          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        &:before{
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 0, 8px);
+          @media (max-width: 991.98px) {
+            @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+          }
         }
       }
       .skill-wrapper {
@@ -274,7 +274,7 @@ section.about {
           height: 110px;
           text-align: center;
           margin-bottom: 15px;
-          font-family: $secondNameFontFamily;
+          font-family: $second_name_font;
           font-size: 18px;
           font-weight: 300;
           transition: all ease-in-out .5s;
@@ -291,9 +291,9 @@ section.about {
             top: 65%;
             left: 40%;
             font-size: 16px;
-            color: $jobTitleColor;
+            color: $job_title_color;
             opacity: 0.6;
-            font-family: $firstNameFontFamily;
+            font-family: $first_name_font;
             @media (max-width: 992px) {
               top: 59%;
               left: 40%;
@@ -325,7 +325,7 @@ section.about {
           }
           svg {
             border-radius: 50%;
-            box-shadow: 0 0 28px 0 $darkColor;
+            box-shadow: 0 0 28px 0 $dark_color;
           }
         }
       }
@@ -353,7 +353,7 @@ section.about {
       }
       h6 {
         margin-left: 30px;
-        @extend %sectionsChildHeadsStyle2;
+        @extend %sections_child_heads_style2;
         @media (max-width: 992px) {
           font-size: 35px;
         }
@@ -361,12 +361,12 @@ section.about {
           font-size: 30px;
           display: inline-block;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
-        @media (max-width: 575.98px) {
-          @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        &:before{
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($border_color, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+          @media (max-width: 575.98px) {
+            @include line_before_small_heads($border_color, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+          }
         }
       }
       h6.second {
@@ -380,11 +380,11 @@ section.about {
         @media (max-width: 575px) {
           margin-top: 30px;
         }
-      }
-      h6.second:before {
-        @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
-        @media (max-width: 575.98px) {
-          @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        &:before{
+          @include line_before_small_heads($border_color_second, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+          @media (max-width: 575.98px) {
+            @include line_before_small_heads($border_color_second, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+          }
         }
       }
       .education {
@@ -393,9 +393,9 @@ section.about {
           margin-left: 48px;
           margin-top: 55px;
           padding: 0 0 30px 45px;
-          background: $stageColor;
+          background: $stage_color;
           border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stageColor;
+          box-shadow: 0px 5px 7px 1px $stage_color;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
           }
@@ -405,7 +405,7 @@ section.about {
           }
           .when {
             padding: 30px 0 15px 0;
-            color: $sectionsHeadsColor;
+            color: $section_heads_color;
             text-transform: capitalize;
             font-size: 10px;
             margin-left: -15px;
@@ -426,13 +426,13 @@ section.about {
               font-size: 15px;
             }
           }
+          &:before{
+            //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+            @include line_before_small_heads($border_color, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
         }
         .stage:nth-of-type(2) {
           margin-top: 30px;
-        }
-        .stage:before {
-          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads($borderColor, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
         }
       }
       .experience {
@@ -441,9 +441,9 @@ section.about {
           margin-left: 57px;
           margin-top: 55px;
           padding: 0 0 30px 45px;
-          background: $stageColor;
+          background: $stage_color;
           border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stageColor;
+          box-shadow: 0px 5px 7px 1px $stage_color;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
             margin-left: 49px;
@@ -457,7 +457,7 @@ section.about {
           }
           .when {
             padding: 30px 0 15px 0;
-            color: $sectionsHeadsColor;
+            color: $section_heads_color;
             text-transform: capitalize;
             font-size: 10px;
             margin-left: -15px;
@@ -478,26 +478,26 @@ section.about {
               font-size: 15px;
             }
           }
+          &:before{
+            //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+            @include line_before_small_heads($border_color_second, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
         }
         .stage:nth-of-type(2) {
           margin-top: 30px;
-        }
-        .stage:before {
-          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads($borderColorSecond, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
         }
       }
     }
   }
   .cv {
-    @extend %sectionsSmallHeadsStyle;
+    @extend %sections_small_heads_style;
     margin-top: 135px;
   }
   .cv > span {
     position: relative;
-  }
-  .cv > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', "", -3px, -6px, 8px);
+    &:before{
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', "", -3px, -6px, 8px);
+    }
   }
 }
 
@@ -505,18 +505,18 @@ section.about {
 
 //start portfolio
 section.portfolio {
-  padding: $sectionsPadding;
-  background: $darkColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     margin-bottom: 45px;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
     }
   }
   .portfolio-controls {
-    background: $darkLightColor;
+    background: $dark_light_color;
     border-radius: 15px;
     text-transform: uppercase;
     margin-bottom: 55px;
@@ -533,23 +533,23 @@ section.portfolio {
         margin: 0;
       }
       .nav-link {
-        color: #fff;
+        color: $main_text_color;
         transition: all ease-in-out .2s;
-      }
-      .nav-link:hover {
-        @media (max-width: 991.98px) {
-          color: $borderColor;
+        &:hover{
+          @media (max-width: 991.98px) {
+            color: $border_color;
+          }
         }
+      }
+      &:hover{
+        border-color: $border_color;
       }
     }
     .nav-btn:last-of-type {
       margin-right: 0;
     }
     .nav-btn.active {
-      border-color: $borderColor;
-    }
-    .nav-btn:hover {
-      border-color: $borderColor;
+      border-color: $border_color;
     }
   }
   .projects-wrapper {
@@ -570,7 +570,7 @@ section.portfolio {
         right: 0;
         top: 0;
         font-weight: bold;
-        font-family: $brandFontFamily;
+        font-family: $brand_font;
         font-size: 33px;
         text-transform: uppercase;
         -webkit-transform: translate(0, -94%);
@@ -598,7 +598,7 @@ section.portfolio {
       a {
         position: absolute;
         text-decoration: none;
-        color: #fff;
+        color: $main_text_color;
         left: 0;
         right: 0;
         transform: translate(0, 725%);
@@ -677,12 +677,12 @@ section.portfolio {
   .more-projects {
     .modal {
       .modal-content {
-        background: $darkColor;
+        background: $dark_color;
         border-radius: 15px;
         .modal-header {
-          border-color: $darkLightColor;
+          border-color: $dark_light_color;
           span {
-            color: $darkLightColor;
+            color: $dark_light_color;
           }
         }
       }
@@ -695,11 +695,11 @@ section.portfolio {
 //start services
 section.services {
   display: none;
-  padding: $sectionsPadding;
-  background: $darkLightColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
     }
@@ -725,10 +725,10 @@ section.services {
       }
       .service-wrapper {
         position: relative;
-        background: $darkColor;
+        background: $dark_color;
         margin-bottom: 40px;
         border-radius: 13px;
-        box-shadow: 0px 5px 7px 1px $stageColor;
+        box-shadow: 0px 5px 7px 1px $stage_color;
         .service-icon {
           width: 40%;
           padding: 62px 0;
@@ -762,11 +762,11 @@ section.services {
         }
         .service {
           width: 60%;
-          background: $darkColor;
+          background: $dark_color;
           display: inline-block;
           float: right;
           h6 {
-            font-family: $sectionsChildHeadsFontFamily2;
+            font-family: $sections_child_heads_font2;
             text-transform: uppercase;
             margin-left: 11px;
             margin-top: 25px;
@@ -784,7 +784,7 @@ section.services {
             }
           }
           p {
-            color: $lineBeforeColor;
+            color: $line_before_color;
             font-size: 13px;
             margin-left: 30px;
             margin-top: 15px;
@@ -818,7 +818,7 @@ section.services {
       @for $i from 1 through 4 {
         .service-wrapper.#{icon}#{$i}:before {
           //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
+          @include line_before_small_heads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
         }
       }
     }
@@ -830,11 +830,11 @@ section.services {
 //start services mobile
 section.services-mobile {
   display: none;
-  padding: $sectionsPadding;
-  background: $darkLightColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
     }
@@ -847,14 +847,14 @@ section.services-mobile {
         margin-bottom: 20px;
         h6 {
           margin: 30px 0;
-          font-family: $sectionsChildHeadsFontFamily2;
+          font-family: $sections_child_heads_font2;
           text-transform: uppercase;
           font-weight: bold;
           letter-spacing: 1px;
           font-size: 19px;
         }
         p {
-          font-family: $brandFontFamily;
+          font-family: $brand_font;
           font-size: 16px;
           margin-bottom: 0;
         }
@@ -872,23 +872,23 @@ section.services-mobile {
 
 //start contact
 section.contact {
-  padding: $sectionsPadding;
-  background: $darkColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_color;
+  color: $main_text_color;
   .get-in-touch {
-    @extend %sectionsSmallHeadsStyle;
+    @extend %sections_small_heads_style;
   }
   .get-in-touch > span {
     position: relative;
-  }
-  .get-in-touch > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 99px, -3px, '', 8px);
-    @media (max-width: 575.98px) {
-      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 108px, -3px, '', 8px);
+    &:before{
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 99px, -3px, '', 8px);
+      @media (max-width: 575.98px) {
+        @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 108px, -3px, '', 8px);
+      }
     }
   }
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     @media (max-width: 575.98px) {
       font-size: $sections_main_head_sm_font_size;
     }
@@ -900,11 +900,11 @@ section.contact {
     margin-bottom: 80px;
     text-transform: capitalize;
     .online {
-      color: $borderColor;
+      color: $border_color;
       margin-right: 5px;
     }
     .offline {
-      color: $lineBeforeColor;
+      color: $line_before_color;
       opacity: 0.6;
       margin-right: 5px;
     }
@@ -913,14 +913,14 @@ section.contact {
     input {
       @extend %form_inputs_style;
       height: 45px;
-    }
-    input:focus {
-      @extend %form_inputs_hover_focus_style;
-    }
-    input::placeholder {
-      @extend %form_inputs_placeholder_style;
-      @media (max-width: 575px) {
-        text-align: left;
+      &:focus{
+        @extend %form_inputs_hover_focus_style;
+      }
+      &::placeholder{
+        @extend %form_inputs_placeholder_style;
+        @media (max-width: 575px) {
+          text-align: left;
+        }
       }
     }
     label {
@@ -929,18 +929,18 @@ section.contact {
       margin-left: 12px;
       text-transform: capitalize;
       font-size: 19px;
-      font-family: $brandFontFamily;
-      color: $lineBeforeColor;
+      font-family: $brand_font;
+      color: $line_before_color;
       display: block;
       text-align: center;
     }
     textarea {
       @extend %form_inputs_style;
-      border: 1px solid $darkLightColor;
+      border: 1px solid $dark_light_color;
       resize: none;
-    }
-    textarea:focus {
-      @extend %form_inputs_hover_focus_style;
+      &:focus{
+        @extend %form_inputs_hover_focus_style;
+      }
     }
     .form-control:disabled, button:disabled {
       background: transparent;
@@ -954,16 +954,16 @@ section.contact {
 //start footer
 footer {
   padding: 20px 0;
-  background: $darkLightColor;
-  color: #fff;
+  background: $dark_light_color;
+  color: $main_text_color;
   .social {
     a {
       text-decoration: none;
     }
     i {
-      background: $darkColor;
-      color: $lineBeforeColor;
-      border: 2px solid $darkColor;
+      background: $dark_color;
+      color: $line_before_color;
+      border: 2px solid $dark_color;
       border-radius: 50%;
       width: 50px;
       height: 50px;
@@ -973,20 +973,20 @@ footer {
   }
   .popover {
     .arrow:before {
-      border-right-color: $darkColor !important;;
+      border-right-color: $dark_color !important;;
       @media (max-width: 575px) {
-        border-right-color: $darkColor !important;;
+        border-right-color: $dark_color !important;;
       }
     }
     .arrow:after {
-      border-right-color: $darkColor !important;;
+      border-right-color: $dark_color !important;;
       @media (max-width: 575px) {
-        border-right-color: $darkColor !important;;
+        border-right-color: $dark_color !important;;
       }
     }
     .popover-body {
-      background: $darkColor;
-      color: $lineBeforeColor;
+      background: $dark_color;
+      color: $line_before_color;
       font-size: 15px;
     }
   }

@@ -1,34 +1,34 @@
 @import "_variable";
 
-%sectionsSmallHeadsStyle {
+%sections_small_heads_style{
   text-align: center;
-  color: $sectionsHeadsColor;
+  color: $section_heads_color;
   font-size: 18px;
 }
 
-%sectionsMainHeadsStyle {
+%sections_main_heads_style{
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 7px;
   font-size: 80px;
-  font-family: $brandFontFamily;
+  font-family: $brand_font;
   margin-top: 7px;
   margin-bottom: 80px;
 }
 
-%sectionsChildHeadsStyle {
+%sections_child_heads_style {
   position: relative;
   text-transform: uppercase;
-  font-family: $sectionsChildHeadsFontFamily;
+  font-family: $sections_child_heads_font;
   font-size: 30px;
   margin-left: 25px;
   padding-top: 20px;
 }
 
-%sectionsChildHeadsStyle2 {
+%sections_child_heads_style2 {
   position: relative;
   text-transform: capitalize;
-  font-family: $sectionsChildHeadsFontFamily2;
+  font-family: $sections_child_heads_font2;
   font-size: 40px;
   margin-left: 25px;
   padding-top: 20px;
@@ -39,24 +39,24 @@
   background: transparent;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $darkLightColor;
+  border-bottom: 1px solid $dark_light_color;
   color: #fff;
   font-size: 20px;
   font-family: $arabic_font_family;
 }
 
 %form_inputs_hover_focus_style {
-  background: $darkLightColor;
+  background: $dark_light_color;
   color: #fff;
   outline: none;
-  box-shadow: 0 5px 7px 1px $darkColor;
-  border-color: $darkLightColor;
+  box-shadow: 0 5px 7px 1px $dark_color;
+  border-color: $dark_light_color;
 }
 %form_inputs_placeholder_style{
   margin-left: 0;
   text-transform: capitalize;
-  color: $lineBeforeColor;
-  font-family: $brandFontFamily;
+  color: $line_before_color;
+  font-family: $brand_font;
   font-size: 19px;
   text-align: center;
 }
