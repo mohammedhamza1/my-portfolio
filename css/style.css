@@ -58,7 +58,7 @@ section.about .education-experience .row .education .stage p, section.about .edu
     section.about .education-experience .row .education .stage p, section.about .education-experience .row .experience .stage p {
       font-size: 15px; } }
 
-section.contact form input, section.contact form textarea {
+section.contact .main-contact-form form input, section.contact .main-contact-form form textarea, section.contact .second-contact-form form input, section.contact .second-contact-form form textarea {
   background: transparent;
   border: none;
   border-radius: 0;
@@ -67,20 +67,26 @@ section.contact form input, section.contact form textarea {
   font-size: 20px;
   font-family: "Cairo", sans-serif; }
 
-section.contact form input:focus, section.contact form textarea:focus {
+section.contact .main-contact-form form input:focus, section.contact .main-contact-form form textarea:focus, section.contact .second-contact-form form input:focus, section.contact .second-contact-form form textarea:focus {
   background: #213243;
   color: #fff;
   outline: none;
   box-shadow: 0 5px 7px 1px #192734;
   border-color: #213243; }
 
-section.contact form input::placeholder {
+section.contact .main-contact-form form input::placeholder, section.contact .second-contact-form form input::placeholder {
   margin-left: 0;
   text-transform: capitalize;
   color: #C1C5C8;
   font-family: "Questrial", sans-serif;
   font-size: 19px;
   text-align: center; }
+
+footer .popover .arrow:before, footer .popover .arrow:after {
+  border-right-color: #192734 !important; }
+  @media (max-width: 575px) {
+    footer .popover .arrow:before, footer .popover .arrow:after {
+      border-right-color: #192734 !important; } }
 
 .download-cv {
   text-transform: uppercase;
@@ -728,12 +734,15 @@ section.portfolio {
       transition: .3s;
       font-weight: normal;
       font-size: 13px; }
+      @media (min-width: 0px) {
+        section.portfolio .projects-wrapper .project a {
+          font-size: 12px; } }
       @media (min-width: 392px) {
         section.portfolio .projects-wrapper .project a {
-          font-size: 20px; } }
+          font-size: 15px; } }
       @media (min-width: 575px) {
         section.portfolio .projects-wrapper .project a {
-          font-size: 5px; } }
+          font-size: 6px; } }
       @media (min-width: 766px) {
         section.portfolio .projects-wrapper .project a {
           font-size: 8px; } }
@@ -746,6 +755,10 @@ section.portfolio {
     section.portfolio .projects-wrapper .project:hover h6 {
       -webkit-transform: translate(0, 80px);
       transform: translate(0, 80px); }
+      @media (min-width: 0px) {
+        section.portfolio .projects-wrapper .project:hover h6 {
+          -webkit-transform: translate(0, 70px);
+          transform: translate(0, 70px); } }
       @media (min-width: 392px) {
         section.portfolio .projects-wrapper .project:hover h6 {
           -webkit-transform: translate(0, 100px);
@@ -769,6 +782,10 @@ section.portfolio {
     section.portfolio .projects-wrapper .project:hover a {
       -webkit-transform: translate(0, 140px);
       transform: translate(0, 140px); }
+      @media (min-width: 0px) {
+        section.portfolio .projects-wrapper .project:hover a {
+          -webkit-transform: translate(0, 120px);
+          transform: translate(0, 120px); } }
       @media (min-width: 392px) {
         section.portfolio .projects-wrapper .project:hover a {
           -webkit-transform: translate(0, 150px);
@@ -800,7 +817,6 @@ section.portfolio {
         color: #213243; }
 
 section.services {
-  display: none;
   padding: 145px 0;
   background: #213243;
   color: #ffffff; }
@@ -1035,7 +1051,8 @@ section.contact {
     text-align: center;
     margin-top: -80px;
     margin-bottom: 80px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: 11px; }
     section.contact .status .online {
       color: #00C853;
       margin-right: 5px; }
@@ -1043,12 +1060,12 @@ section.contact {
       color: #C1C5C8;
       opacity: 0.6;
       margin-right: 5px; }
-  section.contact form input {
+  section.contact .main-contact-form form input {
     height: 45px; }
     @media (max-width: 575px) {
-      section.contact form input::placeholder {
+      section.contact .main-contact-form form input::placeholder {
         text-align: left; } }
-  section.contact form label {
+  section.contact .main-contact-form form label {
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 12px;
@@ -1058,12 +1075,41 @@ section.contact {
     color: #C1C5C8;
     display: block;
     text-align: center; }
-  section.contact form textarea {
+  section.contact .main-contact-form form textarea {
     border: 1px solid #213243;
     resize: none; }
-  section.contact form .form-control:disabled, section.contact form button:disabled {
+  section.contact .main-contact-form form .form-control:disabled, section.contact .main-contact-form form button:disabled {
     background: transparent;
     cursor: not-allowed; }
+  section.contact .second-contact-form {
+    display: none; }
+    section.contact .second-contact-form form input {
+      height: 45px; }
+      section.contact .second-contact-form form input::placeholder {
+        text-align: left; }
+        @media (max-width: 575px) {
+          section.contact .second-contact-form form input::placeholder {
+            text-align: left; } }
+    section.contact .second-contact-form form label {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 12px;
+      text-transform: capitalize;
+      font-size: 19px;
+      font-family: "Questrial", sans-serif;
+      color: #C1C5C8;
+      display: block;
+      text-align: left; }
+    section.contact .second-contact-form form textarea {
+      border: 1px solid #213243;
+      resize: none; }
+    section.contact .second-contact-form form .form-control:disabled, section.contact .second-contact-form form button:disabled {
+      background: transparent;
+      cursor: not-allowed; }
+    section.contact .second-contact-form .map {
+      opacity: 0.2; }
+      section.contact .second-contact-form .map iframe {
+        width: 100%; }
 
 footer {
   padding: 20px 0;
@@ -1080,16 +1126,6 @@ footer {
     height: 50px;
     line-height: 50px;
     cursor: pointer; }
-  footer .popover .arrow:before {
-    border-right-color: #192734 !important; }
-    @media (max-width: 575px) {
-      footer .popover .arrow:before {
-        border-right-color: #192734 !important; } }
-  footer .popover .arrow:after {
-    border-right-color: #192734 !important; }
-    @media (max-width: 575px) {
-      footer .popover .arrow:after {
-        border-right-color: #192734 !important; } }
   footer .popover .popover-body {
     background: #192734;
     color: #C1C5C8;

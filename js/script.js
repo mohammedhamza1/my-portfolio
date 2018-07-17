@@ -138,14 +138,15 @@ $(function () {
     //end progress
 
     //media query
+    //switch between services section in deffirent screens
     if (window.matchMedia('(max-width: 575px)').matches) {
-        $('.services').hide();
+        $('.services').remove();
         $('.services-mobile').show();
-    }
-    if (window.matchMedia('(min-width: 575px)').matches) {
-        $('.services-mobile').hide();
+    } else {
+        $('.services-mobile').remove();
         $('.services').show();
     }
+    //end media query
 
     //End general
 
@@ -171,4 +172,13 @@ $(function () {
     });
     //shuffle
     //end portfolio
+
+    //start contact
+    //hide this (alt contact section) for now
+    if (window.matchMedia('(min-width: 0px)').matches) {
+        $('.second-contact-form').remove();
+    }
+    //set map height to form height
+    $('.map iframe').height($('.second-contact-form form').height());
+    //end contact
 });

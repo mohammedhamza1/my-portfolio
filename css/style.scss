@@ -573,11 +573,14 @@ section.portfolio {
         transition: .3s;
         font-weight: normal;
         font-size: 13px;
+        @media (min-width: 0px) {
+          font-size: 12px;
+        }
         @media (min-width: 392px) {
-          font-size: 20px;
+          font-size: 15px;
         }
         @media (min-width: 575px) {
-          font-size: 5px;
+          font-size: 6px;
         }
         @media (min-width: 766px) {
           font-size: 8px;
@@ -592,6 +595,10 @@ section.portfolio {
       &:hover h6 {
         -webkit-transform: translate(0, 80px);
         transform: translate(0, 80px);
+        @media (min-width: 0px) {
+          -webkit-transform: translate(0, 70px);
+          transform: translate(0, 70px);
+        }
         @media (min-width: 392px) {
           -webkit-transform: translate(0, 100px);
           transform: translate(0, 100px);
@@ -616,6 +623,10 @@ section.portfolio {
       &:hover a {
         -webkit-transform: translate(0, 140px);
         transform: translate(0, 140px);
+        @media (min-width: 0px) {
+          -webkit-transform: translate(0, 120px);
+          transform: translate(0, 120px);
+        }
         @media (min-width: 392px) {
           -webkit-transform: translate(0, 150px);
           transform: translate(0, 150px);
@@ -662,7 +673,6 @@ section.portfolio {
 
 //start services
 section.services {
-  display: none;
   padding: $secions_padding;
   background: $dark_light_color;
   color: $main_text_color;
@@ -867,6 +877,7 @@ section.contact {
     margin-top: -80px;
     margin-bottom: 80px;
     text-transform: capitalize;
+    font-size: 11px;
     .online {
       color: $border_color;
       margin-right: 5px;
@@ -877,42 +888,92 @@ section.contact {
       margin-right: 5px;
     }
   }
-  form {
-    input {
-      @extend %form_inputs_style;
-      height: 45px;
-      &:focus {
-        @extend %form_inputs_hover_focus_style;
-      }
-      &::placeholder {
-        @extend %form_inputs_placeholder_style;
-        @media (max-width: 575px) {
-          text-align: left;
+  .main-contact-form {
+    form {
+      input {
+        @extend %form_inputs_style;
+        height: 45px;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+        &::placeholder {
+          @extend %form_inputs_placeholder_style;
+          @media (max-width: 575px) {
+            text-align: left;
+          }
         }
       }
-    }
-    label {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      margin-left: 12px;
-      text-transform: capitalize;
-      font-size: 19px;
-      font-family: $brand_font;
-      color: $line_before_color;
-      display: block;
-      text-align: center;
-    }
-    textarea {
-      @extend %form_inputs_style;
-      border: 1px solid $dark_light_color;
-      resize: none;
-      &:focus {
-        @extend %form_inputs_hover_focus_style;
+      label {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        font-size: 19px;
+        font-family: $brand_font;
+        color: $line_before_color;
+        display: block;
+        text-align: center;
+      }
+      textarea {
+        @extend %form_inputs_style;
+        border: 1px solid $dark_light_color;
+        resize: none;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+      }
+      .form-control:disabled, button:disabled {
+        background: transparent;
+        cursor: not-allowed;
       }
     }
-    .form-control:disabled, button:disabled {
-      background: transparent;
-      cursor: not-allowed;
+  }
+  .second-contact-form{
+    display: none;
+    form {
+      input {
+        @extend %form_inputs_style;
+        height: 45px;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+        &::placeholder {
+          @extend %form_inputs_placeholder_style;
+          text-align: left;
+          @media (max-width: 575px) {
+            text-align: left;
+          }
+        }
+      }
+      label {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        font-size: 19px;
+        font-family: $brand_font;
+        color: $line_before_color;
+        display: block;
+        text-align: left;
+      }
+      textarea {
+        @extend %form_inputs_style;
+        border: 1px solid $dark_light_color;
+        resize: none;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+      }
+      .form-control:disabled, button:disabled {
+        background: transparent;
+        cursor: not-allowed;
+      }
+    }
+    .map{
+      opacity: 0.2;
+      iframe{
+        width: 100%;
+      }
     }
   }
 }
@@ -955,5 +1016,4 @@ footer {
 }
 
 //end footer
-
 
