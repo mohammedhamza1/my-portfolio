@@ -1,36 +1,39 @@
 //color
-$darkColor: #192734;
-$darkLightColor: #213243;
-$jobTitleColor: #21AE62;
-$borderColor: #00C853;
-$borderColorSecond: #03A9F4;
-$sectionsHeadsColor: #ADBCCB;
-$lineBeforeColor: #C1C5C8;
-$paragraphsColor: #C3D6E9;
-$stageColor: #192734;
-$toTopColor: #21AE62;
-$serviceColor1: #00C853;
-$serviceColor2: #03A9F4;
-$serviceColor3: #FFAB40;
-$serviceColor4: #EC407A;
+$dark_color: #192734;
+$dark_light_color: #213243;
+$job_title_color: #21AE62;
+$border_color: #00C853;
+$border_color_second: #03A9F4;
+$section_heads_color: #ADBCCB;
+$line_before_color: #C1C5C8;
+$info_paragraph_color: #C3D6E9;
+$stage_color: #192734;
+$to_top_color: #21AE62;
+$service_color1: #00C853;
+$service_color2: #03A9F4;
+$service_color3: #FFAB40;
+$service_color4: #EC407A;
+$main_text_color: #ffffff;
 
 //border
-$borderRadius: 9px;
+$border_radius: 9px;
 
 //padding
-$sectionsPadding: 145px 0;
+$secions_padding: 145px 0;
 
 //font family
-$brandFontFamily: 'Questrial', sans-serif;
-$firstNameFontFamily: 'Quicksand', sans-serif;
-$secondNameFontFamily: 'Prompt', sans-serif;
-$jobTitleFontFamily: 'Julius Sans One', sans-serif;
-$sectionsChildHeadsFontFamily: 'Eagle Lake', cursive;
-$sectionsChildHeadsFontFamily2: 'Merienda', cursive;
+$brand_font: 'Questrial', sans-serif;
+$first_name_font: 'Quicksand', sans-serif;
+$second_name_font: 'Prompt', sans-serif;
+$job_title_font: 'Julius Sans One', sans-serif;
+$sections_child_heads_font: 'Eagle Lake', cursive;
+$sections_child_heads_font2: 'Merienda', cursive;
 $arabic_font_family: 'Cairo', sans-serif;
 
 //font size
 $sections_main_head_sm_font_size: 50px;
 
 //lists
-$service_icon_colors: $serviceColor1 $serviceColor2 $serviceColor3 $serviceColor4;
+$service_icon_colors: $service_color1 $service_color2 $service_color3 $service_color4;
+
+

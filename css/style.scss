@@ -1,42 +1,43 @@
 @import 'sass/_variable.scss';
 @import "sass/_mixins.scss";
 @import "sass/_shared.scss";
+@import "sass/_button.scss";
 
 //start home
 section.home {
-  background: $darkColor;
-  color: #fff;
+  background: $dark_color;
+  color: $main_text_color;
   padding: 50px 0;
   //start header
   header {
     .navbar-wrapper {
       .navbar {
         .navbar-brand {
-          background: $darkLightColor;
+          background: $dark_light_color;
           padding: 5px 20px;
-          border-radius: $borderRadius;
+          border-radius: $border_radius;
           text-transform: uppercase;
           letter-spacing: 3px;
-          font-family: $brandFontFamily;
+          font-family: $brand_font;
           font-size: 35px;
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             font-size: 25px;
           }
         }
         .navbar-toggler {
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             padding: 5px;
           }
         }
         .navbar-collapse {
-          @media (max-width: 991.98px) {
+          @media (max-width: 992px) {
             margin-bottom: -110px;
             margin-top: 20px;
           }
           .navbar-nav {
-            background: $darkLightColor;
+            background: $dark_light_color;
             padding: 0 30px;
-            border-radius: $borderRadius;
+            border-radius: $border_radius;
             text-transform: uppercase;
             .nav-item {
               margin-right: 50px;
@@ -44,28 +45,28 @@ section.home {
               padding: 10px 0;
               box-sizing: border-box;
               transition: all ease-in-out .2s;
-              @media (max-width: 991.98px) {
+              @media (max-width: 992px) {
                 border: none;
                 padding: 5px 0;
               }
               .nav-link {
-                color: #fff;
+                color: $main_text_color;
                 transition: all ease-in-out .2s;
-              }
-              .nav-link:hover {
-                @media (max-width: 991.98px) {
-                  color: $borderColor;
+                &:hover {
+                  @media (max-width: 992px) {
+                    color: $border_color;
+                  }
                 }
+              }
+              &:hover {
+                border-color: $border_color;
               }
             }
             .nav-item:last-of-type {
               margin-right: 0;
             }
             .nav-item.active {
-              border-color: $borderColor;
-            }
-            .nav-item:hover {
-              border-color: $borderColor;
+              border-color: $border_color;
             }
           }
         }
@@ -78,13 +79,13 @@ section.home {
   section.my-name {
     .row {
       min-height: 470px;
-      @media (max-width: 575.98px) {
+      @media (max-width: 576px) {
         min-height: 420px;
       }
-      @media (min-width: 575.98px) {
+      @media (min-width: 576px) {
         min-height: 470px;
       }
-      @media (min-width: 991.98px) {
+      @media (min-width: 992px) {
         min-height: 490px;
       }
       .col {
@@ -93,11 +94,11 @@ section.home {
           text-transform: uppercase;
           .first-name {
             h1 {
-              font-family: $firstNameFontFamily;
+              font-family: $first_name_font;
               font-weight: 300;
               font-size: 64px;
               margin-bottom: -20px;
-              @media (max-width: 575.98px) {
+              @media (max-width: 576px) {
                 font-size: 32px;
                 margin-bottom: -10px;
               }
@@ -108,12 +109,12 @@ section.home {
           }
           .second-name {
             h1 {
-              font-family: $secondNameFontFamily;
+              font-family: $second_name_font;
               font-weight: 700;
               font-size: 130px;
               letter-spacing: 1px;
               margin-bottom: -20px;
-              @media (max-width: 575.98px) {
+              @media (max-width: 576px) {
                 margin-bottom: -10px;
                 font-size: 60px;
               }
@@ -124,12 +125,12 @@ section.home {
           }
           .job-title {
             h4 {
-              font-family: $jobTitleFontFamily;
+              font-family: $job_title_font;
               font-size: 30px;
               letter-spacing: 12px;
-              color: $jobTitleColor;
+              color: $job_title_color;
               padding-bottom: 20px;
-              @media (max-width: 575.98px) {
+              @media (max-width: 576px) {
                 font-size: 15px;
               }
               @media (min-width: 1367px) {
@@ -143,38 +144,56 @@ section.home {
   }
   //end section my name
 }
+
 //end home
 
 //start about
 section.about {
-  padding: $sectionsPadding;
-  background: $darkLightColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   .who-am-i {
-    @extend %sectionsSmallHeadsStyle;
+    @extend %sections_small_heads_style;
   }
   .who-am-i > span {
     position: relative;
-  }
-  .who-am-i > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 79px, -3px, '', 8px);
+    &:before {
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 79px, -3px, '', 8px);
+      @media (max-width: 575px) {
+        @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 86px, -3px, '', 8px);
+      }
+    }
   }
   h1 {
-    @extend %sectionsMainHeadsStyle;
-    @media (max-width: 575.98px) {
+    @extend %sections_main_heads_style;
+    @media (max-width: 576px) {
       font-size: $sections_main_head_sm_font_size;
     }
   }
   .row {
+    .profile-pic {
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective: 1000px;
+      img {
+        display: block;
+        transition: all ease-in-out .3s;
+        &:hover {
+          -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+        }
+      }
+    }
     .info {
-      @media (max-width: 991.98px) {
+      @media (max-width: 992px) {
         text-align: center;
       }
       h6 {
-        @extend %sectionsChildHeadsStyle;
-        @media (max-width: 991.98px) {
+        @extend %sections_child_heads_style;
+        @media (max-width: 992px) {
           display: inline-block;
           margin-left: 0;
+          margin-top: 10px;
         }
         @media (min-width: 992px) {
           padding-top: 0;
@@ -182,23 +201,23 @@ section.about {
         @media (min-width: 1200px) {
           padding-top: 20px;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
-        @media (max-width: 991.98px) {
-          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        &:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 0, 8px);
+          @media (max-width: 992px) {
+            @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+          }
         }
       }
       p {
-        color: $paragraphsColor;
+        color: $info_paragraph_color;
         padding-left: 60px;
         padding-top: 7px;
         font-style: italic;
         font-weight: initial;
         margin-bottom: 20px;
         font-size: 20px;
-        @media (max-width: 991.98px) {
+        @media (max-width: 992px) {
           padding-left: 0;
           font-style: normal;
         }
@@ -213,12 +232,12 @@ section.about {
       }
     }
     .skills {
-      @media (max-width: 991.98px) {
+      @media (max-width: 992px) {
         text-align: center;
       }
       h6 {
-        @extend %sectionsChildHeadsStyle;
-        @media (max-width: 991.98px) {
+        @extend %sections_child_heads_style;
+        @media (max-width: 992px) {
           display: inline-block;
           margin-left: 0;
         }
@@ -228,53 +247,89 @@ section.about {
         @media (min-width: 1200px) {
           padding-top: 20px;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 0, 8px);
-        @media (max-width: 991.98px) {
-          @include lineBeforeSmallHeads(#fff, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+        &:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 0, 8px);
+          @media (max-width: 992px) {
+            @include line_before_small_heads($main_text_color, 1, 4px, 50px, '', '', -8px, 39%, 8px);
+          }
         }
       }
       .skill-wrapper {
-        margin-top: 35px;
+        margin-top: 10px;
         margin-left: 40px;
-        @media (max-width: 991.98px) {
+        @media (max-width: 992px) {
           margin-left: 0;
         }
         @media (min-width: 992px) {
-          margin-top: 28px;
+          margin-top: -17px;
           margin-left: 15px;
         }
         @media (min-width: 1200px) {
-          margin-top: 35px;
+          margin-top: 11px;
           margin-left: 40px;
         }
-        .skill {
-          height: 110px;
-          line-height: 110px;
+        #skill1, #skill2, #skill3, #skill4, #skill5, #skill6, #skill7, #skill8 {
           width: 110px;
-          border: 4px solid $borderColor;
-          border-radius: 50%;
+          height: 110px;
           text-align: center;
           margin-bottom: 15px;
-          font-family: $secondNameFontFamily;
+          font-family: $second_name_font;
           font-size: 18px;
           font-weight: 300;
-          @media (max-width: 991.98px) {
+          transition: all ease-in-out .5s;
+          @media (max-width: 992px) {
             margin: 0 auto 30px;
           }
-          @media (min-width: 992px) {
-            height: 110px;
-            line-height: 110px;
-            width: 110px;
-            border: 4px solid $borderColor;
-            border-radius: 50%;
+          .skill-name {
+            position: relative;
+            top: 55%;
+          }
+          .skill-percentage {
             text-align: center;
-            margin-bottom: 15px;
-            font-family: $secondNameFontFamily;
-            font-size: 18px;
-            font-weight: 300;
+            position: absolute;
+            top: 65%;
+            left: 40%;
+            font-size: 16px;
+            color: $job_title_color;
+            opacity: 0.6;
+            font-family: $first_name_font;
+            @media (max-width: 992px) {
+              top: 59%;
+              left: 40%;
+            }
+            @media (min-width: 0px) {
+              top: 60%;
+              left: 43%;
+            }
+            @media (min-width: 277px) {
+              top: 60%;
+              left: 45%;
+            }
+            @media (min-width: 490px) {
+              top: 60%;
+              left: 47%;
+            }
+            @media (min-width: 575px) {
+              top: 60%;
+              left: 41%;
+            }
+            @media (min-width: 992px) {
+              top: 65%;
+              left: 44%;
+            }
+            @media (min-width: 1200px) {
+              top: 65%;
+              left: 41%;
+            }
+          }
+          svg {
+            border-radius: 50%;
+            transition: all ease-in-out .3s;
+            box-shadow: 0 0 28px 0 $dark_color;
+          }
+          &:hover svg {
+            box-shadow: 0 0 28px 10px $dark_color;
           }
         }
       }
@@ -288,7 +343,7 @@ section.about {
       margin-left: 0;
       margin-right: 0;
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       padding-top: 80px;
       text-align: center;
       margin-left: -30px;
@@ -302,20 +357,20 @@ section.about {
       }
       h6 {
         margin-left: 30px;
-        @extend %sectionsChildHeadsStyle2;
+        @extend %sections_child_heads_style2;
         @media (max-width: 992px) {
           font-size: 35px;
         }
-        @media (max-width: 575.98px) {
+        @media (max-width: 576px) {
           font-size: 30px;
           display: inline-block;
         }
-      }
-      h6:before {
-        //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-        @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
-        @media (max-width: 575.98px) {
-          @include lineBeforeSmallHeads($borderColor, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        &:before {
+          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+          @include line_before_small_heads($border_color, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+          @media (max-width: 576px) {
+            @include line_before_small_heads($border_color, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+          }
         }
       }
       h6.second {
@@ -326,70 +381,51 @@ section.about {
         @media (max-width: 992px) {
           margin-left: 30px;
         }
-      }
-      h6.second:before {
-        @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
-        @media (max-width: 575.98px) {
-          @include lineBeforeSmallHeads($borderColorSecond, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+        @media (max-width: 575px) {
+          margin-top: 30px;
+        }
+        &:before {
+          @include line_before_small_heads($border_color_second, 1, 5px, 70px, 77px, '', -8px, 0, 8px);
+          @media (max-width: 576px) {
+            @include line_before_small_heads($border_color_second, 1, 5px, 70px, 65px, '', -8px, 30%, 8px);
+          }
         }
       }
       .education {
         .stage {
-          position: relative;
+          @extend %stage_style;
           margin-left: 48px;
           margin-top: 55px;
-          padding: 0 0 30px 45px;
-          background: $stageColor;
-          border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stageColor;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
           }
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             padding-left: 10px;
             padding-right: 10px;
           }
           .when {
-            padding: 30px 0 15px 0;
-            color: $sectionsHeadsColor;
-            text-transform: capitalize;
-            font-size: 10px;
-            margin-left: -15px;
-            .from {
-            }
-            .to {
-            }
+            @extend %stage_when_class;
           }
           p {
-            padding: 0;
-            margin: 0;
-            font-size: 17px;
-            text-transform: capitalize;
-            @media (max-width: 1270px) {
-              font-size: 14px;
-            }
-            @media (max-width: 992px) {
-              font-size: 15px;
-            }
+            @extend %stage_paragraph_style;
+          }
+          &:before {
+            //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+            @include line_before_small_heads($border_color, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
+          &:hover {
+            border-color: $border_color;
           }
         }
         .stage:nth-of-type(2) {
           margin-top: 30px;
         }
-        .stage:before {
-          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads($borderColor, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
-        }
       }
       .experience {
         .stage {
-          position: relative;
+          @extend %stage_style;
           margin-left: 57px;
           margin-top: 55px;
-          padding: 0 0 30px 45px;
-          background: $stageColor;
-          border-radius: 13px;
-          box-shadow: 0px 5px 7px 1px $stageColor;
           @media (max-width: 1270px) {
             padding: 0 0 20px 20px;
             margin-left: 49px;
@@ -397,93 +433,58 @@ section.about {
           @media (max-width: 992px) {
             margin-left: 48px;
           }
-          @media (max-width: 575.98px) {
+          @media (max-width: 576px) {
             padding-left: 10px;
             padding-right: 10px;
           }
           .when {
-            padding: 30px 0 15px 0;
-            color: $sectionsHeadsColor;
-            text-transform: capitalize;
-            font-size: 10px;
-            margin-left: -15px;
-            .from {
-            }
-            .to {
-            }
+            @extend %stage_when_class;
           }
           p {
-            padding: 0;
-            margin: 0;
-            font-size: 17px;
-            text-transform: capitalize;
-            @media (max-width: 1270px) {
-              font-size: 14px;
-            }
-            @media (max-width: 992px) {
-              font-size: 15px;
-            }
+            @extend %stage_paragraph_style;
+          }
+          &:before {
+            //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
+            @include line_before_small_heads($border_color_second, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
+          }
+          &:hover {
+            border-color: $border_color_second;
           }
         }
         .stage:nth-of-type(2) {
           margin-top: 30px;
         }
-        .stage:before {
-          //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads($borderColorSecond, 1, 85%, 9px, 13px, 10px, '', -21px, 8px);
-        }
       }
     }
   }
   .cv {
-    @extend %sectionsSmallHeadsStyle;
+    @extend %sections_small_heads_style;
     margin-top: 135px;
   }
   .cv > span {
     position: relative;
-  }
-  .cv > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', "", -3px, -6px, 8px);
-  }
-  .download-cv {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
-    width: 360px;
-    height: 65px;
-    line-height: 48px;
-    margin: 25px auto;
-    display: block;
-    border-radius: 22px;
-    background: $borderColor;
-    font-size: 24px;
-    @media (max-width: 575.98px) {
-      font-size: 18px;
-      width: 190px;
-      height: 50px;
-      line-height: 33px;
+    &:before {
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', "", -3px, -6px, 8px);
     }
   }
-  .download-cv:hover, .download-cv:focus {
-    background: $jobTitleColor;
-  }
 }
+
 //end about
 
 //start portfolio
 section.portfolio {
-  padding: $sectionsPadding;
-  background: $darkColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
+    @extend %sections_main_heads_style;
     margin-bottom: 45px;
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       font-size: $sections_main_head_sm_font_size;
     }
   }
   .portfolio-controls {
-    background: $darkLightColor;
+    background: $dark_light_color;
     border-radius: 15px;
     text-transform: uppercase;
     margin-bottom: 55px;
@@ -500,79 +501,186 @@ section.portfolio {
         margin: 0;
       }
       .nav-link {
-        color: #fff;
+        color: $main_text_color;
         transition: all ease-in-out .2s;
-      }
-      .nav-link:hover {
-        @media (max-width: 991.98px) {
-          color: $borderColor;
+        &:hover {
+          @media (max-width: 992px) {
+            color: $border_color;
+          }
         }
+      }
+      &:hover {
+        border-color: $border_color;
       }
     }
     .nav-btn:last-of-type {
       margin-right: 0;
     }
     .nav-btn.active {
-      border-color: $borderColor;
-    }
-    .nav-btn:hover {
-      border-color: $borderColor;
+      border-color: $border_color;
     }
   }
   .projects-wrapper {
     .project {
+      position: relative;
       margin-bottom: 50px;
       transition: all ease-in-out .3s;
+      overflow: hidden;
       img {
         width: 90%;
         border-radius: 15px;
+        transition: .3s;
+      }
+      h6 {
+        position: absolute;
+        margin: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        font-weight: bold;
+        font-family: $brand_font;
+        font-size: 33px;
+        text-transform: uppercase;
+        -webkit-transform: translate(0, -94%);
+        transform: translate(0, -94%);
+        transition: .3s;
+        @media (min-width: 0px) {
+          font-size: 30px;
+        }
+        @media (min-width: 392px) {
+          font-size: 40px;
+        }
+        @media (min-width: 575px) {
+          font-size: 15px;
+        }
+        @media (min-width: 766px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          font-size: 30px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 35px;
+        }
+      }
+      a {
+        position: absolute;
+        text-decoration: none;
+        color: $main_text_color;
+        left: 0;
+        right: 0;
+        transform: translate(0, 725%);
+        transition: .3s;
+        font-weight: normal;
+        font-size: 13px;
+        @media (min-width: 0px) {
+          font-size: 12px;
+          transform: translate(0, 770%);
+        }
+        @media (min-width: 392px) {
+          font-size: 15px;
+          transform: translate(0, 920%);
+        }
+        @media (min-width: 575px) {
+          font-size: 6px;
+        }
+        @media (min-width: 766px) {
+          font-size: 8px;
+        }
+        @media (min-width: 992px) {
+          font-size: 12px;
+        }
+        @media (min-width: 1200px) {
+          font-size: 15px;
+        }
+      }
+      &:hover h6 {
+        -webkit-transform: translate(0, 80px);
+        transform: translate(0, 80px);
+        @media (min-width: 0px) {
+          -webkit-transform: translate(0, 70px);
+          transform: translate(0, 70px);
+        }
+        @media (min-width: 392px) {
+          -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+        }
+        @media (min-width: 575px) {
+          -webkit-transform: translate(0, 40px);
+          transform: translate(0, 40px);
+        }
+        @media (min-width: 766px) {
+          -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+        }
+        @media (min-width: 992px) {
+          -webkit-transform: translate(0, 70px);
+          transform: translate(0, 70px);
+        }
+        @media (min-width: 1200px) {
+          -webkit-transform: translate(0, 95px);
+          transform: translate(0, 95px);
+        }
+      }
+      &:hover a {
+        -webkit-transform: translate(0, 140px);
+        transform: translate(0, 140px);
+        @media (min-width: 0px) {
+          -webkit-transform: translate(0, 120px);
+          transform: translate(0, 120px);
+        }
+        @media (min-width: 392px) {
+          -webkit-transform: translate(0, 150px);
+          transform: translate(0, 150px);
+        }
+        @media (min-width: 575px) {
+          -webkit-transform: translate(0, 70px);
+          transform: translate(0, 70px);
+        }
+        @media (min-width: 766px) {
+          -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
+        }
+        @media (min-width: 992px) {
+          -webkit-transform: translate(0, 120px);
+          transform: translate(0, 120px);
+        }
+        @media (min-width: 1200px) {
+          -webkit-transform: translate(0, 150px);
+          transform: translate(0, 150px);
+        }
+      }
+      &:hover img {
+        opacity: 0.08;
       }
     }
   }
   .more-projects {
-    button.btn {
-      display: block;
-      margin: 35px auto 0;
-      background: $darkLightColor;
-      border-color: $darkLightColor;
-      color: #fff;
-      border-radius: 20px;
-      width: 260px;
-      height: 47px;
-      text-transform: uppercase;
-      font-size: 14px;
-      @media (max-width: 575px) {
-        width: 220px;
-      }
-    }
-    button.btn:hover, button.btn:focus {
-      background: $darkLightColor;
-      border-color: $darkColor;
-    }
     .modal {
       .modal-content {
-        background: $darkColor;
+        background: $dark_color;
         border-radius: 15px;
         .modal-header {
-          border-color: $darkLightColor;
+          border-color: $dark_light_color;
           span {
-            color: $darkLightColor;
+            color: $dark_light_color;
           }
         }
       }
     }
   }
 }
+
 //end portfolio
 
 //start services
 section.services {
-  padding: $sectionsPadding;
-  background: $darkLightColor;
-  color: #fff;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
-    @media (max-width: 575.98px) {
+    @extend %sections_main_heads_style;
+    @media (max-width: 576px) {
       font-size: $sections_main_head_sm_font_size;
     }
   }
@@ -583,7 +691,7 @@ section.services {
       margin-left: 0;
       margin-right: 0;
     }
-    @media (max-width: 575.98px) {
+    @media (max-width: 576px) {
       padding-top: 80px;
       text-align: center;
       margin-left: -30px;
@@ -597,25 +705,25 @@ section.services {
       }
       .service-wrapper {
         position: relative;
-        background: $darkColor;
+        background: $dark_color;
         margin-bottom: 40px;
         border-radius: 13px;
-        box-shadow: 0px 5px 7px 1px $stageColor;
+        box-shadow: 0 5px 7px 1px $stage_color;
         .service-icon {
           width: 40%;
           padding: 62px 0;
           border-radius: 13px;
           display: inline-block;
-          @media (max-width: 420px){
+          @media (max-width: 420px) {
             padding: 100px 0;
           }
-          @media (max-width: 360px){
+          @media (max-width: 360px) {
             padding: 150px 0;
           }
           i {
             display: block;
             margin: auto;
-            @media (max-width: 767.98px) {
+            @media (max-width: 768px) {
               font-size: 50px;
             }
             @media (max-width: 575px) {
@@ -634,42 +742,42 @@ section.services {
         }
         .service {
           width: 60%;
-          background: $darkColor;
+          background: $dark_color;
           display: inline-block;
           float: right;
-          h6{
-            font-family: $sectionsChildHeadsFontFamily2;
+          h6 {
+            font-family: $sections_child_heads_font2;
             text-transform: uppercase;
             margin-left: 11px;
             margin-top: 25px;
-            @media (max-width: 575px){
+            @media (max-width: 575px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 420px){
+            @media (max-width: 420px) {
               margin-left: 0;
               padding: 2px;
             }
-            @media (max-width: 360px){
+            @media (max-width: 360px) {
               font-size: 13px;
               margin-left: 0;
             }
           }
-          p{
-            color: $lineBeforeColor;
+          p {
+            color: $line_before_color;
             font-size: 13px;
             margin-left: 30px;
             margin-top: 15px;
             line-height: 1.7;
-            @media (max-width: 575px){
+            @media (max-width: 575px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 420px){
+            @media (max-width: 420px) {
               margin-left: 0;
               padding: 5px;
             }
-            @media (max-width: 360px){
+            @media (max-width: 360px) {
               font-size: 14px;
               margin-left: 0;
             }
@@ -690,103 +798,224 @@ section.services {
       @for $i from 1 through 4 {
         .service-wrapper.#{icon}#{$i}:before {
           //$background,$opacity,$height,$width,$top,$right,$bottom,$left,$border-radius
-          @include lineBeforeSmallHeads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
+          @include line_before_small_heads(nth($service_icon_colors, $i), 1, 89%, 9px, 9px, '', '', -17px, 8px);
         }
       }
     }
   }
 }
+
 //end services
 
-//start contact
-section.contact{
-  padding: $sectionsPadding;
-  background: $darkColor;
-  color: #fff;
-  .get-in-touch {
-    @extend %sectionsSmallHeadsStyle;
-  }
-  .get-in-touch > span {
-    position: relative;
-  }
-  .get-in-touch > span:before {
-    @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 99px, -3px, '', 8px);
-    @media (max-width: 575.98px) {
-      @include lineBeforeSmallHeads($lineBeforeColor, .4, 65px, 2px, '', 108px, -3px, '', 8px);
-    }
-  }
+//start services mobile
+section.services-mobile {
+  display: none;
+  padding: $secions_padding;
+  background: $dark_light_color;
+  color: $main_text_color;
   h1 {
-    @extend %sectionsMainHeadsStyle;
-    @media (max-width: 575.98px) {
+    @extend %sections_main_heads_style;
+    @media (max-width: 576px) {
       font-size: $sections_main_head_sm_font_size;
     }
   }
-  form{
-    input{
-      @extend %form_inputs_style;
-      height: 45px;
-    }
-    input:focus{
-      @extend %form_inputs_hover_focus_style;
-    }
-    input::placeholder{
-      @extend %form_inputs_placeholder_style;
-      @media  (max-width: 575px){
-        text-align: left;
+  .services-wrapper-mobile {
+    .service-wrapper-mobile {
+      .service-icon-mobile {
+        padding: 40px 30px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        h6 {
+          margin: 30px 0;
+          font-family: $sections_child_heads_font2;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 1px;
+          font-size: 19px;
+        }
+        p {
+          font-family: $brand_font;
+          font-size: 16px;
+          margin-bottom: 0;
+        }
+      }
+      @for $i from 1 through 4 {
+        .service-icon-mobile.#{icon}#{$i} {
+          background: nth($service_icon_colors, $i);
+        }
       }
     }
-    label{
-      margin-top: 40px;
-      margin-bottom: 20px;
-      margin-left: 12px;
-      text-transform: capitalize;
-      font-size: 19px;
-      font-family: $brandFontFamily;
-      color: $lineBeforeColor;
-      display: block;
-      text-align: center;
-    }
-    textarea{
-      @extend %form_inputs_style;
-      border: 1px solid $darkLightColor;
-      resize: none;
-    }
-    textarea:focus{
-      @extend %form_inputs_hover_focus_style;
-    }
-    button{
-      display: block;
-      margin: 80px auto;
-      background: transparent;
-      border: 2px solid $darkLightColor;
-      color: #fff;
-      border-radius: 20px;
-      width: 260px;
-      height: 47px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 22px;
-    }
-    button:focus, button:hover{
-      background: $darkLightColor;
-      border-color: $darkLightColor;
-    }
-
   }
 }
+
+//end services mobile
+
+//start contact
+section.contact {
+  padding: $secions_padding;
+  background: $dark_color;
+  color: $main_text_color;
+  .get-in-touch {
+    @extend %sections_small_heads_style;
+  }
+  .get-in-touch > span {
+    position: relative;
+    &:before {
+      @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 99px, -3px, '', 8px);
+      @media (max-width: 576px) {
+        @include line_before_small_heads($line_before_color, .4, 65px, 2px, '', 108px, -3px, '', 8px);
+      }
+    }
+  }
+  h1 {
+    @extend %sections_main_heads_style;
+    @media (max-width: 576px) {
+      font-size: $sections_main_head_sm_font_size;
+    }
+  }
+  .status {
+    display: block;
+    text-align: center;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+    font-size: 11px;
+    .online {
+      color: $border_color;
+      margin-right: 5px;
+    }
+    .offline {
+      color: $line_before_color;
+      opacity: 0.6;
+      margin-right: 5px;
+    }
+  }
+  .main-contact-form {
+    form {
+      input {
+        @extend %form_inputs_style;
+        height: 45px;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+        &::placeholder {
+          @extend %form_inputs_placeholder_style;
+          @media (max-width: 575px) {
+            text-align: left;
+          }
+        }
+      }
+      label {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        font-size: 19px;
+        font-family: $brand_font;
+        color: $line_before_color;
+        display: block;
+        text-align: center;
+      }
+      textarea {
+        @extend %form_inputs_style;
+        border: 1px solid $dark_light_color;
+        resize: none;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+      }
+      .form-control:disabled, button:disabled {
+        background: transparent;
+        cursor: not-allowed;
+      }
+    }
+  }
+  .second-contact-form{
+    display: none;
+    form {
+      input {
+        @extend %form_inputs_style;
+        height: 45px;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+        &::placeholder {
+          @extend %form_inputs_placeholder_style;
+          text-align: left;
+          @media (max-width: 575px) {
+            text-align: left;
+          }
+        }
+      }
+      label {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 12px;
+        text-transform: capitalize;
+        font-size: 19px;
+        font-family: $brand_font;
+        color: $line_before_color;
+        display: block;
+        text-align: left;
+      }
+      textarea {
+        @extend %form_inputs_style;
+        border: 1px solid $dark_light_color;
+        resize: none;
+        &:focus {
+          @extend %form_inputs_hover_focus_style;
+        }
+      }
+      .form-control:disabled, button:disabled {
+        background: transparent;
+        cursor: not-allowed;
+      }
+    }
+    .map{
+      opacity: 0.2;
+      iframe{
+        width: 100%;
+      }
+    }
+  }
+}
+
 //end contact
 
-//to top
-.to-top {
-  position: relative;
-  display: none;
-  a {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    color: $toTopColor;
-    text-decoration: none;
+//start footer
+footer {
+  padding: 20px 0;
+  background: $dark_light_color;
+  color: $main_text_color;
+  .social {
+    a {
+      text-decoration: none;
+    }
+    i {
+      background: $dark_color;
+      color: $line_before_color;
+      border: 2px solid $dark_color;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+  .popover {
+    .arrow:before {
+      @extend %popover_arrow;
+    }
+    .arrow:after {
+      @extend %popover_arrow;
+    }
+    .popover-body {
+      background: $dark_color;
+      color: $line_before_color;
+      font-size: 15px;
+    }
   }
 }
 
+//end footer
 
