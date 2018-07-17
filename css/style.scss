@@ -575,9 +575,11 @@ section.portfolio {
         font-size: 13px;
         @media (min-width: 0px) {
           font-size: 12px;
+          transform: translate(0, 770%);
         }
         @media (min-width: 392px) {
           font-size: 15px;
+          transform: translate(0, 920%);
         }
         @media (min-width: 575px) {
           font-size: 6px;
