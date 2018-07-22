@@ -58,7 +58,7 @@ section.about .education-experience .row .education .stage p, section.about .edu
     section.about .education-experience .row .education .stage p, section.about .education-experience .row .experience .stage p {
       font-size: 15px; } }
 
-section.contact .main-contact-form form input, section.contact .main-contact-form form textarea, section.contact .second-contact-form form input, section.contact .second-contact-form form textarea {
+section.contact .main-contact-form form .input, section.contact .main-contact-form form .textarea, section.contact .second-contact-form form input, section.contact .second-contact-form form textarea {
   background: transparent;
   border: none;
   border-radius: 0;
@@ -67,14 +67,14 @@ section.contact .main-contact-form form input, section.contact .main-contact-for
   font-size: 20px;
   font-family: "Cairo", sans-serif; }
 
-section.contact .main-contact-form form input:focus, section.contact .main-contact-form form textarea:focus, section.contact .second-contact-form form input:focus, section.contact .second-contact-form form textarea:focus {
+section.contact .main-contact-form form .input:focus, section.contact .main-contact-form form .textarea:focus, section.contact .second-contact-form form input:focus, section.contact .second-contact-form form textarea:focus {
   background: #213243;
   color: #fff;
   outline: none;
   box-shadow: 0 5px 7px 1px #192734;
   border-color: #213243; }
 
-section.contact .main-contact-form form input::placeholder, section.contact .second-contact-form form input::placeholder {
+section.contact .main-contact-form form .input::placeholder, section.contact .second-contact-form form input::placeholder {
   margin-left: 0;
   text-transform: capitalize;
   color: #C1C5C8;
@@ -115,7 +115,7 @@ footer .popover .arrow:before, footer .popover .arrow:after {
     background: #21AE62;
     color: #fff; }
 
-button.all-projects {
+.all-projects {
   display: block;
   margin: 35px auto 0;
   background: #213243;
@@ -129,16 +129,16 @@ button.all-projects {
   transition: all ease-in-out .3s;
   box-shadow: 0 0 20px -3px #192734; }
   @media (max-width: 575px) {
-    button.all-projects {
+    .all-projects {
       width: 220px; } }
-  button.all-projects:hover {
+  .all-projects:hover {
     background: #213243;
     border-color: #03A9F4; }
-  button.all-projects:focus {
+  .all-projects:focus {
     background: #213243;
     border-color: #03A9F4; }
 
-button.contact-btn {
+.contact-btn {
   display: block;
   margin: 80px auto;
   background: transparent;
@@ -153,12 +153,12 @@ button.contact-btn {
   transition: all ease-in-out .3s;
   box-shadow: 0 0 20px -3px #192734; }
   @media (max-width: 575px) {
-    button.contact-btn {
+    .contact-btn {
       width: 220px; } }
-  button.contact-btn:hover {
+  .contact-btn:hover {
     background: #213243;
     border-color: #03A9F4; }
-  button.contact-btn:focus {
+  .contact-btn:focus {
     background: #213243;
     border-color: #03A9F4; }
 
@@ -1068,10 +1068,10 @@ section.contact {
       color: #C1C5C8;
       opacity: 0.6;
       margin-right: 5px; }
-  section.contact .main-contact-form form input {
+  section.contact .main-contact-form form .input {
     height: 45px; }
     @media (max-width: 575px) {
-      section.contact .main-contact-form form input::placeholder {
+      section.contact .main-contact-form form .input::placeholder {
         text-align: left; } }
   section.contact .main-contact-form form label {
     margin-top: 40px;
@@ -1083,7 +1083,7 @@ section.contact {
     color: #C1C5C8;
     display: block;
     text-align: center; }
-  section.contact .main-contact-form form textarea {
+  section.contact .main-contact-form form .textarea {
     border: 1px solid #213243;
     resize: none; }
   section.contact .main-contact-form form .form-control:disabled, section.contact .main-contact-form form button:disabled {

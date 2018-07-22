@@ -892,7 +892,7 @@ section.contact {
   }
   .main-contact-form {
     form {
-      input {
+      .input {
         @extend %form_inputs_style;
         height: 45px;
         &:focus {
@@ -916,7 +916,7 @@ section.contact {
         display: block;
         text-align: center;
       }
-      textarea {
+      .textarea {
         @extend %form_inputs_style;
         border: 1px solid $dark_light_color;
         resize: none;
